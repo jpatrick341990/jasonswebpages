@@ -1,0 +1,279 @@
+CONTRACTOR WEBSITE TEMPLATE
+EDITING GUIDE
+=================================
+
+Thank you for purchasing this Contractor Website Template.
+
+This template was designed for small construction businesses,
+contractors, remodelers, and service-based companies that need
+a clean professional website.
+
+---------------------------------
+SKILL LEVEL
+---------------------------------
+
+Beginner
+
+No advanced coding knowledge is required.
+Most changes involve replacing text or images.
+
+---------------------------------
+ESTIMATED EDITING TIME
+---------------------------------
+
+10–20 minutes
+
+Most users can update the template very quickly
+by following the steps below.
+
+---------------------------------
+WHAT YOU CAN EDIT
+---------------------------------
+
+You can easily customize:
+
+• Company Name
+• Company Logo
+• Phone Number
+• Email Address
+• Business Location
+• Services Offered
+• Background Images
+• Website Colors
+• Testimonials
+• Text Content
+
+---------------------------------
+REQUIRED SOFTWARE
+---------------------------------
+
+You can edit the website with any basic text editor:
+
+• Visual Studio Code (Recommended)
+• Notepad++
+• Sublime Text
+• Notepad
+
+---------------------------------
+FOLDER STRUCTURE
+---------------------------------
+
+contractor-template/
+
+index.html
+Home page
+
+services.html
+Services page
+
+about.html
+About page
+
+contact.html
+Contact page
+
+styles.css
+Controls colors, layout, and design
+
+scripts.js
+Optional JavaScript file
+
+instructions.txt
+Editing guide
+
+README-FIRST.txt
+Quick start instructions
+
+LICENSE.txt
+Usage license
+
+images/
+Contains all images used on the website
+
+
+---------------------------------
+HOW TO CHANGE YOUR COMPANY NAME
+---------------------------------
+
+Open any HTML file and find the text:
+
+Contractor Name
+
+Replace it with your company name.
+
+Example:
+
+ABC Construction
+Summit Contracting
+Precision Remodeling
+
+
+---------------------------------
+HOW TO ADD YOUR COMPANY LOGO
+---------------------------------
+
+Open the folder:
+
+images
+
+Replace the file:
+
+logo.png
+
+with your own logo.
+
+IMPORTANT:
+Keep the file name "logo.png" so the website loads it automatically.
+
+
+---------------------------------
+HOW TO CHANGE YOUR PHONE NUMBER
+---------------------------------
+
+In the HTML files you will see:
+
+tel:5555555555
+
+Replace it with your phone number.
+
+Example:
+
+tel:7135558899
+
+This makes the CALL button work on mobile phones.
+
+
+---------------------------------
+HOW TO CHANGE YOUR EMAIL ADDRESS
+---------------------------------
+
+Open:
+
+contact.html
+
+Find the email example:
+
+hello@example.com
+
+Replace it with your real email address.
+
+
+---------------------------------
+HOW TO CHANGE YOUR BUSINESS LOCATION
+---------------------------------
+
+In contact.html find the section labeled:
+
+Contact Information
+
+Replace the example city and state with your location.
+
+
+---------------------------------
+HOW TO CHANGE THE SERVICES
+---------------------------------
+
+Open:
+
+index.html
+services.html
+
+Find the service cards and replace the example services.
+
+Example services:
+
+Kitchen Remodeling
+Bathroom Renovations
+Home Additions
+Roofing
+Commercial Construction
+General Repairs
+
+
+---------------------------------
+HOW TO CHANGE TESTIMONIALS
+---------------------------------
+
+Open:
+
+index.html
+services.html
+
+Find the testimonial section and replace the example review.
+
+Example:
+
+★★★★★
+"Great communication and excellent work.
+Highly recommend."
+
+– John D.
+
+
+---------------------------------
+HOW TO CHANGE BACKGROUND IMAGES
+---------------------------------
+
+Open the folder:
+
+images
+
+Replace the images:
+
+construction-back-1.png
+construction-back-2.png
+construction-back-3.png
+
+You can replace these with your own project photos.
+
+If you change file names,
+update them inside:
+
+styles.css
+
+
+---------------------------------
+HOW TO CHANGE WEBSITE COLORS
+---------------------------------
+
+Open:
+
+styles.css
+
+Search for color codes such as:
+
+#800020
+#2f2f35
+#ffffff
+
+Replace them with your brand colors.
+
+
+---------------------------------
+HOW TO PUBLISH THE WEBSITE
+---------------------------------
+
+Upload the entire folder to a hosting service.
+
+Recommended FREE hosting:
+
+• Netlify
+• GitHub Pages
+• Cloudflare Pages
+
+Or any traditional hosting provider.
+
+IMPORTANT:
+Do not change the folder structure when uploading.
+
+
+---------------------------------
+SUPPORT
+---------------------------------
+
+This template was designed to be simple to edit.
+
+Most changes can be completed by replacing
+text, images, or contact information.
+
+Enjoy your new website template!
