@@ -1,0 +1,14 @@
+VELORA DEMO TWIN NOTES
+======================
+
+WHAT THIS FILE IS
+- This is the live demo twin for JasonsWebPages.com.
+
+IMPORTANT DEMO BEHAVIOR
+- The owner entry screen is still shown so the demo mimics the real template.
+- The passcode is visual only in this preview build. Clicking Unlock panel opens the owner controls.
+- Demo edits save in the browser on that device only.
+
+JASONSWEBPAGES FOOTER LINK
+- Every public page includes the Jason'sWebPages footer logo button.
+- That button links back to https://jasonswebpages.com.

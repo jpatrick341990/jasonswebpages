@@ -1,0 +1,127 @@
+ROWAN & VALE PHOTOGRAPHY TEMPLATE
+START HERE
+
+This template is built as a real photography product, not a generic mockup.
+It is designed for:
+- wedding photographers
+- portrait photographers
+- personal brand photographers
+- family photographers
+- photographers who want a more premium client-facing website
+
+---------------------------------
+1. MAIN FILES TO KNOW
+---------------------------------
+index.html      = homepage
+portfolio.html  = portfolio page
+services.html   = packages and FAQ page
+about.html      = about page
+contact.html    = inquiry page
+owner.html      = browser-based owner settings panel
+
+assets/css/style.css        = all main styling
+assets/js/app.js            = site behavior
+assets/js/owner.js          = owner panel behavior
+assets/js/photo-data.js     = repeatable cards and gallery content
+assets/images/              = image files used by the site
+
+---------------------------------
+2. EASIEST WAY TO EDIT THIS TEMPLATE
+---------------------------------
+Use owner.html for:
+- site name
+- initials logo mark
+- taglines
+- major headlines
+- color changes
+- main large image swaps
+- preview password
+
+Use assets/js/photo-data.js for:
+- homepage collection cards
+- package cards
+- portfolio items
+- testimonials
+- FAQ cards
+
+That means the buyer does NOT need to hand-code cards all over the site.
+Most repeatable content lives in one file.
+
+---------------------------------
+3. DEFAULT OWNER PASSWORD
+---------------------------------
+preview
+
+This is only a light preview gate for the owner panel.
+It is not real server security.
+
+---------------------------------
+4. FORM SETUP
+---------------------------------
+The inquiry form is currently in demo mode.
+Before publishing live, connect it to a form service.
+Read:
+FORM-SETUP-GUIDE.txt
+
+---------------------------------
+5. OPTIONAL FUTURE BACKEND UPGRADE
+---------------------------------
+A backend is NOT required for most photography buyers.
+This template is meant to work well without one.
+
+If an owner later wants real login, cloud portfolio uploads, or online-managed content, read:
+OPTIONAL-BACKEND-UPGRADE.txt
+HOW-TO-CONNECT-SUPABASE-LATER.txt
+
+---------------------------------
+6. IMAGE CHANGES
+---------------------------------
+Large image areas can be changed from owner.html.
+Repeatable gallery and card images are changed in:
+assets/js/photo-data.js
+
+If you want the least amount of work:
+- put your new image files in assets/images/
+- update the image paths in photo-data.js
+
+---------------------------------
+7. BEST USE CASES
+---------------------------------
+This template is strongest for:
+- luxury wedding photographers
+- portrait photographers
+- editorial family photographers
+- brand photographers
+
+---------------------------------
+8. BEFORE YOU SELL OR PUBLISH
+---------------------------------
+Check:
+- all links
+- all form text
+- all package pricing
+- all image filenames
+- mobile view
+- contact email
+- location wording
+- owner panel password
+
+
+EXTRA IMAGE NOTES
+-----------------
+This version includes a fuller image pack so the template feels closer to a real product and not an over-stripped mockup.
+
+Main live images are in: assets/images/
+There are also a few extra alternate images included in that same folder for quick swaps.
+
+
+PORTFOLIO OWNER TAB
+- This version includes a Portfolio tab inside owner.html.
+- Use that tab to add more portfolio photos, remove photos, change the category, change the card size, and upload replacement images without editing the layout code.
+- After making changes in the Portfolio tab, click Save all changes.
+
+
+SOCIAL LINKS
+- The owner panel includes Instagram, Facebook, Pinterest, TikTok, and YouTube fields.
+- Paste the full profile links there and the header will automatically show the matching social buttons.
+- Leave any field blank and that social button stays hidden.

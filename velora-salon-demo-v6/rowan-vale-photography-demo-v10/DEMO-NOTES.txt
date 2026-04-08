@@ -1,0 +1,8 @@
+ROWAN & VALE DEMO TWIN
+
+This is the Jason'sWebPages demo preview version.
+
+- The owner password screen is shown so visitors can preview the same flow.
+- In this demo, the panel does not really require the password. Clicking Unlock panel opens it.
+- Settings save in this browser only for preview purposes.
+- The footer logo button links back to https://jasonswebpages.com

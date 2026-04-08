@@ -1,0 +1,42 @@
+FORM SETUP
+==========
+
+DEFAULT MODE
+- The contact form is set to:
+  "mode": "mailto"
+
+WHAT MAILTO MODE DOES
+- When a visitor submits the form, their email app opens
+- The site email is pre-filled
+- The visitor's message is placed in the email body
+- This needs NO backend
+
+HOW TO USE MAILTO MODE
+1. Open content.js
+2. Find:
+   "email": "hello@velorasalon.com"
+3. Replace it with the real business email
+4. Save
+
+HOW TO SWITCH TO AN ENDPOINT
+Use this if the buyer wants actual website form delivery without opening the visitor's email app.
+
+1. Open content.js
+2. Find:
+   "mode": "mailto"
+3. Change it to:
+   "mode": "endpoint"
+4. Paste the real form endpoint into:
+   "endpoint": "https://example.com/your-form-endpoint"
+
+EXAMPLE WITH FORMSUBMIT
+- endpoint:
+  https://formsubmit.co/youremail@example.com
+
+OPTIONAL SUCCESS PAGE
+- Add a redirect URL in:
+  "successRedirect"
+
+IMPORTANT
+- I cannot pre-connect a real business email service or backend inside a generic Etsy template because that requires the buyer's own account, credentials, and destination email.
+- The template is already prepared so the buyer only has to replace their details.

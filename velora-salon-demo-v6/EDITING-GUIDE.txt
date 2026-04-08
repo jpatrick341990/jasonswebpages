@@ -1,0 +1,58 @@
+EDITING GUIDE
+=============
+
+EASIEST METHOD
+1. Open owner.html.
+2. Enter the default passcode: preview
+3. Use the tabs to edit the site.
+4. Click Save preview changes.
+5. Open index.html or the other pages to view the edits in that browser.
+6. Click Download settings file when you want a backup copy.
+
+OWNER PANEL TAB GUIDE
+- General = salon name, top bar, booking link, contact details, footer text
+- Copy = hero text, page headings, section text, call-to-action text
+- Colors = main palette
+- Images = the biggest visual areas on the site
+- Services = service cards, service descriptions, service images
+- Gallery = gallery titles, gallery image order, gallery sizes, gallery images
+- Security / backup = save preview, download or upload settings, reset, change passcode
+
+PERMANENT DEFAULT CHANGES
+If the buyer wants the template files themselves to open with the new content already in place:
+1. Open content.js
+2. Replace the default values there with the new values
+3. Save the file
+
+CHANGE THE BUSINESS NAME
+- owner.html -> General tab -> Site name
+or
+- content.js -> branding.siteName
+
+CHANGE THE LOGO
+- owner.html -> Images tab -> Site logo
+or
+- content.js -> branding.logo
+
+CHANGE THE COLORS
+- owner.html -> Colors tab
+or
+- content.js -> theme section
+
+CHANGE THE FORM MODE
+- content.js -> form.mode
+- Use mailto for the easiest setup
+- Use endpoint when connecting a form service
+
+IMPORTANT
+- The owner panel is a front-end editing layer, not a true database backend
+- Save preview changes stores the settings in that browser
+- Download settings file gives the buyer a backup file they can reload later
+
+
+SOCIAL MEDIA LINKS
+- Open owner.html.
+- Use the General section.
+- Paste the full Instagram, Facebook, Pinterest, TikTok, or YouTube links.
+- The header and footer will only show the social buttons for links that are filled in.
+- Leave any social field blank and that button stays hidden.

@@ -1,0 +1,8 @@
+LICENSE / USAGE NOTE
+====================
+
+This package is prepared as a sellable static website template.
+Before listing publicly, make sure:
+- your preview screenshots match the final files
+- your demo link uses the separate demo twin if desired
+- your Etsy description makes it clear this is a static website template, not a hosted subscription service

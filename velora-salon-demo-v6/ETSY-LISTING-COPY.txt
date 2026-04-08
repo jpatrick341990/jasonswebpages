@@ -1,0 +1,31 @@
+ETSY LISTING COPY IDEAS
+=======================
+
+TITLE IDEA
+Luxury Salon Website Template, Beauty Studio Website, Esthetician Web Design, Lash Artist Website, Nail Salon HTML Template, Editable Multi Page Site
+
+SHORT DESCRIPTION IDEA
+A polished, luxury-inspired salon website template built for beauty businesses that want a premium online presence without the mess of a complicated setup. Great for salons, estheticians, lash artists, beauty suites, and boutique spa brands.
+
+FEATURE HIGHLIGHTS
+- 5 page premium website template
+- Home, about, services, gallery, and contact pages
+- Mobile friendly layout
+- Easy-to-edit content.js file
+- Real salon imagery included
+- Owner preview panel included
+- Mailto form setup included
+- Endpoint-ready form option for more advanced users
+- Works with Live Server, GitHub Pages, and other static hosting options
+
+MATERIALS TAG IDEAS
+HTML
+CSS
+JavaScript
+Website Template
+Salon Website
+Beauty Website
+Editable Template
+Static Website
+Multi Page Site
+Luxury Design

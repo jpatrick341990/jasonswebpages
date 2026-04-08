@@ -1,0 +1,145 @@
+HOW TO CONNECT SUPABASE LATER
+FUTURE UPGRADE GUIDE
+
+This guide is for owners who want to upgrade Rowan & Vale from a file-based photography template into a more live, cloud-backed setup later.
+
+IMPORTANT:
+This is optional.
+You do not need to do this just to use the template.
+
+---------------------------------
+1. WHAT THIS FUTURE UPGRADE WOULD DO
+---------------------------------
+A future Supabase version could let the owner:
+- sign in with a real email/password
+- upload portfolio images to cloud storage
+- add new portfolio items from an owner dashboard
+- save portfolio changes for all visitors automatically
+- store inquiry submissions in a database
+
+---------------------------------
+2. WHAT THE OWNER WOULD NEED LATER
+---------------------------------
+The owner would need:
+- a Supabase account
+- a Supabase project
+- one storage bucket for photos
+- a few database tables
+- project URL and public anon/publishable key
+
+---------------------------------
+3. FIRST THINGS TO CONNECT IF YOU UPGRADE THIS LATER
+---------------------------------
+Best first upgrade:
+portfolio items
+
+Why:
+That is the most image-heavy and repeated part of a photography site.
+It gives the biggest payoff if the owner wants easier live updates.
+
+Second best upgrade:
+inquiry submissions
+
+Third best upgrade:
+real owner login
+
+---------------------------------
+4. SIMPLE TABLES TO PLAN FOR LATER
+---------------------------------
+If you build this later, a clean starting structure would be:
+
+TABLE: portfolio_items
+Fields:
+- id
+- title
+- category
+- image_url
+- size
+- sort_order
+- is_active
+- created_at
+
+TABLE: testimonials
+Fields:
+- id
+- quote
+- name
+- detail
+- sort_order
+- is_active
+
+TABLE: faq_items
+Fields:
+- id
+- question
+- answer
+- sort_order
+- is_active
+
+TABLE: inquiries
+Fields:
+- id
+- name
+- email
+- session_type
+- event_date
+- message
+- created_at
+
+---------------------------------
+5. SIMPLE STORAGE PLAN FOR LATER
+---------------------------------
+Create one bucket, something like:
+- rowan-portfolio
+
+Use it for:
+- portfolio photos
+- possibly main owner-uploaded feature images later
+
+---------------------------------
+6. WHAT WOULD CHANGE IN THE TEMPLATE CODE LATER
+---------------------------------
+Right now:
+- repeatable content is in assets/js/photo-data.js
+- some owner panel edits live in browser storage
+
+Later:
+- the site would read portfolio data from Supabase instead of only photo-data.js
+- owner.html would send uploads and edits to Supabase
+- the browser-only owner password would be replaced with real auth
+
+---------------------------------
+7. WHAT TO KEEP THE SAME
+---------------------------------
+Keep the public site structure the same:
+- homepage
+- portfolio page
+- services page
+- about page
+- contact page
+
+Do not redesign everything just to add a backend.
+Only swap where the data comes from.
+
+---------------------------------
+8. BEST FUTURE FILE PLAN
+---------------------------------
+If upgraded later, add files like:
+- supabase-config.js
+- supabase-portfolio.js
+- supabase-owner.js
+- supabase-setup.sql
+
+Leave the current files in place until the backend version is tested.
+
+---------------------------------
+9. BEST PRACTICAL ADVICE
+---------------------------------
+Use the current template normally first.
+Only add Supabase later if the owner says:
+- I want to upload from anywhere
+- I want a real login
+- I want the portfolio managed online
+- I want inquiries stored in one place
+
+That is the cleanest and least painful path.

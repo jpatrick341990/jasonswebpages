@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owner Panel | Velora Salon Template</title>
+  <meta name="description" content="Owner controls for the Velora Salon website template.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="owner-body owner-page-v2">
+  <section class="owner-hero-shell">
+    <div class="container">
+      <div class="owner-page-intro">
+        <span class="eyebrow">Owner panel</span>
+        <h1>Adjust the major brand pieces without disturbing the site layout.</h1>
+        <p>This panel controls the salon branding, major page copy, main colors, large image areas, service cards, gallery images, and backup settings while keeping the design intact.</p>
+      </div>
+
+      <article class="owner-login-card owner-login-box" id="ownerLoginCard">
+        <h2>Enter preview password</h2>
+        <p>This demo keeps the same owner-entry look as the real template. In this preview build, the passcode screen is visual only, so clicking <strong>Unlock panel</strong> opens the controls for visitors.</p>
+        <div class="owner-login-row">
+          <div class="input-wrap">
+            <input id="ownerPasscode" type="password" placeholder="Enter password">
+            <button class="monkey-btn" type="button" data-monkey-toggle="ownerPasscode" aria-label="Show or hide password">🙈</button>
+          </div>
+          <button class="btn btn-primary" type="button" id="ownerLoginBtn">Unlock panel</button>
+        </div>
+        <p class="owner-login-message" id="ownerLoginMessage"></p>
+      </article>
+
+      <article class="owner-panel hidden" id="ownerPanel">
+        <aside class="owner-panel-sidebar">
+          <button class="owner-tab active" data-tab="general" type="button">General</button>
+          <button class="owner-tab" data-tab="copy" type="button">Copy</button>
+          <button class="owner-tab" data-tab="colors" type="button">Colors</button>
+          <button class="owner-tab" data-tab="images" type="button">Images</button>
+          <button class="owner-tab" data-tab="services" type="button">Services</button>
+          <button class="owner-tab" data-tab="gallery" type="button">Gallery</button>
+          <button class="owner-tab" data-tab="security" type="button">Security / backup</button>
+        </aside>
+
+        <div class="owner-panel-main">
+          <section class="owner-tab-panel active" data-panel="general">
+            <div class="owner-help"><strong>Important:</strong> Use this section for the business basics that repeat throughout the site like the salon name, top bar message, booking links, and contact details.</div>
+            <div class="owner-form-grid">
+              <label>Site name<input data-owner-field="branding.siteName" type="text"></label>
+              <label>Site tagline<input data-owner-field="branding.siteTagline" type="text"></label>
+              <label>Announcement bar<input data-owner-field="branding.announcementText" type="text"></label>
+              <label>Header button text<input data-owner-field="branding.bookingButtonText" type="text"></label>
+              <label>Booking link<input data-owner-field="branding.bookingLink" type="text"></label>
+              <label>Phone number<input data-owner-field="branding.phone" type="text"></label>
+              <label>Email address<input data-owner-field="branding.email" type="email"></label>
+              <label>Address<input data-owner-field="branding.address" type="text"></label>
+              <label>Hours<input data-owner-field="branding.hours" type="text"></label>
+              <label>Instagram link<input data-owner-field="branding.instagram" type="url" placeholder="https://instagram.com/yourhandle"></label>
+              <label>Facebook link<input data-owner-field="branding.facebook" type="url" placeholder="https://facebook.com/yourpage"></label>
+              <label>Pinterest link<input data-owner-field="branding.pinterest" type="url" placeholder="https://pinterest.com/yourprofile"></label>
+              <label>TikTok link<input data-owner-field="branding.tiktok" type="url" placeholder="https://tiktok.com/@yourhandle"></label>
+              <label>YouTube link<input data-owner-field="branding.youtube" type="url" placeholder="https://youtube.com/@yourchannel"></label>
+              <label class="full">Footer paragraph<textarea data-owner-field="branding.footerBlurb"></textarea></label>
+            </div>
+          </section>
+
+          <section class="owner-tab-panel" data-panel="copy">
+            <div class="owner-help">This section controls the main page headlines and paragraphs. It is meant for the large text areas buyers usually want to personalize first.</div>
+            <div class="owner-form-grid">
+              <label>Hero eyebrow<input data-owner-field="home.heroBadge" type="text"></label>
+              <label class="full">Hero headline<textarea data-owner-field="home.heroTitle"></textarea></label>
+              <label class="full">Hero text<textarea data-owner-field="home.heroText"></textarea></label>
+              <label>Hero primary button<input data-owner-field="home.heroPrimaryText" type="text"></label>
+              <label>Hero primary link<input data-owner-field="home.heroPrimaryLink" type="text"></label>
+              <label>Hero secondary button<input data-owner-field="home.heroSecondaryText" type="text"></label>
+              <label>Hero secondary link<input data-owner-field="home.heroSecondaryLink" type="text"></label>
+              <label>Intro eyebrow<input data-owner-field="home.introEyebrow" type="text"></label>
+              <label class="full">Intro headline<textarea data-owner-field="home.introTitle"></textarea></label>
+              <label class="full">Intro text<textarea data-owner-field="home.introText"></textarea></label>
+              <label>Atmosphere title<input data-owner-field="home.atmosphereTitle" type="text"></label>
+              <label class="full">Atmosphere text<textarea data-owner-field="home.atmosphereText"></textarea></label>
+              <label>CTA title<input data-owner-field="home.ctaTitle" type="text"></label>
+              <label class="full">CTA text<textarea data-owner-field="home.ctaText"></textarea></label>
+              <label>CTA button text<input data-owner-field="home.ctaButtonText" type="text"></label>
+              <label>CTA button link<input data-owner-field="home.ctaButtonLink" type="text"></label>
+              <label class="full">About page title<textarea data-owner-field="about.pageTitle"></textarea></label>
+              <label class="full">About page intro<textarea data-owner-field="about.pageIntro"></textarea></label>
+              <label>Story title<input data-owner-field="about.storyTitle" type="text"></label>
+              <label class="full">Story paragraph 1<textarea data-owner-field="about.storyText1"></textarea></label>
+              <label class="full">Story paragraph 2<textarea data-owner-field="about.storyText2"></textarea></label>
+              <label>Promise title<input data-owner-field="about.promiseTitle" type="text"></label>
+              <label class="full">Promise text<textarea data-owner-field="about.promiseText"></textarea></label>
+              <label class="full">Services page title<textarea data-owner-field="servicesPage.title"></textarea></label>
+              <label class="full">Services page intro<textarea data-owner-field="servicesPage.intro"></textarea></label>
+              <label>Services note title<input data-owner-field="servicesPage.noteTitle" type="text"></label>
+              <label class="full">Services note text<textarea data-owner-field="servicesPage.noteText"></textarea></label>
+              <label>Process title<input data-owner-field="servicesPage.processTitle" type="text"></label>
+              <label class="full">Process intro<textarea data-owner-field="servicesPage.processIntro"></textarea></label>
+              <label class="full">Gallery page title<textarea data-owner-field="galleryPage.title"></textarea></label>
+              <label class="full">Gallery page intro<textarea data-owner-field="galleryPage.intro"></textarea></label>
+              <label class="full">Contact page title<textarea data-owner-field="contactPage.title"></textarea></label>
+              <label class="full">Contact page intro<textarea data-owner-field="contactPage.intro"></textarea></label>
+              <label>Contact card title<input data-owner-field="contactPage.cardTitle" type="text"></label>
+              <label class="full">Contact card text<textarea data-owner-field="contactPage.cardText"></textarea></label>
+            </div>
+          </section>
+
+          <section class="owner-tab-panel" data-panel="colors">
+            <div class="owner-help">Update the main palette here. Keep contrast strong enough that the text still reads well after color changes.</div>
+            <div class="owner-form-grid">
+              <label>Accent color<input data-owner-color="accent" type="color"></label>
+              <label>Accent dark<input data-owner-color="accentDark" type="color"></label>
+              <label>Accent soft<input data-owner-color="accentSoft" type="color"></label>
+              <label>Background<input data-owner-color="bg" type="color"></label>
+              <label>Soft background<input data-owner-color="bgSoft" type="color"></label>
+              <label>Text color<input data-owner-color="text" type="color"></label>
+              <label>Muted text<input data-owner-color="muted" type="color"></label>
+              <label>Border color<input data-owner-color="border" type="color"></label>
+            </div>
+          </section>
+
+          <section class="owner-tab-panel" data-panel="images">
+            <div class="owner-help">Upload replacement images for the largest visual areas here. The uploaded image is saved into the local preview settings and can be exported with the settings file.</div>
+            <div class="owner-image-list" id="ownerImageList"></div>
+          </section>
+
+          <section class="owner-tab-panel" data-panel="services">
+            <div class="owner-help"><strong>Important:</strong> Add, remove, reorder, and update the service cards here without touching layout code.</div>
+            <div class="owner-actions-row">
+              <button class="btn btn-primary" type="button" id="addServiceItem">Add service card</button>
+              <button class="btn btn-secondary" type="button" id="resetServiceItems">Reset service cards</button>
+            </div>
+            <div class="portfolio-owner-list" id="servicesOwnerList"></div>
+          </section>
+
+          <section class="owner-tab-panel" data-panel="gallery">
+            <div class="owner-help"><strong>Important:</strong> Add, remove, reorder, and update the gallery items here. Use a mix of wide, tall, and square cards for a better mosaic layout.</div>
+            <div class="owner-actions-row">
+              <button class="btn btn-primary" type="button" id="addGalleryItem">Add gallery image</button>
+              <button class="btn btn-secondary" type="button" id="resetGalleryItems">Reset gallery images</button>
+            </div>
+            <div class="portfolio-owner-list" id="galleryOwnerList"></div>
+          </section>
+
+          <section class="owner-tab-panel" data-panel="security">
+            <div class="owner-help"><strong>Important:</strong> Download a settings file before major edits. That gives the buyer a fast fallback if they ever want to restore a previous version.</div>
+            <div class="owner-actions-row">
+              <button class="btn btn-primary" type="button" id="saveOwnerChanges">Save preview changes</button>
+              <button class="btn btn-secondary" type="button" id="exportSettings">Download settings file</button>
+              <label class="btn btn-secondary" for="importSettings">Upload settings file</label>
+              <input id="importSettings" type="file" accept="application/json" class="hidden">
+              <button class="btn btn-secondary" type="button" id="applyPastedJson">Load pasted JSON</button>
+              <button class="btn btn-ghost" type="button" id="resetSettings">Reset settings</button>
+              <a href="index.html" class="btn btn-ghost">View site</a>
+            </div>
+            <div class="owner-login-row owner-pass-row">
+              <div class="input-wrap">
+                <input id="newPasscode" type="password" placeholder="New owner password">
+                <button class="monkey-btn" type="button" data-monkey-toggle="newPasscode" aria-label="Show or hide password">🙈</button>
+              </div>
+              <button class="btn btn-dark" type="button" id="savePasscode">Save password</button>
+            </div>
+            <div class="owner-form-grid owner-security-grid">
+              <label class="full">Copy / paste settings JSON<textarea id="ownerExportBox" placeholder="Click ‘Download settings file’ for a full backup, or paste JSON here and use the upload flow."></textarea></label>
+            </div>
+            <p class="owner-action-message" id="ownerActionMessage"></p>
+          </section>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <script src="content.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>

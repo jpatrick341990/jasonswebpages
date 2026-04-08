@@ -1,0 +1,131 @@
+ROWAN & VALE PHOTOGRAPHY TEMPLATE
+OPTIONAL BACKEND UPGRADE NOTES
+
+IMPORTANT FIRST:
+You do NOT need a backend to use this template well.
+
+For many photography businesses, this template is already enough without one if you:
+- change the images
+- edit the package cards
+- connect the inquiry form
+- use the owner panel for the major brand settings
+
+A backend only becomes worth it if the owner wants more advanced live features.
+
+---------------------------------
+1. WHEN A BACKEND IS ACTUALLY USEFUL
+---------------------------------
+Add a backend later if the owner wants to:
+- upload portfolio photos from any device
+- save changes online for all visitors automatically
+- use a real login instead of the preview-style owner gate
+- store inquiry submissions in a dashboard
+- manage testimonials or FAQ online
+- stop editing files manually
+
+If the buyer does NOT need those things, skip the backend.
+
+---------------------------------
+2. BEST BACKEND CHOICE FOR LATER
+---------------------------------
+Recommended option:
+Supabase
+
+Why:
+- image storage
+- database tables
+- login/auth
+- works well with static HTML/CSS/JS templates
+- easier than building a custom server
+
+---------------------------------
+3. WHAT PARTS OF THIS TEMPLATE WOULD CONNECT TO A BACKEND LATER
+---------------------------------
+These are the best future upgrade targets:
+
+A. Portfolio items
+Current source now:
+- owner panel browser storage
+- or assets/js/photo-data.js
+
+Future backend version:
+- portfolio images stored in Supabase Storage
+- titles, categories, sizes stored in a portfolio table
+
+B. Testimonials
+Current source now:
+- assets/js/photo-data.js
+
+Future backend version:
+- stored in a testimonials table
+
+C. FAQ
+Current source now:
+- assets/js/photo-data.js
+
+Future backend version:
+- stored in an faq table
+
+D. Inquiry submissions
+Current source now:
+- routed through a form service
+
+Future backend version:
+- stored in a inquiries table
+
+E. Owner login
+Current source now:
+- preview password gate only
+
+Future backend version:
+- real email/password auth with Supabase
+
+---------------------------------
+4. WHAT DOES NOT NEED TO CHANGE
+---------------------------------
+Even with a backend later, these parts can mostly stay the same:
+- page layout HTML
+- CSS styling
+- most branding sections
+- normal navigation
+- public-facing copy structure
+
+That is why this template is a good candidate for an optional later backend instead of needing one right now.
+
+---------------------------------
+5. EASIEST FUTURE UPGRADE PLAN
+---------------------------------
+Best future order:
+1. connect a real inquiry dashboard or form storage
+2. connect portfolio items to Supabase storage + database
+3. connect owner login to real auth
+4. optionally connect testimonials and FAQ later
+
+Do NOT try to do everything first.
+Start with the parts that save the owner the most time.
+
+---------------------------------
+6. FILES MOST LIKELY TO CHANGE LATER
+---------------------------------
+These are the files a backend upgrade would most likely touch:
+- owner.html
+- assets/js/owner.js
+- assets/js/app.js
+- assets/js/photo-data.js
+
+Possible new files later:
+- supabase-config.js
+- backend-portfolio.js
+- backend-owner.js
+- supabase-setup.sql
+
+---------------------------------
+7. HONEST PRODUCT ADVICE
+---------------------------------
+For a photography template, a backend should be treated as:
+- an upgrade path
+not
+- a requirement
+
+This template should stay easy and sellable without forcing extra setup.
+The backend path is here for owners who outgrow the normal static setup.

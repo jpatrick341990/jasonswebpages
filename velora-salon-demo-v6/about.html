@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Velora Salon</title>
+  <meta name="description" content="Learn about Velora Salon, a polished beauty studio focused on hair, skin, lashes, nails, and a calm luxury experience.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="">
+
+  <div id="announcementBar" class="announcement-bar"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Go to homepage">
+        <img id="siteLogo" src="assets/images/logo.svg" alt="Site logo">
+        <div class="brand-copy">
+          <div id="siteName" class="site-name"></div>
+          <div id="siteTagline" class="site-tagline"></div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a data-nav="index" href="index.html">Home</a>
+        <a data-nav="about" href="about.html">About</a>
+        <a data-nav="services" href="services.html">Services</a>
+        <a data-nav="gallery" href="gallery.html">Gallery</a>
+        <a data-nav="contact" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a id="bookingButton" class="btn btn-primary" href="contact.html"></a>
+        <div class="header-social social-links" data-social-location="header"></div>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="container">
+        <a data-nav="index" href="index.html">Home</a>
+        <a data-nav="about" href="about.html">About</a>
+        <a data-nav="services" href="services.html">Services</a>
+        <a data-nav="gallery" href="gallery.html">Gallery</a>
+        <a data-nav="contact" href="contact.html">Contact</a>
+        <a id="mobileBookingButton" class="btn btn-primary" href="contact.html"></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="narrow center reveal">
+        <span class="eyebrow">About</span>
+        <h1 id="aboutPageTitle"></h1>
+        <p id="aboutPageIntro" class="lead muted" style="margin:0 auto"></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div class="feature-image-wrap reveal">
+          <img id="aboutStoryImage" class="about-image" src="assets/images/spa-room.jpg" alt="Salon interior">
+        </div>
+        <div class="reveal">
+          <h2 id="aboutStoryTitle" class="section-title" style="font-size:clamp(2rem, 3vw, 3.1rem)"></h2>
+          <p id="aboutStoryText1" class="muted"></p>
+          <p id="aboutStoryText2" class="muted"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="eyebrow">Studio values</span>
+          <h2 class="section-title" style="font-size:clamp(2rem, 3vw, 3rem)">Our studio values</h2>
+        </div>
+        <div id="aboutValuesGrid" class="grid-3 values-grid"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container note-card reveal">
+        <h2 id="promiseTitle" style="margin-top:0"></h2>
+        <p id="promiseText" class="muted"></p>
+        <ul id="promiseList" class="contact-list"></ul>
+      </div>
+    </section>
+  </main>
+  <div class="owner-fab-wrap"><a class="owner-fab" href="owner.html" aria-label="Open owner controls">Owner</a></div>
+
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div id="footerBrand" class="footer-brand"></div>
+        <p id="footerBlurb" class="muted"></p>
+        <div class="footer-social social-links" data-social-location="footer"></div>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a id="footerPhone" href="#"></a></li>
+          <li><a id="footerEmail" href="#"></a></li>
+          <li id="footerAddress"></li>
+          <li id="footerHours"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <a class="demo-footer-badge" href="https://jasonswebpages.com" target="_blank" rel="noopener noreferrer" aria-label="Back to JasonsWebPages.com">
+        <img src="assets/images/jasonswebpages-footer-logo.png" alt="Jason'sWebPages">
+      </a>
+      <small id="copyrightText"></small>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-inner">
+      <button id="lightboxClose" aria-label="Close image viewer">✕</button>
+      <img id="lightboxImage" src="" alt="">
+    </div>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="site.js"></script>
+  
+</body>
+</html>

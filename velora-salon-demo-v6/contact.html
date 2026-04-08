@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Velora Salon</title>
+  <meta name="description" content="Contact Velora Salon to ask a question, request an appointment, or connect with the studio.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="">
+
+  <div id="announcementBar" class="announcement-bar"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Go to homepage">
+        <img id="siteLogo" src="assets/images/logo.svg" alt="Site logo">
+        <div class="brand-copy">
+          <div id="siteName" class="site-name"></div>
+          <div id="siteTagline" class="site-tagline"></div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a data-nav="index" href="index.html">Home</a>
+        <a data-nav="about" href="about.html">About</a>
+        <a data-nav="services" href="services.html">Services</a>
+        <a data-nav="gallery" href="gallery.html">Gallery</a>
+        <a data-nav="contact" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a id="bookingButton" class="btn btn-primary" href="contact.html"></a>
+        <div class="header-social social-links" data-social-location="header"></div>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="container">
+        <a data-nav="index" href="index.html">Home</a>
+        <a data-nav="about" href="about.html">About</a>
+        <a data-nav="services" href="services.html">Services</a>
+        <a data-nav="gallery" href="gallery.html">Gallery</a>
+        <a data-nav="contact" href="contact.html">Contact</a>
+        <a id="mobileBookingButton" class="btn btn-primary" href="contact.html"></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="narrow center reveal">
+        <span class="eyebrow">Contact</span>
+        <h1 id="contactPageTitle"></h1>
+        <p id="contactPageIntro" class="lead muted" style="margin:0 auto"></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div class="info-card reveal">
+          <h2 id="contactCardTitle"></h2>
+          <p id="contactCardText" class="muted"></p>
+          <ul class="contact-list">
+            <li><strong>Phone:</strong> <a id="contactPhone" href="#"></a></li>
+            <li><strong>Email:</strong> <a id="contactEmail" href="#"></a></li>
+            <li><strong>Address:</strong> <span id="contactAddress"></span></li>
+            <li><strong>Hours:</strong> <span id="contactHours"></span></li>
+          </ul>
+
+          <div class="booking-notes">
+            <div class="inline-note">
+              <strong>Appointment requests:</strong>
+              <div class="muted">Send a request with the form and we will follow up about availability, service details, and the best time for your visit.</div>
+            </div>
+            <div class="inline-note">
+              <strong>Booking options:</strong>
+              <div class="muted">This page can keep the request form, or the main buttons can be connected to an outside booking platform later if needed.</div>
+            </div>
+          </div>
+        </div>
+
+        <form id="booking-form" class="form-card reveal">
+          <h2 style="margin-top:0">Request an appointment</h2>
+          <label class="field">Name
+            <input name="name" type="text" placeholder="Your name" required>
+          </label>
+          <label class="field">Email
+            <input name="email" type="email" placeholder="Your email" required>
+          </label>
+          <label class="field">Phone
+            <input name="phone" type="text" placeholder="Best phone number">
+          </label>
+          <label class="field">Service
+            <select name="service">
+              <option value="">Select a service</option>
+              <option>Signature Hair</option>
+              <option>Skin Rituals</option>
+              <option>Lash Detail</option>
+              <option>Nail Studio</option>
+              <option>General Question</option>
+            </select>
+          </label>
+          <label class="field">Message
+            <textarea name="message" rows="6" placeholder="Tell us what you would like to book or ask."></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send Request</button>
+          <p id="formNote" class="form-note">Use the form to tell us which service you are interested in and the best way to reach you.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div class="owner-fab-wrap"><a class="owner-fab" href="owner.html" aria-label="Open owner controls">Owner</a></div>
+
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div id="footerBrand" class="footer-brand"></div>
+        <p id="footerBlurb" class="muted"></p>
+        <div class="footer-social social-links" data-social-location="footer"></div>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a id="footerPhone" href="#"></a></li>
+          <li><a id="footerEmail" href="#"></a></li>
+          <li id="footerAddress"></li>
+          <li id="footerHours"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <a class="demo-footer-badge" href="https://jasonswebpages.com" target="_blank" rel="noopener noreferrer" aria-label="Back to JasonsWebPages.com">
+        <img src="assets/images/jasonswebpages-footer-logo.png" alt="Jason'sWebPages">
+      </a>
+      <small id="copyrightText"></small>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-inner">
+      <button id="lightboxClose" aria-label="Close image viewer">✕</button>
+      <img id="lightboxImage" src="" alt="">
+    </div>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="site.js"></script>
+  
+</body>
+</html>

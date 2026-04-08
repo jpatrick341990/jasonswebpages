@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#c99b62">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Owner Panel | Rowan &amp; Vale Photography</title>
+</head>
+<body>
+<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark" data-setting-text="brandMark">RV</span><div><span class="brand-name" data-setting-text="siteName">Rowan &amp; Vale Photography</span><span class="brand-sub" data-setting-text="siteTagline">Luxury wedding, portrait, and brand photography with a warm editorial feel.</span></div></a><button class="mobile-toggle" aria-label="Toggle navigation">☰</button><nav class="nav-links"><a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html" class="nav-cta">Inquire</a></nav><div class="header-social social-links" data-social-location="header"></div></div></header>
+<section class="page-banner owner-banner" data-owner-banner>
+  <div class="container page-banner-inner">
+    <span class="eyebrow">Owner panel</span>
+    <h1>Adjust the major brand pieces without disturbing the page design.</h1>
+    <p>This panel controls the main branding, hero copy, color direction, large image areas, and portfolio photos while keeping the page layout intact.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <article class="owner-login-card owner-login-box" id="ownerLoginCard">
+      <h2>Preview the owner panel</h2>
+      <p>This demo keeps the same password-style screen so buyers can see the flow. For the preview twin, clicking <strong>Unlock panel</strong> opens the owner area without enforcing a real password.</p>
+      <div class="owner-login-row">
+        <div class="input-wrap">
+          <input id="ownerPasscode" type="password" placeholder="Preview password">
+          <button class="monkey-btn" type="button" data-monkey-toggle="ownerPasscode">🙈</button>
+        </div>
+        <button class="btn btn-primary" type="button" id="ownerLoginBtn">Unlock panel</button>
+      </div>
+      <p class="owner-login-message" id="ownerLoginMessage"></p>
+    </article>
+
+    <article class="owner-panel hidden" id="ownerPanel">
+      <aside class="owner-panel-sidebar">
+        <button class="owner-tab active" data-tab="general">General</button>
+        <button class="owner-tab" data-tab="copy">Copy</button>
+        <button class="owner-tab" data-tab="colors">Colors</button>
+        <button class="owner-tab" data-tab="images">Images</button>
+        <button class="owner-tab" data-tab="portfolio">Portfolio</button>
+        <button class="owner-tab" data-tab="security">Security / backup</button>
+      </aside>
+      <div class="owner-panel-main">
+        <section class="owner-tab-panel active" data-panel="general">
+          <div class="owner-help"><strong>Important:</strong> This panel updates the main branding, major headlines, social links, and the largest image areas. The repeatable collections and portfolio cards are managed separately so the site stays organized.</div>
+          <div class="owner-form-grid">
+            <label>Site name<input data-owner-field="siteName" type="text"></label>
+            <label>Brand initials<input data-owner-field="brandMark" type="text"></label>
+            <label>Site tagline<textarea data-owner-field="siteTagline"></textarea></label>
+            <label>Footer tagline<textarea data-owner-field="footerTagline"></textarea></label>
+            <label>Footer paragraph<textarea data-owner-field="footerCopy"></textarea></label>
+            <label>Intro paragraph<textarea data-owner-field="introCopy"></textarea></label>
+            <label>Instagram link<input data-owner-field="instagramUrl" type="url" placeholder="https://instagram.com/yourhandle"></label>
+            <label>Facebook link<input data-owner-field="facebookUrl" type="url" placeholder="https://facebook.com/yourpage"></label>
+            <label>Pinterest link<input data-owner-field="pinterestUrl" type="url" placeholder="https://pinterest.com/yourname"></label>
+            <label>TikTok link<input data-owner-field="tiktokUrl" type="url" placeholder="https://tiktok.com/@yourhandle"></label>
+            <label>YouTube link<input data-owner-field="youtubeUrl" type="url" placeholder="https://youtube.com/@yourchannel"></label>
+          </div>
+        </section>
+
+        <section class="owner-tab-panel" data-panel="copy">
+          <div class="owner-form-grid">
+            <label>Hero eyebrow<input data-owner-field="heroEyebrow" type="text"></label>
+            <label>Hero headline<textarea data-owner-field="heroHeadline"></textarea></label>
+            <label>Hero text<textarea data-owner-field="heroText"></textarea></label>
+            <label>Hero primary button<input data-owner-field="heroButtonPrimary" type="text"></label>
+            <label>Hero secondary button<input data-owner-field="heroButtonSecondary" type="text"></label>
+            <label>Break headline one<textarea data-owner-field="breakHeadlineOne"></textarea></label>
+            <label>Break text one<textarea data-owner-field="breakTextOne"></textarea></label>
+            <label>Break headline two<textarea data-owner-field="breakHeadlineTwo"></textarea></label>
+            <label>Break text two<textarea data-owner-field="breakTextTwo"></textarea></label>
+            <label>About page headline<textarea data-owner-field="aboutHeadline"></textarea></label>
+            <label>About page text<textarea data-owner-field="aboutText"></textarea></label>
+            <label>Contact page headline<textarea data-owner-field="contactHeadline"></textarea></label>
+            <label>Contact page text<textarea data-owner-field="contactText"></textarea></label>
+          </div>
+        </section>
+
+        <section class="owner-tab-panel" data-panel="colors">
+          <div class="owner-form-grid">
+            <label>Accent color<input data-owner-color="accent" type="color"></label>
+            <label>Accent deep<input data-owner-color="accentDeep" type="color"></label>
+            <label>Background<input data-owner-color="bg" type="color"></label>
+            <label>Background soft<input data-owner-color="bgSoft" type="color"></label>
+            <label>Text color<input data-owner-color="text" type="color"></label>
+            <label>Dark tone<input data-owner-color="dark" type="color"></label>
+          </div>
+        </section>
+
+        <section class="owner-tab-panel" data-panel="images">
+          <div class="owner-help">Upload replacement images here for the biggest visual areas. Keep each file under a reasonable size for faster loading.</div>
+          <div class="owner-form-grid">
+            <label>Hero image<input data-owner-image="heroPrimary" type="file" accept="image/*"></label>
+            <label>Page banner image<input data-owner-image="heroSecondary" type="file" accept="image/*"></label>
+            <label>Photographer portrait<input data-owner-image="photographerPortrait" type="file" accept="image/*"></label>
+            <label>First break image<input data-owner-image="sectionBreakOne" type="file" accept="image/*"></label>
+            <label>Second break image<input data-owner-image="sectionBreakTwo" type="file" accept="image/*"></label>
+            <label>About image<input data-owner-image="aboutImage" type="file" accept="image/*"></label>
+            <label>Contact image<input data-owner-image="contactImage" type="file" accept="image/*"></label>
+            <label>Owner banner image<input data-owner-image="ownerBanner" type="file" accept="image/*"></label>
+          </div>
+        </section>
+
+
+
+        <section class="owner-tab-panel" data-panel="portfolio">
+          <div class="owner-help"><strong>Important:</strong> Add, remove, and reorder portfolio photos here without touching the layout code. Upload new images, adjust the title, choose the category, and save when you are done.</div>
+          <div class="owner-actions-row">
+            <button class="btn btn-primary" type="button" id="addPortfolioItem">Add portfolio photo</button>
+            <button class="btn btn-secondary" type="button" id="resetPortfolioItems">Reset portfolio photos</button>
+          </div>
+          <div class="portfolio-owner-list" id="portfolioOwnerList"></div>
+        </section>
+        <section class="owner-tab-panel" data-panel="security">
+          <div class="owner-help"><strong>Important:</strong> Download a settings file before making major changes. That gives the buyer a quick fallback if they want to restore a previous version.</div>
+          <div class="owner-actions-row">
+            <button class="btn btn-primary" type="button" id="exportSettings">Download settings file</button>
+            <label class="btn btn-secondary" for="importSettings">Upload settings file</label>
+            <input id="importSettings" type="file" accept="application/json" class="hidden">
+            <button class="btn btn-secondary" type="button" id="resetSettings">Reset settings</button>
+          </div>
+          <div class="owner-login-row" style="margin-top:26px;align-items:center;max-width:640px;">
+            <div class="input-wrap">
+              <input id="newPasscode" type="password" placeholder="Password">
+              <button class="monkey-btn" type="button" data-monkey-toggle="newPasscode">🙈</button>
+            </div>
+            <button class="btn btn-dark" type="button" id="savePasscode">Save password</button>
+          </div>
+          <div class="owner-actions-row">
+            <button class="btn btn-primary" type="button" id="saveOwnerSettings">Save all changes</button>
+            <a class="btn btn-secondary" href="index.html">Back to site</a>
+          </div>
+          <p class="owner-action-message" id="ownerActionMessage"></p>
+        </section>
+      </div>
+    </article>
+  </div>
+</section>
+<footer class="site-footer"><div class="container footer-grid"><div class="brand-footer"><div class="brand"><span class="brand-mark" data-setting-text="brandMark">RV</span><div><span class="brand-name" data-setting-text="siteName">Rowan &amp; Vale Photography</span><span class="brand-sub" data-setting-text="footerTagline">Timeless imagery for weddings, portraits, and intentional brand stories.</span></div></div><p class="footer-copy" data-setting-text="footerCopy">Rowan &amp; Vale Photography is designed to help photographers present their work with confidence, clarity, and a high-end client experience.</p></div><div class="footer-links"><a href="portfolio.html">Portfolio</a><a href="services.html">Services</a><a href="about.html">About</a><a href="owner.html">Owner</a></div><a href="https://jasonswebpages.com" class="footer-credit" target="_blank" rel="noopener noreferrer" aria-label="Visit JasonsWebPages.com"><img src="assets/images/jasonswebpages-footer-logo.png" alt="Jason'sWebPages" class="footer-credit-logo"></a></div></footer>
+<script src="assets/js/photo-data.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/owner.js"></script>
+</body>
+</html>
