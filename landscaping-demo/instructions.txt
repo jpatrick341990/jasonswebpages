@@ -1,0 +1,194 @@
+LANDSCAPING WEBSITE TEMPLATE
+EDITING GUIDE
+=================================
+
+Thank you for purchasing this Landscaping Website Template.
+
+This template was designed for landscaping businesses,
+lawn care companies, outdoor service providers,
+and related small businesses.
+
+---------------------------------
+SKILL LEVEL
+---------------------------------
+
+Beginner
+
+Most changes only require replacing text or images.
+
+---------------------------------
+ESTIMATED EDITING TIME
+---------------------------------
+
+10–20 minutes
+
+---------------------------------
+WHAT YOU CAN EDIT
+---------------------------------
+
+You can easily customize:
+
+• Company Name
+• Company Logo
+• Phone Number
+• Email Address
+• Business Location
+• Services Offered
+• Background Images
+• Website Colors
+• Testimonials
+• Text Content
+
+---------------------------------
+REQUIRED SOFTWARE
+---------------------------------
+
+Use any basic text editor:
+
+• Visual Studio Code (Recommended)
+• Notepad++
+• Sublime Text
+• Notepad
+
+---------------------------------
+FOLDER STRUCTURE
+---------------------------------
+
+landscaping-template/
+
+index.html
+Home page
+
+services.html
+Services page
+
+about.html
+About page
+
+contact.html
+Contact page
+
+styles.css
+Controls colors, layout, and design
+
+scripts.js
+Optional JavaScript file
+
+instructions.txt
+Editing guide
+
+README-FIRST.txt
+Quick start instructions
+
+LICENSE.txt
+Usage license
+
+images/
+Contains all images used on the website
+
+---------------------------------
+HOW TO CHANGE YOUR COMPANY NAME
+---------------------------------
+
+Open each HTML file and replace:
+
+Company Name
+
+with your real business name.
+
+---------------------------------
+HOW TO CHANGE YOUR LOGO
+---------------------------------
+
+Replace this file:
+
+images/logo.png
+
+with your own logo using the same file name.
+
+---------------------------------
+HOW TO CHANGE YOUR PHONE NUMBER
+---------------------------------
+
+Find:
+
+tel:5555555555
+
+Replace it with your real number.
+
+Example:
+
+tel:7135558899
+
+---------------------------------
+HOW TO CHANGE YOUR EMAIL ADDRESS
+---------------------------------
+
+Open contact.html and replace:
+
+hello@example.com
+
+with your real email address.
+
+---------------------------------
+HOW TO CHANGE YOUR BUSINESS LOCATION
+---------------------------------
+
+Open contact.html and replace the location text
+with your real city and state.
+
+---------------------------------
+HOW TO CHANGE SERVICES
+---------------------------------
+
+Open:
+- index.html
+- services.html
+
+Replace the example services with your own.
+
+---------------------------------
+HOW TO CHANGE TESTIMONIALS
+---------------------------------
+
+Open the pages and replace the example review text
+with your own testimonial.
+
+---------------------------------
+HOW TO CHANGE BACKGROUND IMAGES
+---------------------------------
+
+Replace these files in the images folder:
+
+landscape-back-1.png
+landscape-back-2.png
+landscape-back-3.png
+
+If you rename them, update the names inside styles.css.
+
+---------------------------------
+HOW TO CHANGE COLORS
+---------------------------------
+
+Open styles.css and look for colors such as:
+
+#2f7d32
+#2a3329
+#ffffff
+
+Replace them with your own brand colors.
+
+---------------------------------
+HOW TO PUBLISH THE WEBSITE
+---------------------------------
+
+Upload the full folder to a hosting service.
+
+Recommended free hosting:
+- Netlify
+- GitHub Pages
+- Cloudflare Pages
+
+Keep the folder structure the same.
+
+Enjoy your new website template.

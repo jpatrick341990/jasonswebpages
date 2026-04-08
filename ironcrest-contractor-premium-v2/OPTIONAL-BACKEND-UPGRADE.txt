@@ -1,0 +1,18 @@
+OPTIONAL BACKEND UPGRADE
+
+A backend is optional for this template.
+Most contractor buyers do not need one.
+
+WHEN IT COULD HELP
+- uploading project photos from different devices
+- storing quote requests in a dashboard
+- real login security
+- cloud-saved owner settings
+
+RECOMMENDED FUTURE PATH
+If a buyer needs cloud saving later, Supabase is a simple direction:
+- auth for real login
+- storage bucket for project images
+- table for services, projects, testimonials, and site settings
+
+This template is structured cleanly enough to be upgraded later without rebuilding every page from scratch.

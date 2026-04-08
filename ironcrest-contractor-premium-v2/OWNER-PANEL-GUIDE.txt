@@ -1,0 +1,42 @@
+OWNER PANEL GUIDE
+
+Open owner.html.
+Default password: preview
+Use the monkey button to show or hide the password.
+
+TABS
+General
+- business name
+- tagline
+- phone
+- email
+- location
+- social links
+
+Copy
+- home hero text
+- feature text
+- about text
+
+Colors
+- accent color
+- background color
+- text colors
+
+Images
+- hero image
+- about image
+- contact image
+You can upload an image or paste a file path.
+
+Sections
+- services
+- project cards
+- testimonials
+Use Add buttons to create more cards.
+
+Security / backup
+- download settings file
+- upload settings file
+- reset settings
+- change the password

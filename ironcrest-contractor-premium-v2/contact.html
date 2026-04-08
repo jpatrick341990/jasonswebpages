@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Contact | Ironcrest Contracting</title>
+</head>
+<body data-page="contact">
+  <div id="site-header"></div>
+
+  <section class="page-hero" style="background-image: linear-gradient(rgba(8, 18, 11, 0.56), rgba(8, 18, 11, 0.62)), url('images/contact-banner.jpg');">
+    <div class="container page-hero-copy glass-panel">
+      <p class="eyebrow">Contact</p>
+      <h1>Make it easy to inquire, schedule, and move toward a quote.</h1>
+      <p>Good contact pages remove friction. Clear phone, email, service area, and a form that asks the right questions are usually enough.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="contact-card">
+        <p class="section-kicker">Contact info</p>
+        <h2>Fastest way to reach us</h2>
+        <div class="contact-list" id="contact-list"></div>
+      </div>
+      <form class="quote-form contact-card" id="contact-form-page" data-demo-form="true">
+        <p class="section-kicker">Quote request</p>
+        <h2>Tell us about the work.</h2>
+        <div class="form-row single"><label>Full name<input type="text" name="name" required></label></div>
+        <div class="form-row single"><label>Email<input type="email" name="email" required></label></div>
+        <div class="form-row single"><label>Phone<input type="text" name="phone"></label></div>
+        <div class="form-row single"><label>Project type<select name="service" id="contact-service-select"></select></label></div>
+        <div class="form-row single"><label>Message<textarea name="message" placeholder="Share the type of work, property size, timeline, or goals."></textarea></label></div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-note">Connect the form to Basin, Formspree, or your preferred form service before publishing live.</p>
+      </form>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <button class="owner-fab" id="owner-fab" type="button">Owner</button>
+  <script src="contractor-data.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

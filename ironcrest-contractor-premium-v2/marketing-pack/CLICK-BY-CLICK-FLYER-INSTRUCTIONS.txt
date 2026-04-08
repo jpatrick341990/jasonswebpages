@@ -1,0 +1,216 @@
+IRONCREST CONTRACTOR MARKETING PACK
+CLICK-BY-CLICK INSTRUCTIONS
+
+==================================================
+1. WHAT THIS IS
+==================================================
+This folder contains matching editable flyer and print files for your Ironcrest contractor website template.
+
+Every word is editable because the text is live HTML text, not text baked into an image.
+
+Files included:
+- index.html
+- main-services-flyer.html
+- remodeling-flyer.html
+- exterior-repairs-flyer.html
+- before-after-flyer.html
+- why-choose-us-flyer.html
+- seasonal-offer-flyer.html
+- review-referral-flyer.html
+- quote-request-flyer.html
+- business-card.html
+- door-hanger.html
+- flyers.css
+
+==================================================
+2. HOW TO OPEN THE PACK
+==================================================
+1. Unzip the main website zip.
+2. Open the unzipped folder in VS Code.
+3. In the left sidebar, click:
+   contractor-template
+4. Click:
+   marketing-pack
+5. Double-click:
+   index.html
+6. Right-click index.html
+7. Click:
+   Open with Live Server
+
+If you do not use Live Server:
+1. Right-click index.html
+2. Click Reveal in File Manager
+3. Double-click index.html from your computer file window
+
+==================================================
+3. HOW TO OPEN ANY FLYER
+==================================================
+1. In VS Code, open the marketing-pack folder.
+2. Double-click the flyer you want.
+   Example:
+   main-services-flyer.html
+3. Right-click the file.
+4. Click:
+   Open with Live Server
+5. The flyer will open in your browser.
+
+==================================================
+4. HOW TO EDIT EVERY WORD
+==================================================
+1. In VS Code, click the flyer file you want.
+2. Look for the text between these tags:
+   <h1>
+   <h2>
+   <h3>
+   <p>
+   <strong>
+   <span>
+3. Delete the words you do not want.
+4. Type your own words.
+5. Press Ctrl + S to save.
+6. Go back to your browser.
+7. Refresh the page if it does not update automatically.
+
+Example:
+If you see this:
+<h1>Professional remodeling and contracting work that feels organized from the first call.</h1>
+
+You can change it to:
+<h1>Kitchen remodels, repairs, and exterior upgrades done with clear communication.</h1>
+
+==================================================
+5. HOW TO CHANGE PHONE, EMAIL, WEBSITE, AND SERVICE AREAS
+==================================================
+1. Open the flyer file.
+2. Press Ctrl + F.
+3. Search for:
+   (555) 555-1284
+4. Replace it with your real phone number.
+5. Search for:
+   hello@ironcrestco.com
+6. Replace it with your real email.
+7. Search for:
+   ironcrestco.com
+8. Replace it with your real website.
+9. Search for any city or service area wording and replace it.
+10. Press Ctrl + S.
+
+Tip:
+Repeat Ctrl + F for each piece of text you want to swap fast.
+
+==================================================
+6. HOW TO CHANGE THE IMAGES
+==================================================
+Each flyer is using images from the main website images folder.
+
+To replace an image:
+1. Open the flyer file.
+2. Look for a line that looks like this:
+   <img src="../images/hero-main.jpg" alt="Project image">
+3. Change the file name inside src to a different image file.
+
+Example:
+Change this:
+../images/hero-main.jpg
+
+To this:
+../images/my-new-kitchen-project.jpg
+
+IMPORTANT:
+Put your replacement image inside the main images folder here:
+contractor-template/images/
+
+Then save the flyer file.
+
+==================================================
+7. HOW TO EXPORT A FLYER AS A PDF
+==================================================
+1. Open the flyer in your browser.
+2. Press Ctrl + P.
+3. In Destination, choose:
+   Save to PDF
+4. Set paper size to:
+   Letter
+5. Set Layout to:
+   Portrait
+6. Turn OFF headers and footers if your browser shows that option.
+7. Set margins to Default or None.
+8. Click Save.
+9. Name your file.
+10. Save it where you want.
+
+For the business card:
+- You may need More settings
+- Try Scale around 100
+- Save to PDF, then print through a local print shop if needed
+
+==================================================
+8. HOW TO MAKE THE PACK MATCH YOUR WEBSITE EVEN MORE
+==================================================
+The colors already match your site.
+If you want to change them anyway:
+
+1. Open:
+   flyers.css
+2. At the top you will see color variables like:
+   --accent
+   --bg
+   --text
+   --dark-panel
+3. Change the color codes.
+4. Press Ctrl + S.
+5. Refresh your browser.
+
+==================================================
+9. FASTEST WAY TO CUSTOMIZE THE WHOLE PACK
+==================================================
+Do this in order:
+1. Replace company name
+2. Replace phone number
+3. Replace email
+4. Replace website
+5. Replace service areas
+6. Replace service list text
+7. Replace the images
+8. Export each flyer as PDF
+
+==================================================
+10. BEST WAY TO USE THIS PACK FOR SELLING OR CLIENT WORK
+==================================================
+Use these as:
+- printable flyers
+- PDF lead sheets
+- estimate packet pages
+- leave-behind handouts
+- local promo sheets
+- door hanger campaigns
+- business cards
+- referral/review handouts
+
+==================================================
+11. WHAT TO DO IF THE PAGE LOOKS WEIRD
+==================================================
+1. Make sure the file stays inside the marketing-pack folder.
+2. Make sure flyers.css stays in the same marketing-pack folder.
+3. Make sure the images folder stays one level above marketing-pack.
+4. Do not rename folders unless you also fix the image paths.
+
+==================================================
+12. SIMPLE FILE MAP
+==================================================
+contractor-template/
+  images/
+  marketing-pack/
+    flyers.css
+    index.html
+    main-services-flyer.html
+    remodeling-flyer.html
+    exterior-repairs-flyer.html
+    before-after-flyer.html
+    why-choose-us-flyer.html
+    seasonal-offer-flyer.html
+    review-referral-flyer.html
+    quote-request-flyer.html
+    business-card.html
+    door-hanger.html
+

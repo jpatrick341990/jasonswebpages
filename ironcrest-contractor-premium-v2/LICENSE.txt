@@ -1,0 +1,3 @@
+LICENSE
+=======
+This template is provided for website-template resale and buyer editing workflows. Replace all placeholder content before publishing live.

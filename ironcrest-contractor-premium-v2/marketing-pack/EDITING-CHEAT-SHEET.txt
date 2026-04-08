@@ -1,0 +1,23 @@
+FAST CHEAT SHEET
+
+MOST IMPORTANT FILES:
+- marketing-pack/index.html = overview page with links
+- marketing-pack/flyers.css = all flyer styling/colors
+- marketing-pack/*.html = each editable flyer or print piece
+
+FASTEST EDITS:
+- Ctrl + F for company name
+- Ctrl + F for phone number
+- Ctrl + F for email
+- Ctrl + F for website
+- Ctrl + F for service names
+
+FASTEST EXPORT:
+- Open flyer in browser
+- Ctrl + P
+- Save to PDF
+
+IMAGE PATH EXAMPLE:
+<img src="../images/hero-main.jpg" alt="Project image">
+
+Replace hero-main.jpg with your own image file name after you place your image inside contractor-template/images/

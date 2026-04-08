@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Ironcrest Contracting | General Contracting & Remodeling</title>
+</head>
+<body data-page="home">
+  <div id="site-header"></div>
+
+  <section class="hero hero-home" id="hero" style="background-image: linear-gradient(rgba(8, 18, 11, 0.48), rgba(8, 18, 11, 0.60)), url('images/hero-main.jpg');">
+    <div class="container hero-layout">
+      <div class="hero-copy glass-panel">
+        <p class="eyebrow" id="hero-eyebrow">Residential remodeling & general contracting</p>
+        <h1 id="hero-title">Professional construction work that feels organized, honest, and worth hiring.</h1>
+        <p class="hero-text" id="hero-text">Built for remodelers, repair specialists, and local contractors who need a site that shows real services, clean process, and strong next steps without looking cheap.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-primary">Request a quote</a>
+          <a href="services.html" class="btn btn-secondary">View services</a>
+        </div>
+        <div class="hero-stats" id="hero-stats">
+          <div><strong>10+</strong><span>years in the field</span></div>
+          <div><strong>300+</strong><span>projects completed</span></div>
+          <div><strong>5-star</strong><span>service mindset</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section trust-strip">
+    <div class="container trust-grid" id="trust-grid"></div>
+  </section>
+
+  <section class="section">
+    <div class="container section-heading split-heading">
+      <div>
+        <p class="section-kicker">Core services</p>
+        <h2>Services that help clients feel clear about what you build and how you work.</h2>
+      </div>
+      <p>Use this section for the jobs that actually drive revenue: remodels, additions, repairs, and exterior improvement work.</p>
+    </div>
+    <div class="services-grid" id="home-services"></div>
+  </section>
+
+  <section class="section dark-band">
+    <div class="container split-feature">
+      <div>
+        <p class="section-kicker">Why contractor websites convert</p>
+        <h2 id="home-feature-title">Show the finished result, explain the process, and make the next step obvious.</h2>
+        <p id="home-feature-text">That is the backbone of this template. The goal is not to look generic and green. The goal is to make the company feel organized, premium, and worth contacting.</p>
+        <a href="about.html" class="btn btn-primary">About the company</a>
+      </div>
+      <div class="feature-card-stack">
+        <article class="feature-card">
+          <h3>Clear positioning</h3>
+          <p>Luxury landscaping, outdoor living, and dependable maintenance sit together cleanly.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Easy editing</h3>
+          <p>Core brand copy, images, colors, social links, services, and projects can be updated in the owner panel.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Ready to sell</h3>
+          <p>It feels like a real local landscaping business, not just a starter mockup.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container section-heading split-heading">
+      <div>
+        <p class="section-kicker">Recent projects</p>
+        <h2>Project imagery that makes the company feel active, capable, and worth calling.</h2>
+      </div>
+      <p>Use this section for remodels, build progress, site work, or finished improvements that help prove real experience.</p>
+    </div>
+    <div class="projects-grid projects-grid-home" id="home-projects"></div>
+  </section>
+
+  <section class="section callout-panel">
+    <div class="container callout-shell">
+      <div>
+        <p class="section-kicker">Our process</p>
+        <h2>A straightforward process clients can actually trust.</h2>
+      </div>
+      <div class="process-grid" id="process-grid"></div>
+    </div>
+  </section>
+
+  <section class="section testimonial-section">
+    <div class="container section-heading center-heading">
+      <p class="section-kicker">Client feedback</p>
+      <h2>Testimonials that make the company feel reliable, responsive, and professional.</h2>
+    </div>
+    <div class="testimonials-grid" id="testimonials-grid"></div>
+  </section>
+
+  <section class="section quote-section">
+    <div class="container quote-shell">
+      <div>
+        <p class="section-kicker">Ready for the next step?</p>
+        <h2>Request a quote and start the conversation.</h2>
+        <p>Ask for the project basics, make the next step obvious, and give serious leads a clean way to contact the company.</p>
+      </div>
+      <form class="quote-form" id="contact-form" data-demo-form="true">
+        <div class="form-row">
+          <label>Full name<input type="text" name="name" placeholder="Your name" required></label>
+          <label>Email address<input type="email" name="email" placeholder="you@example.com" required></label>
+        </div>
+        <div class="form-row">
+          <label>Phone number<input type="text" name="phone" placeholder="(555) 555-5555"></label>
+          <label>Project location<input type="text" name="location" placeholder="City or neighborhood"></label>
+        </div>
+        <div class="form-row single">
+          <label>Service needed<select name="service" id="quote-service-select"></select></label>
+        </div>
+        <div class="form-row single">
+          <label>Project details<textarea name="message" placeholder="Tell us about the property, the work you want done, and your rough timing."></textarea></label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit request</button>
+        <p class="form-note">This form ships in demo mode. Use the form guide in the zip to connect your favorite form service before publishing live.</p>
+      </form>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <button class="owner-fab" id="owner-fab" type="button">Owner</button>
+
+  <script src="contractor-data.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

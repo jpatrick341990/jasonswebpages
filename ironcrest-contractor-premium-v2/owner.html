@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Owner | Ironcrest Contracting</title>
+</head>
+<body data-page="owner">
+  <div id="site-header"></div>
+
+  <section class="page-hero owner-hero" style="background-image: linear-gradient(rgba(28, 9, 14, 0.68), rgba(28, 9, 14, 0.74)), url('images/service-banner.jpg');">
+    <div class="container page-hero-copy glass-panel">
+      <p class="eyebrow">Owner panel</p>
+      <h1>Adjust the brand shell without tearing up the layout.</h1>
+      <p>Update the company details, social links, major copy, colors, major images, services, project cards, and backup file from here. This version works without a backend and includes a future-upgrade path in the docs.</p>
+    </div>
+  </section>
+
+  <section class="section owner-shell">
+    <div class="container owner-grid">
+      <aside class="owner-tabs" id="owner-tabs">
+        <button class="owner-tab active" data-tab="general">General</button>
+        <button class="owner-tab" data-tab="copy">Copy</button>
+        <button class="owner-tab" data-tab="colors">Colors</button>
+        <button class="owner-tab" data-tab="images">Images</button>
+        <button class="owner-tab" data-tab="content">Sections</button>
+        <button class="owner-tab" data-tab="security">Security / backup</button>
+      </aside>
+      <div class="owner-panel-wrap">
+        <section class="owner-panel active" data-panel="general">
+          <h2>General brand details</h2>
+          <div class="owner-form-grid two-col">
+            <label>Business name<input type="text" id="setting-businessName"></label>
+            <label>Tagline<input type="text" id="setting-tagline"></label>
+            <label>Phone display<input type="text" id="setting-phoneDisplay"></label>
+            <label>Phone link digits<input type="text" id="setting-phoneLink"></label>
+            <label>Email<input type="email" id="setting-email"></label>
+            <label>Location / city<input type="text" id="setting-location"></label>
+            <label class="full">Service area line<input type="text" id="setting-serviceArea"></label>
+          </div>
+          <h3>Social links</h3>
+          <div class="owner-form-grid two-col">
+            <label>Instagram<input type="url" id="setting-social-instagram"></label>
+            <label>Facebook<input type="url" id="setting-social-facebook"></label>
+            <label>Pinterest<input type="url" id="setting-social-pinterest"></label>
+            <label>TikTok<input type="url" id="setting-social-tiktok"></label>
+            <label>YouTube<input type="url" id="setting-social-youtube"></label>
+          </div>
+          <div class="owner-actions"><button class="btn btn-primary" id="save-general">Save general settings</button></div>
+        </section>
+
+        <section class="owner-panel" data-panel="copy">
+          <h2>Main copy blocks</h2>
+          <div class="owner-form-grid single-col">
+            <label>Hero eyebrow<input type="text" id="setting-heroEyebrow"></label>
+            <label>Hero title<textarea id="setting-heroTitle"></textarea></label>
+            <label>Hero text<textarea id="setting-heroText"></textarea></label>
+            <label>Home feature title<textarea id="setting-homeFeatureTitle"></textarea></label>
+            <label>Home feature text<textarea id="setting-homeFeatureText"></textarea></label>
+            <label>About title<textarea id="setting-aboutTitle"></textarea></label>
+            <label>About paragraph 1<textarea id="setting-aboutText1"></textarea></label>
+            <label>About paragraph 2<textarea id="setting-aboutText2"></textarea></label>
+          </div>
+          <div class="owner-actions"><button class="btn btn-primary" id="save-copy">Save copy</button></div>
+        </section>
+
+        <section class="owner-panel" data-panel="colors">
+          <h2>Color controls</h2>
+          <div class="owner-form-grid two-col">
+            <label>Accent color<input type="color" id="setting-color-accent"></label>
+            <label>Accent dark<input type="color" id="setting-color-accentDark"></label>
+            <label>Background<input type="color" id="setting-color-bg"></label>
+            <label>Surface<input type="color" id="setting-color-surface"></label>
+            <label>Text<input type="color" id="setting-color-text"></label>
+            <label>Muted text<input type="color" id="setting-color-muted"></label>
+          </div>
+          <div class="owner-actions"><button class="btn btn-primary" id="save-colors">Save colors</button></div>
+        </section>
+
+        <section class="owner-panel" data-panel="images">
+          <h2>Major image swaps</h2>
+          <p class="panel-note">Upload a new image to save it in this browser, or paste a file path if you prefer editing by files.</p>
+          <div class="owner-image-group">
+            <div>
+              <label>Hero image path<input type="text" id="setting-image-hero"></label>
+              <label>Upload hero image<input type="file" accept="image/*" id="upload-image-hero"></label>
+            </div>
+            <img id="preview-image-hero" alt="Hero preview">
+          </div>
+          <div class="owner-image-group">
+            <div>
+              <label>About image path<input type="text" id="setting-image-about"></label>
+              <label>Upload about image<input type="file" accept="image/*" id="upload-image-about"></label>
+            </div>
+            <img id="preview-image-about" alt="About preview">
+          </div>
+          <div class="owner-image-group">
+            <div>
+              <label>Contact banner path<input type="text" id="setting-image-contact"></label>
+              <label>Upload contact banner<input type="file" accept="image/*" id="upload-image-contact"></label>
+            </div>
+            <img id="preview-image-contact" alt="Contact preview">
+          </div>
+          <div class="owner-actions"><button class="btn btn-primary" id="save-images">Save images</button></div>
+        </section>
+
+        <section class="owner-panel" data-panel="content">
+          <h2>Services, project cards, and testimonials</h2>
+          <div class="content-block">
+            <div class="content-block-header"><h3>Services</h3><button class="btn btn-secondary owner-small-btn" id="add-service">Add service</button></div>
+            <div id="owner-services-list" class="owner-card-list"></div>
+          </div>
+          <div class="content-block">
+            <div class="content-block-header"><h3>Projects</h3><button class="btn btn-secondary owner-small-btn" id="add-project">Add project</button></div>
+            <div id="owner-projects-list" class="owner-card-list"></div>
+          </div>
+          <div class="content-block">
+            <div class="content-block-header"><h3>Testimonials</h3><button class="btn btn-secondary owner-small-btn" id="add-testimonial">Add testimonial</button></div>
+            <div id="owner-testimonials-list" class="owner-card-list"></div>
+          </div>
+          <div class="owner-actions"><button class="btn btn-primary" id="save-content">Save content</button></div>
+        </section>
+
+        <section class="owner-panel" data-panel="security">
+          <h2>Security / backup</h2>
+          <div class="note-card"><strong>Important:</strong> This owner panel is a browser-based editor. It is good for simple file-based use. The optional backend docs explain how to upgrade later if the buyer ever wants cloud-saved changes.</div>
+          <div class="owner-actions wrap-actions">
+            <button class="btn btn-primary" id="download-settings">Download settings file</button>
+            <label class="btn btn-secondary file-btn">Upload settings file<input type="file" id="upload-settings" accept="application/json"></label>
+            <button class="btn btn-secondary" id="reset-settings">Reset settings</button>
+          </div>
+          <div class="password-field-wrap">
+            <label>Password
+              <div class="password-input-wrap">
+                <input type="password" id="owner-passcode" value="preview">
+                <button type="button" class="monkey-toggle" data-target="owner-passcode" aria-label="Show or hide password">🙈</button>
+              </div>
+            </label>
+          </div>
+          <div class="owner-actions"><button class="btn btn-primary" id="save-passcode">Save password</button></div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="contractor-data.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

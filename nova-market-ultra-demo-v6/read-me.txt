@@ -1,0 +1,46 @@
+NOVA MARKET ULTRA — READ ME FIRST
+
+What this template is:
+Nova Market Ultra is a polished multi-page storefront with a built-in seller dashboard, order view, payout snapshot, inventory alerts, and inbox preview, customer account area, account sign-in included starter roles, theme settings page, and easy local owner controls for the store brand.
+
+Best setup order:
+1. Open account.html and sign in with a included owner or seller account.
+2. Open site-settings.html and set the store name, logo, announcement bar, utility note, social links, and theme.
+3. Open seller-dashboard.html and add or edit products.
+4. Replace the included product and category images inside the images folder when needed.
+5. Test cart, wishlist, checkout, account, tracking, and contact.
+6. Publish only after the contact form path and store policies are updated for the real business.
+
+Built-in starter accounts:
+Owner: owner@novamarket.example / owner123
+Seller: seller@novamarket.example / seller123
+Shopper: shopper@novamarket.example / shopper123
+
+Most important pages:
+index.html — home page
+shop.html — product catalog
+collections.html — category browsing
+deals.html — sale page
+seller-dashboard.html — add, edit, delete products
+account.html — sign in starter accounts and manage shopper info
+site-settings.html — store brand, logo, socials, and theme controls
+start-here.html — setup order in plain language
+
+What saves where:
+This version saves products, cart data, account data, brand settings, and theme settings in the browser on the device being used. It is a front-end product, not a live cloud backend.
+
+If you need a future backend:
+This project can be upgraded later to Supabase for real auth, storage, and store-wide saved settings.
+
+
+New in this version:
+- richer seller dashboard with orders, messages, payouts, and low-stock alerts
+- homepage section toggles inside Site Settings
+- stronger empty states for cart, wishlist, account, search, and tracking
+- smarter search suggestions with recent searches and trending prompts
+
+
+For the Jason'sWebPages preview build:
+- account access is opened with one-click role buttons on account.html
+- no real password is required in the preview build
+- this preview stores changes in the current browser only

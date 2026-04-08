@@ -1,0 +1,54 @@
+IRONCREST CONTRACTING WEBSITE TEMPLATE
+
+START HERE
+1. Unzip the folder.
+2. Open the contractor-template folder in VS Code.
+3. Right click index.html and open with Live Server.
+4. Open owner.html if you want the easiest no-code editing option.
+
+WHAT THIS TEMPLATE IS BUILT FOR
+- general contractors
+- remodelers
+- repair companies
+- deck and exterior builders
+- light commercial construction brands
+
+EASIEST WAY TO EDIT
+The easiest way to edit this template is through owner.html.
+From the owner panel, the buyer can change:
+- business name
+- phone, email, and location
+- social links
+- hero copy and about copy
+- colors
+- major images
+- services
+- project cards
+- testimonials
+- password
+- backup file import/export
+
+MAIN FILES
+- index.html = home page
+- services.html = service details page
+- about.html = company story page
+- contact.html = quote/contact page
+- owner.html = owner settings page
+- contractor-data.js = default repeatable content
+- scripts.js = rendering and owner logic
+- styles.css = layout and styling
+
+FORMS
+The quote form ships in demo mode by default.
+Read FORM-SETUP-GUIDE.txt before publishing live.
+
+BACKEND
+A backend is not required for this template.
+The buyer can use it as a normal editable HTML/CSS/JS site.
+If they want cloud-based editing later, read OPTIONAL-BACKEND-UPGRADE.txt.
+
+
+NEW IN THIS ZIP:
+- Added marketing-pack/ folder with 8 matching flyer templates plus a business card and door hanger.
+- Open contractor-template/marketing-pack/index.html to view the full pack.
+- Full click-by-click instructions are inside contractor-template/marketing-pack/CLICK-BY-CLICK-FLYER-INSTRUCTIONS.txt

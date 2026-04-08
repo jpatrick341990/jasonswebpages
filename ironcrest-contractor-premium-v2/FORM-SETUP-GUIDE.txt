@@ -1,0 +1,11 @@
+FORM SETUP GUIDE
+
+This template ships with the contact form in demo mode.
+That means it shows a message instead of sending real email.
+
+To make it live:
+1. Open index.html and contact.html.
+2. Find the main form with id="contact-form".
+3. Replace the demo form setup with your preferred service such as Formspree or Basin.
+4. Remove data-demo-form="true" after you connect the real form endpoint.
+5. Test the form before publishing.

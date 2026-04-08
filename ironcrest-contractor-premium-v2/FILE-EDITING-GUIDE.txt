@@ -1,0 +1,14 @@
+FILE EDITING GUIDE
+
+If the buyer does not want to use owner.html, they can edit the main content in contractor-data.js.
+
+Most repeatable content lives in contractor-data.js:
+- trust items
+- services
+- process steps
+- project cards
+- testimonials
+- FAQ items
+
+Main images are in the images folder.
+Replace image files with the same names if you want to keep the layout working with less effort.
