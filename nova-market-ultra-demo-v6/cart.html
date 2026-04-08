@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart | Nova Market Ultra</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div class="announcement-bar">
+    <p>Free Shipping On Orders Over $50 • New Spring Collection Just Dropped • Limited-Time Deals Live Now</p>
+  </div>
+
+  <div class="utility-bar">
+    <div class="container utility-wrap">
+      <p>Free Shipping | Secure Checkout | 30-Day Returns</p>
+      <div class="utility-links">
+        <a href="tracking.html">Track Order</a>
+        <a href="account.html">My Account</a>
+        <a href="contact.html">Support</a>
+        <a href="site-settings.html">Site Settings</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header modern-header-fixed">
+    <div class="container header-wrap ultra-header header-top-row">
+      <a href="index.html" class="logo-wrap">
+        <img src="images/logo.png" alt="Nova Market Logo" class="logo" />
+        <div>
+          <h1 class="brand-name">Nova Market</h1>
+          <p class="brand-tag">Premium Lifestyle Store</p>
+        </div>
+      </a>
+
+      <form class="header-search" id="headerSearchForm">
+        <div class="search-input-wrap ghost-search-wrap">
+          <input id="searchInput" type="text" autocomplete="off" placeholder="" />
+          <span class="ghost-placeholder" id="ghostPlaceholder"></span>
+          <div class="search-suggestions" id="searchSuggestions"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </div>
+
+    <div class="container nav-row header-bottom-row">
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html" class="">Home</a>
+        <a href="shop.html" class="">Shop</a>
+        <a href="collections.html" class="">Collections</a>
+        <a href="deals.html" class="">Deals</a>
+        <a href="checkout.html" class="">Checkout</a>
+        <a href="seller-dashboard.html" class="">Seller</a>
+        <a href="blog.html" class="">Blog</a>
+        <a href="about.html" class="">About</a>
+        <a href="faq.html" class="">FAQ</a>
+        <a href="contact.html" class="">Contact</a>
+      </nav>
+
+      <div class="header-actions header-actions-bottom">
+        <a href="wishlist.html" class="header-wishlist-link">❤ Wishlist</a>
+        <a href="account.html">👤 Account</a>
+        <a href="cart.html" class="cart-pill">🛒 Cart</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero small-hero">
+    <div class="container centered-hero">
+      <p class="section-kicker">Cart Layout</p>
+      <h2>Your Shopping Cart</h2>
+      <p>Review your items, update quantities, and head to checkout when you are ready.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container cart-grid">
+      <div class="cart-card">
+        <h3>Cart Items</h3>
+
+        <div class="cart-item">
+          <span>Minimal Lamp</span>
+          <span>$49.99</span>
+        </div>
+
+        <div class="quantity-row" style="margin-top: 16px;">
+          <label for="qty1">Quantity</label>
+          <input id="qty1" type="number" value="1" min="1" />
+        </div>
+
+        <div class="cart-item">
+          <span>Premium Hoodie</span>
+          <span>$64.00</span>
+        </div>
+
+        <div class="quantity-row" style="margin-top: 16px;">
+          <label for="qty2">Quantity</label>
+          <input id="qty2" type="number" value="1" min="1" />
+        </div>
+
+        <div class="cart-item">
+          <span>Wireless Earbuds</span>
+          <span>$89.99</span>
+        </div>
+
+        <div class="quantity-row" style="margin-top: 16px;">
+          <label for="qty3">Quantity</label>
+          <input id="qty3" type="number" value="1" min="1" />
+        </div>
+      </div>
+
+      <div class="cart-card">
+        <h3>Order Summary</h3>
+
+        <div class="cart-item">
+          <span>Subtotal</span>
+          <span>$203.98</span>
+        </div>
+
+        <div class="cart-item">
+          <span>Shipping</span>
+          <span>$12.00</span>
+        </div>
+
+        <div class="cart-item">
+          <span>Tax</span>
+          <span>$16.32</span>
+        </div>
+
+        <div class="cart-item total-row">
+          <span>Total</span>
+          <span>$232.30</span>
+        </div>
+
+        <input type="text" class="coupon-input" placeholder="Coupon Code" />
+
+        <a href="checkout.html" class="btn btn-primary full-btn">Proceed to Checkout</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark-panel">
+    <div class="container">
+      <div class="section-heading centered">
+        <p class="section-kicker">Trust & Checkout Notes</p>
+        <h3>Helpful checkout notes for customers</h3>
+      </div>
+
+      <div class="checkout-trust-grid">
+        <div class="trust-item">
+          <strong>Secure Payment</strong>
+          <span>Add secure checkout, returns, and support details here.</span>
+        </div>
+        <div class="trust-item">
+          <strong>Fast Shipping</strong>
+          <span>Promote delivery speed and shipping updates.</span>
+        </div>
+        <div class="trust-item">
+          <strong>Easy Returns</strong>
+          <span>Show return-friendly policies to build confidence.</span>
+        </div>
+        <div class="trust-item">
+          <strong>Customer Support</strong>
+          <span>Add support messaging for reassurance before checkout.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter-section">
+    <div class="container newsletter-wrap">
+      <div>
+        <p class="section-kicker">Cart Reminder</p>
+        <h3>Another polished section for a more premium flow</h3>
+        <p>Use this signup area for launch reminders, cart recovery emails, or order updates.</p>
+      </div>
+
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid ultra-footer-grid">
+      <div>
+        <h4>Nova Market</h4>
+        <p>A shopping cart page with order totals and checkout links.</p>
+      </div>
+
+      <div>
+        <h4>Shop</h4>
+        <a href="shop.html">Shop All</a>
+        <a href="collections.html">Collections</a>
+        <a href="deals.html">Deals</a>
+        <a href="wishlist.html">Wishlist</a>
+      </div>
+
+      <div>
+        <h4>Customer</h4>
+        <a href="account.html">My Account</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="tracking.html">Track Order</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+
+      <div>
+        <h4>Info</h4>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="policies.html">Policies</a>
+      </div>
+
+      <div>
+        <h4>Template Notes</h4>
+        <p>The cart page gives buyers a much more believable storefront experience.</p>
+      </div>
+    </div>
+  
+    <div class="footer-credit-wrap">
+      <a href="https://jasonswebpages.com" class="footer-credit" target="_blank" rel="noopener noreferrer" aria-label="Visit JasonsWebPages.com">
+        <img src="images/jasonswebpages-footer-logo.png" alt="Jason'sWebPages" class="footer-credit-logo" />
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/brand.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>

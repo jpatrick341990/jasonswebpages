@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop | Nova Market Ultra</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/shop.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div class="announcement-bar">
+    <p>Free Shipping On Orders Over $50 • New Spring Collection Just Dropped • Limited-Time Deals Live Now</p>
+  </div>
+
+  <div class="utility-bar">
+    <div class="container utility-wrap">
+      <p>Free Shipping | Secure Checkout | 30-Day Returns</p>
+      <div class="utility-links">
+        <a href="tracking.html">Track Order</a>
+        <a href="account.html">My Account</a>
+        <a href="contact.html">Support</a>
+        <a href="site-settings.html">Site Settings</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header modern-header-fixed">
+    <div class="container header-wrap ultra-header header-top-row">
+      <a href="index.html" class="logo-wrap">
+        <img src="images/logo.png" alt="Nova Market Logo" class="logo" />
+        <div>
+          <h1 class="brand-name">Nova Market</h1>
+          <p class="brand-tag">Premium Lifestyle Store</p>
+        </div>
+      </a>
+
+      <form class="header-search" id="headerSearchForm">
+        <div class="search-input-wrap ghost-search-wrap">
+          <input id="searchInput" type="text" autocomplete="off" placeholder="" />
+          <span class="ghost-placeholder" id="ghostPlaceholder"></span>
+          <div class="search-suggestions" id="searchSuggestions"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </div>
+
+    <div class="container nav-row header-bottom-row">
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html" class="">Home</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="collections.html" class="">Collections</a>
+        <a href="deals.html" class="">Deals</a>
+        <a href="checkout.html" class="">Checkout</a>
+        <a href="seller-dashboard.html" class="">Seller</a>
+        <a href="blog.html" class="">Blog</a>
+        <a href="about.html" class="">About</a>
+        <a href="faq.html" class="">FAQ</a>
+        <a href="contact.html" class="">Contact</a>
+      </nav>
+
+      <div class="header-actions header-actions-bottom">
+        <a href="wishlist.html" class="header-wishlist-link">❤ Wishlist</a>
+        <a href="account.html">👤 Account</a>
+        <a href="cart.html" class="cart-pill">🛒 Cart</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero small-hero">
+    <div class="container centered-hero">
+      <p class="section-kicker">Storefront Catalog</p>
+      <h2>Premium Shop Page</h2>
+      <p>Browse all products, filter by category, and sort the catalog in seconds.</p>
+    </div>
+  </section>
+
+  <section class="shop-toolbar-wrap">
+    <div class="container shop-toolbar advanced-toolbar">
+      <input type="text" id="shopSearchInput" placeholder="Search products..." />
+
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="home">Home</option>
+        <option value="fashion">Fashion</option>
+        <option value="tech">Tech</option>
+        <option value="accessories">Accessories</option>
+      </select>
+
+      <select id="sortBy">
+        <option value="default">Sort By</option>
+        <option value="price-low">Price: Low to High</option>
+        <option value="price-high">Price: High to Low</option>
+        <option value="name-az">Name: A to Z</option>
+        <option value="name-za">Name: Z to A</option>
+      </select>
+
+      <select id="availabilityFilter">
+        <option value="all">Availability</option>
+        <option value="in-stock">In Stock</option>
+        <option value="featured">Featured</option>
+        <option value="on-sale">On Sale</option>
+      </select>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="shop-layout-grid">
+        <aside class="shop-sidebar-card">
+          <h3>Browse</h3>
+          <p class="sidebar-helper-copy">Use these quick filters to jump into the most shop-ready items instantly.</p>
+          <ul class="sidebar-filter-list">
+            <li><a href="#" data-shop-filter="new" class="active">New Arrivals</a></li>
+            <li><a href="#" data-shop-filter="top">Top Rated</a></li>
+            <li><a href="#" data-shop-filter="best">Best Sellers</a></li>
+            <li><a href="#" data-shop-filter="sale">On Sale</a></li>
+            <li><a href="#" data-shop-filter="gift">Gift Ideas</a></li>
+          </ul>
+        </aside>
+
+        <div>
+          <div class="product-grid premium-grid" id="productGrid"></div>
+
+          <div class="catalog-empty-state" id="shopEmptyState" hidden>No products matched your search.</div>
+
+          <div class="pagination-row">
+            <a href="#" class="page-pill active">1</a>
+            <a href="#" class="page-pill">2</a>
+            <a href="#" class="page-pill">3</a>
+            <a href="#" class="page-pill">Next</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter-section">
+    <div class="container newsletter-wrap">
+      <div>
+        <p class="section-kicker">Stay Updated</p>
+        <h3>Stay updated on launches, offers, and subscriber-only news</h3>
+        <p>Use this signup section for launch alerts, offers, and product updates.</p>
+      </div>
+
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid ultra-footer-grid">
+      <div>
+        <h4>Nova Market</h4>
+        <p>Massive catalog-style shop page included.</p>
+      </div>
+
+      <div>
+        <h4>Shop</h4>
+        <a href="shop.html">Shop All</a>
+        <a href="collections.html">Collections</a>
+        <a href="deals.html">Deals</a>
+        <a href="wishlist.html">Wishlist</a>
+      </div>
+
+      <div>
+        <h4>Customer</h4>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="cart.html">Cart</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="tracking.html">Track Order</a>
+      </div>
+
+      <div>
+        <h4>Info</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="policies.html">Policies</a>
+      </div>
+
+      <div>
+        <h4>Template Notes</h4>
+        <p>Built to work for boutiques, lifestyle shops, home goods, fashion, tech, and more.</p>
+      </div>
+    </div>
+  
+    <div class="footer-credit-wrap">
+      <a href="https://jasonswebpages.com" class="footer-credit" target="_blank" rel="noopener noreferrer" aria-label="Visit JasonsWebPages.com">
+        <img src="images/jasonswebpages-footer-logo.png" alt="Jason'sWebPages" class="footer-credit-logo" />
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/brand.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>

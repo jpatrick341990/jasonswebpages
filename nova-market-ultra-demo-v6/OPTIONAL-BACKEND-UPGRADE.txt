@@ -1,0 +1,31 @@
+OPTIONAL BACKEND UPGRADE
+
+This template does not need a backend to feel premium.
+
+Why it already works well without one:
+- Local product editing through the seller dashboard, order view, payout snapshot, inventory alerts, and inbox preview
+- Browser-saved cart, wishlist, checkout, account, and tracking starter data
+- Brand and theme settings already built into the site settings page
+
+When a backend becomes worth it:
+- Multiple devices need to manage the same store
+- Real account security is needed
+- Product uploads need to save live for every visitor
+- Contact forms need inbox delivery and stored messages
+- Orders need to save online instead of only in one browser
+
+Best future path:
+Supabase is the easiest clean upgrade path for this project.
+
+Recommended upgrade order later:
+1. Real auth for owner, seller, and customer roles
+2. Store settings table for brand + theme settings
+3. Product table and storage bucket for listing images
+4. Contact submissions table
+5. Order table if needed
+
+
+A future backend can map directly to the current seller dashboard areas: products, orders, payouts, support messages, and homepage section controls.
+
+
+Nova v4 note: the Site Settings page now includes homepage section visibility toggles, so owners can show or hide major homepage rows without editing code.

@@ -1,0 +1,19 @@
+FORM SETUP GUIDE
+
+Current behavior:
+The contact form is a browser-saved preview. It lets a buyer test the template without a backend.
+
+For a real live site:
+1. Open contact.html.
+2. Replace the starter form action with your preferred form endpoint or custom backend.
+3. Test one message before publishing.
+4. Update the support email and phone in site-settings.html.
+
+Simple options:
+- Formspree
+- Basin
+- Netlify Forms
+- Your own backend or serverless function
+
+Tip:
+Keep the front-end layout exactly the same. Only swap the submission target so you do not break the styling.

@@ -1,0 +1,17 @@
+NOVA MARKET ULTRA — DEMO PREVIEW NOTES
+
+This preview build is for jasonswebpages.com.
+
+What is different in this demo:
+1. The account page keeps the access flow visible.
+2. Owner, Seller, and Shopper each open with one click.
+3. No real password is required in this preview build.
+4. Store settings, theme changes, and seller changes save in this browser only.
+5. This demo includes the Jason'sWebPages footer logo button linking back to https://jasonswebpages.com.
+
+Best demo path:
+1. Open account.html.
+2. Click Owner View to explore site settings.
+3. Click Seller View to explore the seller dashboard.
+4. Click Shopper View to explore the account/cart/store side.
+5. Use Clear preview access when you want to reset the role.
