@@ -1,0 +1,56 @@
+OPTIONAL BACKEND NOTES
+ASTER & VINE STUDIO
+
+THIS TEMPLATE DOES NOT REQUIRE A BACKEND TO WORK.
+You can use it as a normal front-end template.
+
+THE EASIEST DEFAULT EDITING ROUTES ARE:
+1. owner.html for quick browser-based preview edits
+2. assets/js/floral-data.js for permanent repeatable card edits
+3. assets/images/ for image replacement
+
+WHEN A BACKEND BECOMES USEFUL
+A backend is useful if the buyer wants things like:
+- real owner login
+- live photo uploads through the website
+- saved gallery or product data for visitors to see live
+- central management from multiple devices
+- database-driven content
+
+RECOMMENDED BACKEND DIRECTION
+- Supabase
+
+WHY SUPABASE IS A GOOD FIT
+- owner login
+- storage for uploaded images
+- database for products or portfolio items
+- works well with static front-end websites
+
+IMPORTANT TRUTH ABOUT SAVING TO THE BUYER'S COMPUTER
+A normal website cannot silently save uploaded files onto the buyer's computer wherever it wants.
+Browsers normally block that for security.
+
+WHAT A WEBSITE CAN DO INSTEAD
+- save uploads to a backend
+- save temporary edits in browser storage
+- generate export/download files that the user manually saves
+
+SUPABASE FREE PLAN NOTE
+For simple use such as:
+- one owner account
+- simple photo uploads
+- a small gallery or product list
+- light traffic
+
+The free plan is commonly a good place to start.
+
+IMPORTANT
+Free plans have limits.
+Those limits can change.
+The buyer should always check the current Supabase pricing and limits before launching a live site.
+
+BEST PRACTICAL ADVICE
+- start small
+- compress images before uploading
+- use the free plan first if it fits the project
+- upgrade only if the business grows enough to need it

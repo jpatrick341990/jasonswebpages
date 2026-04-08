@@ -1,0 +1,77 @@
+FILE EDITING GUIDE
+ASTER & VINE STUDIO
+
+BEST FILES TO KNOW
+- assets/js/floral-data.js = repeatable cards and filters
+- assets/images/ = main image folder
+- assets/css/style.css = styling
+- assets/js/app.js = front-end behavior
+- assets/js/owner.js = owner panel behavior
+
+MAIN CONTENT FILE
+The main file for repeatable content is:
+assets/js/floral-data.js
+
+WHAT IS INSIDE floral-data.js
+It includes the main arrays that power the repeatable content sections.
+Depending on the section, you may see arrays such as:
+- collections
+- products
+- portfolio
+- servicePackages
+- serviceExtras
+- homeFaqs
+- serviceFaqs
+- testimonials
+- shopFilters
+- portfolioFilters
+
+HOW TO ADD A NEW CARD
+1. Find the array you want.
+2. Copy one full object.
+3. Paste it under the last one.
+4. Change the values.
+5. Save.
+6. Refresh the page.
+
+HOW TO HIDE A CARD WITHOUT DELETING IT
+Change:
+active: true
+To:
+active: false
+
+HOW TO REMOVE A CARD COMPLETELY
+Delete the full object from the array.
+
+HOW TO CHANGE IMAGES
+Inside the card object, change the image path.
+Example:
+image: "assets/images/collection-daily.jpg"
+
+You can also replace the actual image file in assets/images while keeping the same file name.
+
+HOW TO CHANGE HOMEPAGE VS NON-HOMEPAGE DISPLAY
+Some product objects use settings like:
+home: true
+or
+home: false
+
+If home is true, that item may also show on the homepage.
+
+HOW TO CHANGE FILTER BUTTONS
+Look for:
+- shopFilters
+- portfolioFilters
+
+Edit the label text there.
+
+WHY THIS FILE ROUTE IS GOOD
+This route keeps the final template folder itself clean and permanent.
+That makes it easier when you are preparing the version you actually want to sell, ship, or store.
+
+
+SOCIAL LINKS
+- Open owner.html.
+- Use the Brand settings area to paste Instagram, Facebook, Pinterest, TikTok, and YouTube links.
+- Leave any social field blank and that icon stays hidden.
+- Save the settings and the header/footer social buttons will update in this browser.

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#b76b5c">
+  <meta name="description" content="Aster & Vine Studio owner panel for floral website preview edits, image swaps, and passcode access.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Owner Panel | Aster & Vine Studio</title>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark"><img class="brand-logo-image" data-setting-logo alt="" hidden><span class="brand-initials" data-setting-text="brandMark">AV</span></span>
+      <div>
+        <span class="brand-name" data-setting-text="siteName">Aster &amp; Vine Studio</span>
+        <span class="brand-sub" data-setting-text="siteTagline">Refined floral design for daily bouquets, weddings, events, and subscription deliveries.</span>
+      </div>
+    </a>
+    <button class="mobile-toggle" aria-label="Toggle navigation">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="services.html">Services</a>
+      <a href="booking.html">Book</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </nav>
+    <div class="header-social social-links" data-social-location="header"></div>
+  </div>
+</header>
+<div class="owner-fab-wrap"><a class="owner-fab" href="owner.html" title="Open owner panel">Owner</a></div>
+
+<section class="page-banner band-admin" data-setting-image="sectionSkyline">
+  <div class="container">
+    <span class="eyebrow light">Owner panel</span>
+    <h1>Edit the preview quickly without digging through every page.</h1>
+    <p>This panel is meant for front-end preview editing. It helps the studio swap core brand details, colors, and selected images fast while testing a fresh direction.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container owner-login-card" id="ownerLoginCard">
+    <div class="owner-login-box">
+      <h2>Enter preview passcode</h2>
+      <p>The default passcode is <strong>preview</strong>. In this Jason'sWebPages demo, this gate is only simulated so visitors can see the full owner flow without needing a real password.</p>
+      <div class="owner-login-row">
+        <div class="password-shell" style="flex:1">
+          <input id="ownerPasscode" type="password" placeholder="Enter passcode">
+          <button class="password-toggle" type="button" id="ownerPassToggle" aria-label="Show passcode">🙈</button>
+        </div>
+        <button class="btn btn-primary" id="ownerLoginBtn" type="button">Unlock Panel</button>
+      </div>
+      <p class="form-message" id="ownerLoginMessage"></p>
+    </div>
+  </div>
+
+  <div class="container owner-panel hidden" id="ownerPanel">
+    <div class="owner-panel-sidebar">
+      <button class="owner-tab active" data-tab="general">Brand</button>
+      <button class="owner-tab" data-tab="copy">Copy</button>
+      <button class="owner-tab" data-tab="colors">Colors</button>
+      <button class="owner-tab" data-tab="images">Images</button>
+      <button class="owner-tab" data-tab="cards">Cards</button>
+      <button class="owner-tab" data-tab="backup">Backup</button>
+    </div>
+    <div class="owner-panel-main">
+      <section class="owner-tab-panel active" data-panel="general">
+        <h2>General brand settings</h2>
+        <p class="owner-help">Use these fields for the high-impact changes: name, initials, main tagline, and footer copy.</p>
+        <div class="owner-form-grid">
+          <label><span>Site name</span><input data-owner-field="siteName" type="text"></label>
+          <label><span>Brand mark / initials</span><input data-owner-field="brandMark" type="text" maxlength="3"></label>
+          <label><span>Tagline</span><input data-owner-field="siteTagline" type="text"></label>
+          <label><span>Footer tagline</span><input data-owner-field="footerTagline" type="text"></label>
+          <label style="grid-column:1/-1"><span>Footer copy</span><textarea data-owner-field="footerCopy"></textarea></label>
+          <label><span>Instagram link</span><input data-owner-field="instagramUrl" type="url" placeholder="https://instagram.com/yourhandle"></label>
+          <label><span>Facebook link</span><input data-owner-field="facebookUrl" type="url" placeholder="https://facebook.com/yourpage"></label>
+          <label><span>Pinterest link</span><input data-owner-field="pinterestUrl" type="url" placeholder="https://pinterest.com/yourname"></label>
+          <label><span>TikTok link</span><input data-owner-field="tiktokUrl" type="url" placeholder="https://tiktok.com/@yourhandle"></label>
+          <label><span>YouTube link</span><input data-owner-field="youtubeUrl" type="url" placeholder="https://youtube.com/@yourchannel"></label>
+        </div>
+      </section>
+
+      <section class="owner-tab-panel" data-panel="copy">
+        <h2>Main page copy</h2>
+        <div class="owner-form-grid">
+          <label><span>Hero eyebrow</span><input data-owner-field="heroEyebrow" type="text"></label>
+          <label><span>Hero headline</span><textarea data-owner-field="heroHeadline"></textarea></label>
+          <label style="grid-column:1/-1"><span>Hero text</span><textarea data-owner-field="heroText"></textarea></label>
+          <label><span>Primary hero button</span><input data-owner-field="heroButtonPrimary" type="text"></label>
+          <label><span>Secondary hero button</span><input data-owner-field="heroButtonSecondary" type="text"></label>
+          <label style="grid-column:1/-1"><span>Intro copy</span><textarea data-owner-field="introCopy"></textarea></label>
+          <label><span>About teaser headline</span><textarea data-owner-field="aboutTeaserHeadline"></textarea></label>
+          <label><span>About teaser text</span><textarea data-owner-field="aboutTeaserText"></textarea></label>
+          <label><span>Break headline 1</span><input data-owner-field="breakHeadlineOne" type="text"></label>
+          <label><span>Break text 1</span><textarea data-owner-field="breakTextOne"></textarea></label>
+          <label><span>Break headline 2</span><input data-owner-field="breakHeadlineTwo" type="text"></label>
+          <label><span>Break text 2</span><textarea data-owner-field="breakTextTwo"></textarea></label>
+          <label><span>Services headline</span><textarea data-owner-field="servicesHeadline"></textarea></label>
+          <label><span>Services text</span><textarea data-owner-field="servicesText"></textarea></label>
+          <label><span>About headline</span><textarea data-owner-field="aboutHeadline"></textarea></label>
+          <label><span>About intro</span><textarea data-owner-field="aboutIntro"></textarea></label>
+          <label><span>Contact headline</span><textarea data-owner-field="contactHeadline"></textarea></label>
+          <label><span>Contact intro</span><textarea data-owner-field="contactIntro"></textarea></label>
+        </div>
+      </section>
+
+      <section class="owner-tab-panel" data-panel="colors">
+        <h2>Color controls</h2>
+        <p class="owner-help">Swap the main accent and background colors to quickly move between soft romantic, moody editorial, or cleaner neutral floral looks.</p>
+        <div class="owner-form-grid">
+          <label><span>Accent</span><input data-owner-color="accent" type="color"></label>
+          <label><span>Accent deep</span><input data-owner-color="accentDeep" type="color"></label>
+          <label><span>Background</span><input data-owner-color="bg" type="color"></label>
+          <label><span>Soft background</span><input data-owner-color="bgSoft" type="color"></label>
+          <label><span>Text</span><input data-owner-color="text" type="color"></label>
+          <label><span>Dark sections</span><input data-owner-color="dark" type="color"></label>
+        </div>
+      </section>
+
+      <section class="owner-tab-panel" data-panel="images">
+        <h2>Selected image uploads</h2>
+        <p class="owner-help">These uploads are stored in the current browser only. They are perfect for preview edits and Etsy-style demonstrations. For a final launch, replace the image files in the assets/images folder too. The custom logo upload below is the easiest way to swap the site mark without touching code.</p>
+        <div class="owner-form-grid">
+          <label><span>Brand logo image</span><input data-owner-image="brandLogo" type="file" accept="image/*"></label>
+          <label><span>Homepage hero image</span><input data-owner-image="heroPrimary" type="file" accept="image/*"></label>
+          <label><span>Page banner image</span><input data-owner-image="heroSecondary" type="file" accept="image/*"></label>
+          <label><span>Main image band</span><input data-owner-image="sectionPatio" type="file" accept="image/*"></label>
+          <label><span>Secondary image band</span><input data-owner-image="sectionPanoramaOne" type="file" accept="image/*"></label>
+          <label><span>Delivery-style image band</span><input data-owner-image="sectionPanoramaTwo" type="file" accept="image/*"></label>
+          <label><span>Owner banner image</span><input data-owner-image="sectionSkyline" type="file" accept="image/*"></label>
+        </div>
+      </section>
+      <section class="owner-tab-panel" data-panel="cards">
+        <h2>Cards, images, and repeat sections</h2>
+        <p class="owner-help">This panel gives you both routes: edit the repeating cards here without code, or keep using <strong>assets/js/floral-data.js</strong> as the master fallback file. Changes made here save in this browser and override the default data file for preview use.</p>
+        <div class="notice owner-dual-note">
+          <strong>Two ways to edit:</strong>
+          <span>1) Use this owner panel for quick no-code changes in the current browser. 2) Edit <strong>assets/js/floral-data.js</strong> if you want a permanent file-based version to ship in the final zip.</span>
+        </div>
+        <div class="catalog-toolbar">
+          <label>
+            <span>Section</span>
+            <select id="catalogSectionSelect"></select>
+          </label>
+          <div class="catalog-toolbar-actions">
+            <button class="btn btn-secondary" type="button" id="catalogAddItemBtn">Add new card</button>
+            <button class="btn btn-ghost" type="button" id="catalogDuplicateItemBtn">Duplicate selected</button>
+          </div>
+        </div>
+        <div class="catalog-editor-layout">
+          <aside class="catalog-list-card">
+            <div class="catalog-list-head">
+              <h3>Section items</h3>
+              <p>Select a card to edit it.</p>
+            </div>
+            <div id="catalogItemList" class="catalog-item-list"></div>
+          </aside>
+          <div class="catalog-form-card">
+            <div class="catalog-form-head">
+              <h3 id="catalogFormTitle">Edit selected card</h3>
+              <p id="catalogFormHelp">Change titles, text, image, buttons, and visibility without touching the layout code.</p>
+            </div>
+            <div class="owner-form-grid" id="catalogDynamicFields"></div>
+            <div class="catalog-preview-block">
+              <div>
+                <span class="owner-field-label">Current image preview</span>
+                <div class="catalog-image-preview-shell"><img id="catalogImagePreview" alt="Selected card preview"></div>
+              </div>
+              <div class="owner-form-grid catalog-image-grid">
+                <label><span>Upload a new image</span><input id="catalogImageUpload" type="file" accept="image/*"></label>
+                <label><span>Or use image path / URL</span><input id="catalogImagePath" type="text" placeholder="assets/images/your-image.jpg"></label>
+              </div>
+            </div>
+            <div class="owner-actions-row catalog-actions-row">
+              <button class="btn btn-primary" type="button" id="catalogSaveItemBtn">Save selected card</button>
+              <button class="btn btn-secondary" type="button" id="catalogDeleteItemBtn">Delete selected</button>
+            </div>
+            <p class="form-message" id="catalogActionMessage"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="owner-tab-panel" data-panel="backup">
+        <h2>Backup and reset</h2>
+        <div class="notice">
+          <strong>Good habit:</strong>
+          export your JSON before big changes. That gives the studio a quick way to save one floral direction and test another.
+        </div>
+        <div class="notice owner-dual-note">
+          <strong>Why a custom name may show up:</strong>
+          older preview edits were being saved in the browser. This version uses fresh preview memory so the shipped defaults stay clean.
+        </div>
+        <div class="backup-actions">
+          <button class="btn btn-primary" type="button" id="exportSettings">Export settings JSON</button>
+          <label class="btn btn-secondary alt-upload">Import settings JSON<input id="importSettings" type="file" accept="application/json" hidden></label>
+          <button class="btn btn-secondary" type="button" id="resetSettings">Reset settings</button>
+        </div>
+        <div class="backup-actions second-row">
+          <button class="btn btn-primary" type="button" id="exportCatalog">Export card data JSON</button>
+          <label class="btn btn-secondary alt-upload">Import card data JSON<input id="importCatalog" type="file" accept="application/json" hidden></label>
+          <button class="btn btn-secondary" type="button" id="resetCatalogBtn">Reset cards to defaults</button>
+        </div>
+        <hr class="soft">
+        <label><span>Preview passcode</span><input id="newPasscode" type="text" placeholder="Change preview passcode"></label>
+        <button class="btn btn-primary" type="button" id="savePasscode">Save passcode</button>
+        <p class="form-message" id="ownerActionMessage"></p>
+      </section>
+
+      <div class="owner-actions-row">
+        <button class="btn btn-primary" type="button" id="saveOwnerSettings">Save all changes</button>
+        <a class="btn btn-secondary" href="index.html">Back to site</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="site-footer section-dark">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand">
+        <span class="brand-mark"><img class="brand-logo-image" data-setting-logo alt="" hidden><span class="brand-initials" data-setting-text="brandMark">AV</span></span>
+        <div>
+          <span class="brand-name" data-setting-text="siteName">Aster &amp; Vine Studio</span>
+          <span class="brand-sub" data-setting-text="footerTagline">Built for flower businesses that need ordering, inquiries, and visual polish in one place.</span>
+        </div>
+      </div>
+      <p class="footer-copy" data-setting-text="footerCopy">Aster &amp; Vine Studio uses a browser-based owner panel for quick edits to brand text, selected images, colors, and the preview passcode.</p>
+    </div>
+    <div class="footer-links">
+      <a href="shop.html">Shop</a>
+      <a href="booking.html">Book</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="services.html">Services</a>
+      <a href="owner.html">Owner Panel</a>
+    </div>
+  </div>
+
+  <div class="footer-credit-wrap">
+    <a class="footer-credit" href="https://jasonswebpages.com" target="_blank" rel="noopener noreferrer" aria-label="Back to JasonsWebPages.com">
+      <img src="assets/images/jasonswebpages-footer-logo.png" alt="Jason'sWeb" class="footer-credit-logo">
+    </a>
+  </div>
+</footer>
+<script src="assets/js/floral-data.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/owner.js"></script>
+</body>
+</html>

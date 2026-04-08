@@ -1,0 +1,100 @@
+OWNER PANEL GUIDE
+ASTER & VINE STUDIO
+
+WHAT IT IS
+The owner panel is a front-end editing area for preview-style changes.
+It helps non-code users make quick changes in the browser.
+
+HOW TO OPEN IT
+1. Open owner.html with Live Server.
+2. Enter the passcode.
+3. Default passcode: preview
+
+IMPORTANT
+This passcode is only a light preview gate.
+It is not true server security.
+
+MAIN TABS YOU MAY SEE
+- Copy
+- Colors
+- Images
+- Cards
+- Backup
+
+COPY TAB
+Use this to adjust business text and selected wording.
+This is good for quick brand swaps.
+
+COLORS TAB
+Use this to adjust the visual palette.
+Good for testing a different floral mood without editing CSS directly.
+
+IMAGES TAB
+Use this to change selected major visuals and the brand logo.
+Logo route:
+- go to Images
+- upload Brand logo image
+
+CARDS TAB
+Use this to manage repeating content like:
+- collection cards
+- shop cards
+- portfolio cards
+- service cards
+- FAQs
+- testimonials
+
+You can usually:
+- add
+- edit
+- duplicate
+- remove
+- change image path
+- upload a preview image in the current browser
+
+BACKUP TAB
+Use this to:
+- export settings JSON
+- import settings JSON
+- reset settings
+- export card data JSON
+- import card data JSON
+- reset cards to defaults
+- change the preview passcode
+
+VERY IMPORTANT BACKUP HABIT
+Before major changes:
+1. export settings JSON
+2. export card data JSON
+3. save both files somewhere safe
+
+HOW OWNER PANEL SAVING WORKS
+Owner panel changes are mainly browser-based preview changes.
+That means they are usually stored in local browser storage.
+They are great for trying ideas, but they do not automatically rewrite the original template files.
+
+WHEN TO USE OWNER PANEL
+Use the owner panel when you want:
+- fast preview edits
+- a no-code experience
+- easier logo/image swapping
+- quick card testing
+- easy backup/export of preview data
+
+WHEN TO USE FILE EDITING INSTEAD
+Use file editing when you want:
+- the real shipped files to contain your final content
+- permanent changes saved into the project files
+- version-controlled edits
+
+If you want the permanent file route, edit:
+- assets/js/floral-data.js
+- assets/images/
+- assets/css/style.css if needed
+
+
+SOCIAL LINKS
+- Open owner.html.
+- Use the Brand settings area to paste Instagram, Facebook, Pinterest, TikTok, and YouTube links.
+- Leave any social field blank and that icon stays hidden.
+- Save the settings and the header/footer social buttons will update in this browser.

@@ -1,0 +1,140 @@
+ATLAS PEAK PERFORMANCE — FORM SETUP GUIDE
+=========================================
+
+WHAT THIS GUIDE IS FOR
+----------------------
+Use this guide before publishing the site live.
+
+Right now, the contact / application form is in DEMO MODE.
+That means it shows a message in preview, but it does NOT send real emails yet.
+
+To make the form work for real, connect it to a form service.
+
+THE SIMPLEST WAY
+----------------
+Use a form service that gives you a form endpoint URL.
+Examples of services like this include:
+- Formspree
+- Basin
+- Getform
+- Netlify Forms
+
+You do NOT need to build a custom backend just to get the application form working.
+
+THE FASTEST SETUP METHOD
+------------------------
+You only need to edit ONE file:
+
+contact.html
+
+Look for this line:
+
+<form class="styled-form" id="coachingApplicationForm">
+
+Replace it with something like this:
+
+<form class="styled-form" id="coachingApplicationForm" action="PASTE-YOUR-FORM-ENDPOINT-HERE" method="POST" data-live-form="true">
+
+Then save the file.
+
+WHAT TO CHANGE
+--------------
+Replace:
+
+PASTE-YOUR-FORM-ENDPOINT-HERE
+
+with the real endpoint URL from your form service.
+
+Example shape only:
+https://example-form-service.com/your-form-id
+
+Do NOT use that exact example URL.
+Use the real one from the service you choose.
+
+WHY data-live-form="true" IS THERE
+-----------------------------------
+This template uses a small JavaScript helper.
+
+When the form is still in demo mode, the site prevents submission and shows a preview message.
+
+When you add:
+
+- a real action URL
+- method="POST"
+- data-live-form="true"
+
+then the template will stop treating it like a demo form and allow the real submission.
+
+STEP-BY-STEP
+------------
+1. Sign up for a form service.
+2. Create a new form there.
+3. Copy the endpoint / action URL they give you.
+4. Open contact.html.
+5. Find:
+   <form class="styled-form" id="coachingApplicationForm">
+6. Replace it with:
+   <form class="styled-form" id="coachingApplicationForm" action="YOUR-REAL-ENDPOINT" method="POST" data-live-form="true">
+7. Save the file.
+8. Run the site with Live Server.
+9. Submit a test form.
+10. Check your inbox / form-service dashboard.
+
+WHAT TO TEST BEFORE PUBLISHING
+------------------------------
+Test these things:
+- submit the form yourself
+- make sure you receive the submission
+- make sure the fields come through correctly
+- make sure the service is sending to the correct email address
+- make sure spam filtering is set the way you want
+
+VERY IMPORTANT
+--------------
+Do not publish the site assuming the form works just because the page looks good.
+Always send at least one real test submission first.
+
+OPTION A — SIMPLE FORM SERVICE
+------------------------------
+Best for most template buyers.
+
+Good if you just want:
+- contact form submissions
+- application form emails
+- no custom backend
+- fast setup
+
+OPTION B — REAL BACKEND / DATABASE
+----------------------------------
+Only use this if you want more advanced handling like:
+- saving submissions in a dashboard
+- attaching submissions to user accounts
+- complex automations
+- deeper admin tools
+
+For most buyers of this template, OPTION A is enough.
+
+IF YOU USE NETLIFY FORMS
+------------------------
+Some platforms support forms in a special way.
+If you use Netlify Forms, follow Netlify's setup rules instead of pasting a third-party endpoint.
+The important idea is still the same:
+make the contact form REAL before publishing.
+
+HOW TO GO BACK TO DEMO MODE
+---------------------------
+If you want to switch back to preview/demo mode, change the form tag back to:
+
+<form class="styled-form" id="coachingApplicationForm">
+
+That removes the live endpoint setup.
+
+FILES RELATED TO THIS
+---------------------
+Main form file:
+- contact.html
+
+JavaScript helper file:
+- assets/js/app.js
+
+This template is already prepared so the form can stay in demo mode during editing and then switch to live mode when you are ready.

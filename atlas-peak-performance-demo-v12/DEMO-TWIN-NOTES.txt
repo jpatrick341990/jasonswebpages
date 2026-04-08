@@ -1,0 +1,11 @@
+ATLAS PEAK PERFORMANCE DEMO TWIN
+
+This is the Jason'sWebPages demo twin.
+
+Important demo behavior:
+- The owner page still shows the password screen so it mimics the real version.
+- The demo does NOT actually require the password.
+- Clicking Unlock panel or pressing Enter opens the owner area for preview use.
+- Social links can be edited in the owner panel and will show in the header and footer when filled in.
+- The Jason'sWebPages footer logo/button is included so demo visitors can get back to https://jasonswebpages.com
+- Demo edits save in this browser only.

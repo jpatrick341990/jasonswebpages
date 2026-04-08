@@ -1,0 +1,27 @@
+FILE AND FOLDER MAP
+ASTER & VINE STUDIO
+
+ROOT HTML FILES
+- index.html = home
+- shop.html = shop
+- portfolio.html = floral gallery / portfolio
+- services.html = services
+- booking.html = booking / consultation form
+- about.html = about
+- contact.html = contact
+- owner.html = owner preview panel
+
+ASSETS FOLDER
+- assets/css/style.css = main styles
+- assets/js/app.js = site interactions
+- assets/js/owner.js = owner panel behavior
+- assets/js/floral-data.js = repeatable content data
+- assets/images/ = image library
+
+GUIDE FILES
+- READ-ME-FIRST.txt = main start-here guide
+- OWNER-PANEL-GUIDE.txt = no-code owner area guide
+- FILE-EDITING-GUIDE.txt = permanent file editing guide
+- IMAGE-AND-LOGO-GUIDE.txt = image swap guide
+- OPTIONAL-BACKEND-NOTES.txt = backend explanation
+- FILE-AND-FOLDER-MAP.txt = this file

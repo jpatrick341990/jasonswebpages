@@ -1,0 +1,51 @@
+IMAGE AND LOGO GUIDE
+ASTER & VINE STUDIO
+
+MAIN IMAGE FOLDER
+assets/images/
+
+BIG IMAGE FILES INCLUDED
+- hero-bouquet.jpg
+- hero-installation.jpg
+- section-atelier.jpg
+- section-seasonal.jpg
+- section-delivery.jpg
+- admin-banner.jpg
+- collection-daily.jpg
+- collection-events.jpg
+- collection-weddings.jpg
+- collection-subscription.jpg
+- portfolio-editorial.jpg
+- portfolio-workshop.jpg
+
+EASIEST IMAGE SWAP METHOD
+Replace the file inside assets/images and keep the same file name.
+That way the existing template references still work.
+
+EXAMPLE
+If the site is using:
+assets/images/collection-daily.jpg
+
+You can replace that JPG with your own photo and keep the same file name.
+Then refresh the site.
+
+CARD IMAGE METHOD
+If you want a brand new file name instead, edit the card image path in:
+assets/js/floral-data.js
+
+LOGO CHANGE METHOD
+Easy route:
+1. Open owner.html
+2. Enter passcode: preview
+3. Go to Images
+4. Upload Brand logo image
+
+If no logo is uploaded, the default initials mark is used.
+
+IMAGE TIPS
+- use clean floral imagery
+- keep card images visually consistent
+- avoid mixing dark moody images with very bright airy ones unless that contrast is intentional
+- crop images well
+- keep file sizes reasonable
+- try to keep similar card image shapes for a cleaner layout

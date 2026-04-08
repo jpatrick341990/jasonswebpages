@@ -1,0 +1,20 @@
+DEMO TWIN NOTES
+
+This is the Jason'sWebPages demo twin for the Aster & Vine floral template.
+
+What is different from the real version:
+- The passcode gate is only simulated.
+- Clicking Unlock Panel always opens the owner area.
+- Changes save in the current browser only.
+- This demo uses separate preview memory keys so it does not mix with the real template as easily.
+
+What stays the same:
+- Same overall look and flow.
+- Same monkey toggle on the passcode field.
+- Same owner tabs and card controls.
+- Same social-link controls.
+- Same no-code preview editing feel.
+
+Footer link:
+- A Jason'sWeb logo button is included at the bottom of the demo pages.
+- It links back to https://jasonswebpages.com

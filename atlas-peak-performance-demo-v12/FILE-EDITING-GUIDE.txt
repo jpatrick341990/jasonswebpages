@@ -1,0 +1,79 @@
+ATLAS PEAK PERFORMANCE — FILE EDITING GUIDE
+==========================================
+
+MAIN FILES
+----------
+index.html
+- homepage layout
+
+portfolio.html
+- results page layout
+
+services.html
+- program / pricing page layout
+
+about.html
+- coach story page layout
+
+contact.html
+- application page layout
+
+owner.html
+- owner panel
+
+assets/css/style.css
+- site styling
+
+assets/js/app.js
+- main site behavior
+- owner settings storage
+- card rendering helpers
+- hero switcher
+- filters
+
+assets/js/atlas-data.js
+- repeatable card content
+
+assets/js/owner.js
+- owner panel behavior
+
+assets/images/
+- all current image files
+
+BEST EDITING ORDER
+------------------
+1. Change the brand shell in owner.html
+2. Change repeated cards in assets/js/atlas-data.js
+3. Replace images in assets/images
+4. Only edit HTML if you want structural changes
+
+WHY THIS TEMPLATE IS EASIER THAN BEFORE
+---------------------------------------
+The repeatable content is no longer scattered across multiple pages.
+The public pages pull those repeated sections from one file:
+assets/js/atlas-data.js
+
+That means:
+- fewer passes
+- less hunting
+- less chance of missing one old card somewhere
+
+
+OWNER PANEL SOCIAL LINKS
+------------------------
+The owner panel can also control the social media buttons.
+
+Where to edit:
+- owner.html
+- General tab
+
+Supported links:
+- Instagram
+- Facebook
+- Pinterest
+- TikTok
+- YouTube
+
+Behavior:
+- if a link field is blank, that button stays hidden
+- if a link field is filled, that button shows in the header and footer

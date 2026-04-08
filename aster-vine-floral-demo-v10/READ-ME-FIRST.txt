@@ -1,0 +1,471 @@
+
+ASTER & VINE FLORAL BUSINESS TEMPLATE — JASONSWEBPAGES DEMO TWIN
+
+This zip is the live demo twin for the real Aster & Vine template.
+It is meant for preview use on jasonswebpages.com.
+
+IMPORTANT DEMO DIFFERENCE:
+- The owner passcode screen is shown so visitors can see the real flow.
+- In this demo twin, the passcode is SIMULATED ONLY.
+- Clicking Unlock Panel opens the owner area without enforcing a real password.
+- Owner changes save in the current browser only.
+
+Jason'sWebPages button:
+- A footer logo button is included on the demo pages.
+- It links back to https://jasonswebpages.com
+
+ASTER & VINE STUDIO
+PREMIUM FLORAL BUSINESS TEMPLATE
+VERY DETAILED START HERE GUIDE
+
+==================================================
+1. WHAT THIS TEMPLATE IS
+==================================================
+This is a premium floral business website template made for flower-related businesses such as:
+- flower shops
+- wedding florists
+- event florists
+- bouquet delivery brands
+- subscription flower brands
+- workshop floral studios
+- luxury botanical studios
+
+This template is built in HTML, CSS, and JavaScript.
+That means it is a normal website template folder, not WordPress.
+
+This version gives the buyer 2 editing routes:
+
+ROUTE A = OWNER PANEL ROUTE
+This is the easier, no-code route for quick preview changes.
+It works in the browser and saves preview edits in that browser.
+Good for testing, trying ideas, and fast edits.
+
+ROUTE B = FILE EDITING ROUTE
+This is the permanent file route.
+You edit the real files inside the template folder.
+Good when you want the shipped files themselves to contain your final content.
+
+IMPORTANT:
+The owner panel in this version is NOT a real backend.
+It is a front-end owner editing experience.
+It can save preview edits in the browser, but it is not the same thing as a true live backend.
+
+==================================================
+2. FASTEST WAY TO GET THE TEMPLATE OPEN
+==================================================
+1. Unzip the template folder.
+2. Open the unzipped folder in VS Code.
+3. Install the Live Server extension in VS Code if you do not already have it.
+4. Right click index.html.
+5. Click Open with Live Server.
+6. The home page should open in your browser.
+
+Main pages included:
+- index.html = home page
+- shop.html = flower shop / arrangements page
+- portfolio.html = portfolio / floral gallery page
+- services.html = floral services page
+- booking.html = floral consultation / booking page
+- about.html = about page
+- contact.html = contact page
+- owner.html = owner panel / settings area
+
+==================================================
+3. QUICK FILE MAP
+==================================================
+Main pages:
+- index.html
+- shop.html
+- portfolio.html
+- services.html
+- booking.html
+- about.html
+- contact.html
+- owner.html
+
+Main style file:
+- assets/css/style.css
+
+Main site behavior file:
+- assets/js/app.js
+
+Owner panel file:
+- assets/js/owner.js
+
+Main repeatable card data file:
+- assets/js/floral-data.js
+
+Main image folder:
+- assets/images/
+
+Extra guide files:
+- OWNER-PANEL-GUIDE.txt
+- FILE-EDITING-GUIDE.txt
+- IMAGE-AND-LOGO-GUIDE.txt
+- OPTIONAL-BACKEND-NOTES.txt
+- FILE-AND-FOLDER-MAP.txt
+
+==================================================
+4. THE TWO WAYS TO EDIT THIS TEMPLATE
+==================================================
+------------------------------
+ROUTE A = OWNER PANEL ROUTE
+------------------------------
+Use this if you want the easiest editing route.
+
+How to open it:
+1. Open owner.html with Live Server.
+2. Enter the preview passcode.
+3. Default preview passcode: preview
+
+What the owner panel is good for:
+- testing branding changes
+- changing selected text
+- changing colors
+- changing selected big images
+- changing the logo
+- editing repeating cards in the Cards tab
+- exporting and importing preview data
+
+Important truth:
+Owner panel changes save in the current browser using local storage.
+That means those changes are great for previewing and testing.
+That does NOT mean those changes automatically rewrite every original file in the zip.
+
+If you want to keep owner panel work:
+- use the Backup tab
+- export your JSON
+- save that JSON somewhere safe
+
+------------------------------
+ROUTE B = FILE EDITING ROUTE
+------------------------------
+Use this if you want the actual folder files to be the final version.
+
+The most important file for repeatable cards is:
+- assets/js/floral-data.js
+
+That file controls most of the repeating cards across the site.
+
+==================================================
+5. WHAT floral-data.js CONTROLS
+==================================================
+The main repeatable card content comes from:
+- assets/js/floral-data.js
+
+This file controls:
+- homepage collection cards
+- shop products
+- portfolio gallery cards
+- service package cards
+- service extra cards
+- homepage FAQs
+- service FAQs
+- testimonials
+- shop filter button labels
+- portfolio filter button labels
+
+If you want to add or remove cards without digging through multiple HTML pages, this is the file to use.
+
+==================================================
+6. HOW TO ADD A NEW SHOP PRODUCT
+==================================================
+1. Open assets/js/floral-data.js
+2. Find the products array.
+3. Copy one full product object.
+4. Paste it below the last product object.
+5. Change the values you want.
+6. Save the file.
+7. Refresh shop.html and index.html.
+
+A typical product object includes things like:
+- active
+- home
+- badge
+- title
+- description
+- price
+- detail
+- image
+- categories
+
+If active is false, the card will not show.
+If home is true, the card may also show on the homepage.
+
+==================================================
+7. HOW TO REMOVE A SHOP PRODUCT
+==================================================
+Method 1:
+Delete that full product object from the products array.
+
+Method 2:
+Change:
+- active: true
+To:
+- active: false
+
+Method 2 is often safer while testing because it hides the card without fully deleting it.
+
+==================================================
+8. HOW TO ADD OR REMOVE PORTFOLIO CARDS
+==================================================
+1. Open assets/js/floral-data.js
+2. Find the portfolio array.
+3. Copy one full portfolio object to add a new one.
+4. Change the image, title, tags, and text.
+5. Save and refresh portfolio.html.
+
+To remove one:
+- delete the object
+OR
+- set active: false
+
+==================================================
+9. HOW TO EDIT SERVICE CARDS
+==================================================
+In floral-data.js, look for:
+- servicePackages = larger package cards
+- serviceExtras = smaller service cards
+- serviceFaqs = service FAQ list
+
+Edit those arrays the same way:
+- copy an object to add another
+- edit values
+- delete or set active false to remove one
+
+==================================================
+10. HOW TO CHANGE FILTER BUTTONS
+==================================================
+In floral-data.js, find:
+- shopFilters
+- portfolioFilters
+
+Change those labels if you want different category names.
+
+==================================================
+11. HOW TO CHANGE CARD IMAGES
+==================================================
+There are 2 easy ways.
+
+METHOD 1 = CHANGE THE IMAGE PATH IN floral-data.js
+Example:
+image: "assets/images/collection-daily.jpg"
+
+You can replace that with another image file path inside assets/images.
+
+METHOD 2 = REPLACE THE ACTUAL FILE IN assets/images
+If you keep the same file name, the template will keep using that file name and the visuals update automatically.
+
+Example:
+If a card uses:
+assets/images/collection-daily.jpg
+
+You can replace that image file with your own new JPG and keep the same exact file name.
+That is the easiest method for many buyers.
+
+==================================================
+12. HOW TO CHANGE THE BIG HERO / SECTION IMAGES
+==================================================
+The big non-card images are mainly in:
+- assets/images/hero-bouquet.jpg
+- assets/images/hero-installation.jpg
+- assets/images/section-atelier.jpg
+- assets/images/section-seasonal.jpg
+- assets/images/section-delivery.jpg
+- assets/images/admin-banner.jpg
+
+Easy method:
+Replace those files in assets/images with your own images using the same file names.
+
+==================================================
+13. HOW TO CHANGE THE LOGO
+==================================================
+Easy owner panel route:
+1. Open owner.html
+2. Enter passcode: preview
+3. Go to Images
+4. Upload the Brand logo image
+
+Fallback behavior:
+If no custom logo is uploaded, the site uses the built-in initials mark.
+
+If you want to use only file editing:
+You can also replace logo-related visuals in the image folder if the template is using a file-based logo asset in later revisions.
+
+==================================================
+14. HOW TO CHANGE THE PREVIEW PASSCODE
+==================================================
+1. Open owner.html
+2. Unlock with the current passcode
+3. Go to Backup
+4. Find the Preview passcode field
+5. Enter the new passcode
+6. Click Save passcode
+
+Default preview passcode:
+preview
+
+IMPORTANT:
+This is only a light owner-panel gate for the preview/editor area.
+It is NOT real server security.
+
+==================================================
+15. WHY YOU MAY SOMETIMES SEE OLD PREVIEW CONTENT
+==================================================
+If you ever see a random old business name, old logo, or old preview settings, that usually means your browser still has local saved owner-panel data from earlier tests.
+
+This template version uses a fresh preview memory key to reduce that issue.
+But if you keep testing many versions, browser storage can still matter.
+
+If something looks odd:
+- try the Reset buttons in the owner panel
+- export anything important first
+- then reset preview data
+
+==================================================
+16. WHAT THE OWNER PANEL CARDS TAB DOES
+==================================================
+The Cards tab lets you work with repeating cards in the browser.
+It can help you:
+- add cards
+- edit cards
+- duplicate cards
+- remove cards
+- change image paths
+- upload image previews in the current browser
+
+It covers things like:
+- homepage collection cards
+- shop products
+- portfolio cards
+- service cards
+- testimonials
+- FAQs
+
+This is great for no-code editing and quick experimentation.
+
+IMPORTANT:
+Those changes are browser-based preview changes unless you export and keep the JSON.
+The original fallback data file is still floral-data.js.
+
+==================================================
+17. HOW TO BACK UP OWNER PANEL CHANGES
+==================================================
+1. Open owner.html
+2. Go to the Backup tab
+3. Click Export settings JSON for settings changes
+4. Click Export card data JSON for card/content changes
+5. Save those files somewhere safe on your computer
+
+This is smart to do before major edits.
+
+==================================================
+18. HOW TO RESET THINGS IF YOU BREAK SOMETHING
+==================================================
+Inside owner.html > Backup tab you can usually:
+- reset settings
+- reset cards to defaults
+
+Use those if your preview work gets messy.
+Export your JSON first if you want to keep a copy.
+
+If you changed actual files and want to undo them:
+- use your backup copy of the template folder
+- or use Undo in VS Code
+- or restore from a saved zip copy
+
+==================================================
+19. IMAGE QUALITY TIPS
+==================================================
+For best results:
+- use JPG or WEBP for most photos
+- keep images reasonably compressed
+- avoid giant 10 MB files if not needed
+- keep similar aspect ratios for cards so the site looks consistent
+- use high-quality floral images that match each other stylistically
+
+==================================================
+20. WHAT THIS TEMPLATE DOES NOT DO BY DEFAULT
+==================================================
+This version does NOT automatically:
+- create a real customer login system
+- create a real checkout/payment system
+- create a real backend database
+- silently save uploads to the buyer's computer
+- give true server security from the preview passcode
+
+It is a premium front-end template with an owner-style preview/editing workflow.
+
+==================================================
+21. OPTIONAL BACKEND UPGRADE
+==================================================
+If the buyer wants a real live upload system where the owner can upload photos through the website and have them show on the live site for visitors, the clean upgrade path is to connect a real backend.
+
+Recommended direction:
+- Supabase
+
+Why:
+- owner login
+- image storage
+- gallery/product data
+- cleaner live management
+
+See:
+- OPTIONAL-BACKEND-NOTES.txt
+
+==================================================
+22. SUPABASE SIMPLE USE NOTE
+==================================================
+For simple use like:
+- one owner
+- uploading photos
+- a small gallery or product list
+- light traffic
+
+The Supabase free plan is commonly a good starting point.
+
+IMPORTANT:
+Free plans have limits.
+Those limits can change over time.
+The buyer should always check current Supabase pricing and limits before launching a live business site.
+
+==================================================
+23. BEST WORKFLOW FOR NORMAL BUYERS
+==================================================
+If the buyer wants the easiest path:
+1. Use owner.html for quick preview changes.
+2. Test content direction.
+3. Export JSON backups.
+4. Then make the final permanent file edits if needed.
+
+If the buyer is comfortable editing one file:
+1. Open assets/js/floral-data.js
+2. Edit the card arrays there.
+3. Replace images inside assets/images.
+4. Save and refresh.
+
+==================================================
+24. FINAL SIMPLE SUMMARY
+==================================================
+If you only remember 4 things, remember these:
+
+1. Main repeatable cards live in:
+assets/js/floral-data.js
+
+2. Main images live in:
+assets/images/
+
+3. Easy preview editing lives in:
+owner.html
+passcode = preview
+
+4. This owner panel is a browser-based preview/editor workflow, not a real backend.
+
+END OF READ ME
+
+
+SOCIAL LINKS
+- Open owner.html.
+- Use the Brand settings area to paste Instagram, Facebook, Pinterest, TikTok, and YouTube links.
+- Leave any social field blank and that icon stays hidden.
+- Save the settings and the header/footer social buttons will update in this browser.

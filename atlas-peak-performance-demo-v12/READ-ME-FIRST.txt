@@ -1,0 +1,277 @@
+DEMO VERSION NOTE
+This is the demo twin for Jason'sWebPages. The owner page mimics the password flow but does not actually require the password in the demo. Demo edits save in the current browser only.
+
+ATLAS PEAK PERFORMANCE — START HERE
+===================================
+
+WHAT THIS TEMPLATE IS
+---------------------
+Atlas Peak Performance is a men’s strength / endurance / transformation coaching website template.
+
+It is built for niches like:
+- men’s transformation coaching
+- strength coaching
+- remote fitness coaching
+- hybrid performance coaching
+- accountability coaching
+- conditioning / endurance coaching
+
+WHAT IS INCLUDED
+----------------
+Public pages:
+- index.html
+- portfolio.html
+- services.html
+- about.html
+- contact.html
+
+Owner page:
+- owner.html
+
+Main edit files:
+- assets/js/atlas-data.js
+- assets/js/app.js
+- assets/css/style.css
+- assets/images/
+
+Extra setup guides:
+- FILE-EDITING-GUIDE.txt
+- FORM-SETUP-GUIDE.txt
+
+THE 2 MAIN EDITING SYSTEMS
+--------------------------
+This template uses 2 different editing systems.
+
+1. OWNER PANEL
+   File: owner.html
+
+   Use this to change:
+   - site name
+   - initials / brand mark
+   - tagline
+   - hero text
+   - about text
+   - apply page text
+   - social media links for the header and footer
+   - major colors
+   - logo upload
+   - major banner / hero / section images
+   - owner password
+
+   Important:
+   The owner panel saves changes in the browser on that device.
+   It is good for preview editing.
+   It is NOT a real backend.
+
+2. CARD DATA FILE
+   File: assets/js/atlas-data.js
+
+   Use this to change the repeatable cards:
+   - homepage program cards
+   - results cards
+   - testimonials
+   - pricing cards
+   - FAQ items
+
+   This is the easiest permanent way to update those repeated sections.
+
+HOW TO OPEN THE TEMPLATE
+------------------------
+1. Unzip the folder.
+2. Open the template folder in VS Code.
+3. Use Live Server.
+4. Open index.html.
+
+FORM SETUP BEFORE PUBLISHING
+---------------------------
+The contact / application form starts in DEMO MODE.
+
+That means:
+- it looks right in preview
+- it does NOT send real submissions yet
+- before publishing live, you should connect it to a form service
+
+For the step-by-step setup, open:
+FORM-SETUP-GUIDE.txt
+
+That guide shows you:
+- what file to edit
+- what line to change
+- how to paste a real form endpoint
+- how to test the form before publishing
+
+OWNER PANEL LOGIN
+-----------------
+Page:
+owner.html
+
+Default passcode:
+preview
+
+HOW TO CHANGE THE MAIN BRAND TEXT
+---------------------------------
+1. Open owner.html
+2. Enter the passcode: preview
+3. Go to:
+   - General
+   - Copy
+   - Colors
+   - Images
+4. Paste any social media links you want to show in the header/footer
+5. Make your changes
+6. Click SAVE ALL CHANGES
+7. Refresh the site pages in the same browser
+
+HOW TO CHANGE THE LOGO
+----------------------
+Option A:
+Use the owner panel.
+
+1. Open owner.html
+2. Log in
+3. Go to Images
+4. Upload a Brand logo image
+5. Click SAVE ALL CHANGES
+
+If no logo image is uploaded, the site shows the round initials mark instead.
+
+HOW TO ADD SOCIAL MEDIA LINKS
+-----------------------------
+1. Open owner.html
+2. Enter the password: preview
+3. Go to General
+4. Paste the full links for any social accounts you want to show
+   - Instagram
+   - Facebook
+   - Pinterest
+   - TikTok
+   - YouTube
+5. Click SAVE ALL CHANGES
+
+Important:
+- leave a field blank and that social button stays hidden
+- filled links will show as small buttons in the header and footer
+
+HOW TO CHANGE THE PROGRAM / RESULT / PRICING CARDS
+--------------------------------------------------
+Open:
+assets/js/atlas-data.js
+
+That file is organized into sections like:
+- programs
+- resultStats
+- results
+- testimonials
+- serviceOffers
+- tiers
+- faqHome
+- faqPrograms
+
+Each card uses fields like:
+- title
+- description or text
+- bullets
+- image
+- badge
+- category
+- price
+- cta
+
+Example program card:
+{
+  badge: "Flagship",
+  title: "Strength Reset",
+  description: "For men rebuilding consistency...",
+  bullets: ["3 strength sessions per week", "Recovery checkpoints"],
+  image: "assets/images/atlas-program-strength.jpg"
+}
+
+To change it:
+- replace the text
+- replace the image file name
+- save the file
+
+HOW TO CHANGE THE CARD IMAGES
+-----------------------------
+1. Put your new image into:
+   assets/images/
+
+2. Open:
+   assets/js/atlas-data.js
+
+3. Change the image line to the new file name
+
+Example:
+image: "assets/images/my-new-image.jpg"
+
+FASTEST METHOD:
+Replace the existing atlas image files in assets/images using the SAME file names.
+That way you do not need to change the code.
+
+IMPORTANT IMAGE FILES
+---------------------
+Main shell images:
+- atlas-hero-main.jpg
+- atlas-hero-alt.jpg
+- atlas-banner-results.jpg
+- atlas-banner-programs.jpg
+- atlas-banner-about.jpg
+- atlas-banner-apply.jpg
+- atlas-banner-owner.jpg
+- atlas-break-endurance.jpg
+- atlas-break-recovery.jpg
+- atlas-coach-story.jpg
+- atlas-about-panel.jpg
+- atlas-contact-side.jpg
+
+Card images:
+- atlas-program-strength.jpg
+- atlas-program-endurance.jpg
+- atlas-program-hybrid.jpg
+- atlas-result-strength.jpg
+- atlas-result-endurance.jpg
+- atlas-result-recomp.jpg
+- atlas-result-reset.jpg
+- atlas-result-mentality.jpg
+- atlas-result-peak.jpg
+- atlas-service-remote.jpg
+- atlas-service-hybrid.jpg
+- atlas-service-executive.jpg
+
+WHAT THE OWNER PANEL DOES NOT DO
+--------------------------------
+The owner panel does NOT fully manage all cards.
+
+Those repeated card sections are handled in:
+assets/js/atlas-data.js
+
+That is intentional because it keeps the structure cleaner and easier to maintain than hardcoding cards into multiple HTML pages.
+
+PREVIEW PASSCODE
+----------------
+This template includes a light owner password gate for the owner panel.
+
+It is NOT real server security.
+
+The owner panel includes an eye toggle to show / hide the passcode.
+
+EXPORT / IMPORT
+---------------
+Inside owner.html you can:
+- export settings JSON
+- import settings JSON
+- reset settings
+
+This is useful when:
+- moving the preview to another device
+- saving a version before making big changes
+- testing multiple branding directions
+
+FINAL NOTE
+----------
+This template was rewritten to lean clearly into men’s performance coaching.
+The public pages are no longer mixed with unrelated agency / wedding / generic business leftovers.
+
+
+IMAGE PACK NOTE
+This version includes a matching Atlas fitness image pack using real raster JPG images across the site so the brand feels more consistent right out of the box.

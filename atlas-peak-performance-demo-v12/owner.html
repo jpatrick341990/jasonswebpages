@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111917">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Owner Panel | Atlas Peak Performance</title>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <img class="brand-logo-img" data-brand-logo alt="Brand logo">
+      <span class="brand-mark" data-brand-mark data-setting-text="brandMark">AP</span>
+      <div>
+        <span class="brand-name" data-setting-text="siteName">Atlas Peak Performance</span>
+        <span class="brand-sub" data-setting-text="siteTagline">Men’s strength, endurance, and body-composition coaching built to feel disciplined from the first scroll.</span>
+      </div>
+    </a>
+    <button class="mobile-toggle" aria-label="Toggle navigation">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Results</a>
+      <a href="services.html">Programs</a>
+      <a href="about.html">Coach</a>
+      <a href="contact.html" class="nav-cta">Apply</a>
+    </nav>
+    <div class="header-social social-links" data-social-location="header"></div>
+  </div>
+</header>
+<div class="owner-fab-wrap"><a class="owner-fab" href="owner.html">Owner</a></div>
+
+<section class="page-banner owner-banner" data-setting-image="pageBannerOwner">
+  <div class="overlay-dark"></div>
+  <div class="container page-banner-inner">
+    <span class="eyebrow">Owner panel</span>
+    <h1>Edit the major brand settings without touching the layout code.</h1>
+    <p>This owner panel handles the big brand fields, key image swaps, color controls, a logo upload, settings backup, and the owner password. Repeatable cards are managed through the main content file that comes with the template.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container owner-login-card" id="ownerLoginCard">
+    <div class="owner-login-box glass-panel">
+      <h2>Enter owner password</h2>
+      <p>The default password is <strong>preview</strong>. This is only a light preview gate for the owner panel, not real server security.</p>
+      <div class="owner-login-row">
+        <div class="passcode-field">
+          <input id="ownerPasscode" type="password" placeholder="Enter password">
+          <button class="passcode-toggle" type="button" data-password-toggle="ownerPasscode">🙈</button>
+        </div>
+        <button class="btn btn-dark" id="ownerLoginBtn" type="button">Unlock panel</button>
+      </div>
+      <p class="form-message" id="ownerLoginMessage"></p>
+    </div>
+  </div>
+
+  <div class="container owner-panel hidden" id="ownerPanel">
+    <div class="owner-panel-sidebar">
+      <button class="owner-tab active" data-tab="general">General</button>
+      <button class="owner-tab" data-tab="copy">Copy</button>
+      <button class="owner-tab" data-tab="colors">Colors</button>
+      <button class="owner-tab" data-tab="images">Images</button>
+      <button class="owner-tab" data-tab="backup">Security / backup</button>
+    </div>
+
+    <div class="owner-panel-main">
+      <section class="owner-tab-panel active" data-panel="general">
+        <h2>General brand settings</h2>
+        <div class="owner-form-grid">
+          <label>Site name<input data-owner-field="siteName" type="text"></label>
+          <label>Brand initials<input data-owner-field="brandMark" type="text" maxlength="3"></label>
+          <label>Site tagline<input data-owner-field="siteTagline" type="text"></label>
+          <label>Footer tagline<input data-owner-field="footerTagline" type="text"></label>
+          <label>Contact email<input data-owner-field="contactEmail" type="text"></label>
+          <label>Location / coaching availability<input data-owner-field="contactLocation" type="text"></label>
+          <label>Reply window<input data-owner-field="contactTurnaround" type="text"></label>
+          <label>Instagram URL<input data-owner-field="instagramUrl" type="text" placeholder="https://instagram.com/yourhandle"></label>
+          <label>Facebook URL<input data-owner-field="facebookUrl" type="text" placeholder="https://facebook.com/yourpage"></label>
+          <label>Pinterest URL<input data-owner-field="pinterestUrl" type="text" placeholder="https://pinterest.com/yourhandle"></label>
+          <label>TikTok URL<input data-owner-field="tiktokUrl" type="text" placeholder="https://tiktok.com/@yourhandle"></label>
+          <label>YouTube URL<input data-owner-field="youtubeUrl" type="text" placeholder="https://youtube.com/@yourchannel"></label>
+          <label>Footer copy<textarea data-owner-field="footerCopy"></textarea></label>
+        </div>
+      </section>
+
+      <section class="owner-tab-panel" data-panel="copy">
+        <h2>Main copy fields</h2>
+        <div class="owner-form-grid">
+          <label>Hero eyebrow<input data-owner-field="heroEyebrow" type="text"></label>
+          <label>Hero headline<textarea data-owner-field="heroHeadline"></textarea></label>
+          <label>Hero paragraph<textarea data-owner-field="heroText"></textarea></label>
+          <label>Primary button text<input data-owner-field="heroButtonPrimary" type="text"></label>
+          <label>Secondary button text<input data-owner-field="heroButtonSecondary" type="text"></label>
+          <label>Homepage intro<textarea data-owner-field="introCopy"></textarea></label>
+          <label>About teaser headline<textarea data-owner-field="aboutTeaserHeadline"></textarea></label>
+          <label>About teaser text<textarea data-owner-field="aboutTeaserText"></textarea></label>
+          <label>Break headline one<input data-owner-field="breakHeadlineOne" type="text"></label>
+          <label>Break text one<textarea data-owner-field="breakTextOne"></textarea></label>
+          <label>Break headline two<input data-owner-field="breakHeadlineTwo" type="text"></label>
+          <label>Break text two<textarea data-owner-field="breakTextTwo"></textarea></label>
+          <label>Programs headline<textarea data-owner-field="servicesHeadline"></textarea></label>
+          <label>Programs intro<textarea data-owner-field="servicesText"></textarea></label>
+          <label>About page headline<textarea data-owner-field="aboutHeadline"></textarea></label>
+          <label>About page intro<textarea data-owner-field="aboutIntro"></textarea></label>
+          <label>About story headline<textarea data-owner-field="aboutStoryHeadline"></textarea></label>
+          <label>About story text one<textarea data-owner-field="aboutStoryTextOne"></textarea></label>
+          <label>About story text two<textarea data-owner-field="aboutStoryTextTwo"></textarea></label>
+          <label>Apply page headline<textarea data-owner-field="contactHeadline"></textarea></label>
+          <label>Apply page intro<textarea data-owner-field="contactIntro"></textarea></label>
+          <label>Apply page info text<textarea data-owner-field="contactCardText"></textarea></label>
+        </div>
+      </section>
+
+      <section class="owner-tab-panel" data-panel="colors">
+        <h2>Color controls</h2>
+        <div class="owner-form-grid">
+          <label>Accent<input data-owner-color="accent" type="color"></label>
+          <label>Accent deep<input data-owner-color="accentDeep" type="color"></label>
+          <label>Background<input data-owner-color="bg" type="color"></label>
+          <label>Soft background<input data-owner-color="bgSoft" type="color"></label>
+          <label>Text<input data-owner-color="text" type="color"></label>
+          <label>Dark section<input data-owner-color="dark" type="color"></label>
+        </div>
+      </section>
+
+      <section class="owner-tab-panel" data-panel="images">
+        <h2>Logo and key image uploads</h2>
+        <p class="owner-help">These uploads are stored in this browser for preview use. For permanent packaged editing, buyers can also replace the files in assets/images and update assets/js/atlas-data.js where needed.</p>
+        <div class="owner-form-grid">
+          <label>Brand logo image<input data-owner-image="brandLogo" type="file" accept="image/*"><img class="owner-preview-image" data-owner-preview="brandLogo" alt="Brand logo preview"></label>
+          <label>Hero main image<input data-owner-image="heroPrimary" type="file" accept="image/*"><img class="owner-preview-image" data-owner-preview="heroPrimary" alt="Hero image preview"></label>
+          <label>Hero alternate image<input data-owner-image="heroSecondary" type="file" accept="image/*"><img class="owner-preview-image" data-owner-preview="heroSecondary" alt="Hero alt image preview"></label>
+          <label>Gym feature image<input data-owner-image="sectionPatio" type="file" accept="image/*"><img class="owner-preview-image" data-owner-preview="sectionPatio" alt="Break image preview"></label>
+          <label>Training detail image<input data-owner-image="sectionPanoramaOne" type="file" accept="image/*"><img class="owner-preview-image" data-owner-preview="sectionPanoramaOne" alt="Secondary break preview"></label>
+          <label>Programs banner image<input data-owner-image="pageBannerPrograms" type="file" accept="image/*"><img class="owner-preview-image" data-owner-preview="pageBannerPrograms" alt="Programs banner preview"></label>
+          <label>Results banner image<input data-owner-image="pageBannerResults" type="file" accept="image/*"><img class="owner-preview-image" data-owner-preview="pageBannerResults" alt="Results banner preview"></label>
+          <label>Coach banner image<input data-owner-image="pageBannerAbout" type="file" accept="image/*"><img class="owner-preview-image" data-owner-preview="pageBannerAbout" alt="About banner preview"></label>
+          <label>Apply banner image<input data-owner-image="pageBannerApply" type="file" accept="image/*"><img class="owner-preview-image" data-owner-preview="pageBannerApply" alt="Apply banner preview"></label>
+          <label>Coach feature image<input data-owner-image="aboutFeature" type="file" accept="image/*"><img class="owner-preview-image" data-owner-preview="aboutFeature" alt="Coach image preview"></label>
+          <label>Secondary coach image<input data-owner-image="aboutSecondary" type="file" accept="image/*"><img class="owner-preview-image" data-owner-preview="aboutSecondary" alt="Coach secondary preview"></label>
+          <label>Contact side image<input data-owner-image="contactSide" type="file" accept="image/*"><img class="owner-preview-image" data-owner-preview="contactSide" alt="Contact image preview"></label>
+        </div>
+      </section>
+
+      <section class="owner-tab-panel" data-panel="backup">
+        <h2>Security / backup</h2>
+        <div class="readme-note">
+          <strong>Important:</strong> this owner panel handles the brand shell, major visuals, settings backup, and the owner password. The repeatable program, results, testimonial, FAQ, and pricing cards are managed through the template's main content file.
+        </div>
+        <div class="backup-actions">
+          <button class="btn btn-dark" type="button" id="exportSettings">Download settings file</button>
+          <label class="btn btn-soft alt-upload">Upload settings file<input id="importSettings" type="file" accept="application/json" hidden></label>
+          <button class="btn btn-soft" type="button" id="resetSettings">Reset settings</button>
+        </div>
+        <div class="owner-form-grid compact-grid">
+</div>
+        <label class="passcode-label" for="newPasscode">Password</label>
+        <div class="passcode-field backup-passcode-field">
+          <input id="newPasscode" type="password" placeholder="Change password">
+          <button class="passcode-toggle" type="button" data-password-toggle="newPasscode">🙈</button>
+        </div>
+        <button class="btn btn-dark" type="button" id="savePasscode">Save password</button>
+        <p class="form-message" id="ownerActionMessage"></p>
+      </section>
+
+      <div class="owner-actions-row">
+        <button class="btn btn-dark" type="button" id="saveOwnerSettings">Save all changes</button>
+        <a class="btn btn-soft" href="index.html">Back to site</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer section-dark">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand brand-footer">
+        <img class="brand-logo-img" data-brand-logo alt="Brand logo">
+        <span class="brand-mark" data-brand-mark data-setting-text="brandMark">AP</span>
+        <div>
+          <span class="brand-name" data-setting-text="siteName">Atlas Peak Performance</span>
+          <span class="brand-sub" data-setting-text="footerTagline">Performance coaching with a cleaner structure, stronger proof, and an easier editing workflow.</span>
+        </div>
+      </div>
+      <p class="footer-copy" data-setting-text="footerCopy">Atlas Peak Performance is a front-end coaching website template built for men’s strength, conditioning, and transformation brands. It includes a browser-based owner panel for selected text, image, color, and passcode updates.</p>
+      <div class="footer-social social-links" data-social-location="footer"></div>
+    </div>
+    <div class="footer-links">
+      <a href="portfolio.html">Results</a>
+      <a href="services.html">Programs</a>
+      <a href="about.html">Coach</a>
+      <a href="owner.html">Owner</a>
+    </div>
+
+    <a href="https://jasonswebpages.com" class="footer-credit" target="_blank" rel="noopener noreferrer" aria-label="Back to JasonsWebPages.com">
+      <img src="assets/images/jasonswebpages-footer-logo.png" alt="Jason'sWebPages" class="footer-credit-logo">
+    </a>
+  </div>
+</footer>
+
+<script src="assets/js/atlas-data.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/owner.js"></script>
+</body>
+</html>

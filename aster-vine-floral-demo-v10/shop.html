@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#b76b5c">
+  <meta name="description" content="Luxury floral studio website for bouquet orders, weddings, events, subscriptions, workshops, and delivery-focused flower brands.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Shop | Aster &amp; Vine Studio</title>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark"><img class="brand-logo-image" data-setting-logo alt="" hidden><span class="brand-initials" data-setting-text="brandMark">AV</span></span>
+      <div>
+        <span class="brand-name" data-setting-text="siteName">Aster &amp; Vine Studio</span>
+        <span class="brand-sub" data-setting-text="siteTagline">Refined floral design for daily bouquets, weddings, events, and subscription deliveries.</span>
+      </div>
+    </a>
+    <button class="mobile-toggle" aria-label="Toggle navigation">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="services.html">Services</a>
+      <a href="booking.html">Book</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </nav>
+    <div class="header-social social-links" data-social-location="header"></div>
+  </div>
+</header>
+<div class="owner-fab-wrap"><a class="owner-fab" href="owner.html" title="Open owner panel">Owner</a></div>
+
+<section class="page-banner narrow" data-setting-image="heroSecondary">
+  <div class="container">
+    <span class="eyebrow light">Shop flowers</span>
+    <h1>Order-ready bouquets and add-ons without losing the refined studio feel.</h1>
+    <p>Use this space for bouquet drops, gifting options, sympathy flowers, subscriptions, and event-ready add-ons.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container shop-grid">
+    <div>
+      <div class="section-heading">
+        <span class="eyebrow">Collection filters</span>
+        <h2>Give customers a faster path to the type of flowers they came for.</h2>
+        <p>Seasonal filters help shoppers move quickly from everyday gifting to sympathy flowers, memberships, or event add-ons.</p>
+      </div>
+      <div class="filter-row" id="shopFilterButtons"></div>
+      <div class="product-grid filter-grid" id="shopProductGrid"></div>
+    </div>
+
+    <aside class="info-stack">
+      <article class="form-card">
+        <span class="eyebrow">Order request builder</span>
+        <h2>Show how a florist can take polished order requests without a heavy backend.</h2>
+        <form class="order-builder">
+          <label><span>Bouquet style</span><select><option>Garden wrap</option><option>Vase arrangement</option><option>Sympathy design</option><option>Subscription flowers</option><option>Event add-on</option></select></label>
+          <div class="field-grid">
+            <label><span>Color palette</span><select><option>Soft tonal neutrals</option><option>Warm seasonal</option><option>Bright mixed color</option><option>Designer’s choice</option></select></label>
+            <label><span>Size</span><select><option>Small</option><option>Medium</option><option>Large</option><option>Statement</option></select></label>
+          </div>
+          <div class="field-grid">
+            <label><span>Delivery or pickup</span><select><option>Local delivery</option><option>Studio pickup</option></select></label>
+            <label><span>Preferred date</span><input type="date"></label>
+          </div>
+          <label><span>Add-ons</span><select><option>None</option><option>Vase</option><option>Handwritten card</option><option>Candle</option><option>Chocolate</option></select></label>
+          <label><span>Gift note</span><textarea placeholder="Include delivery notes or a message for the recipient"></textarea></label>
+          <button class="btn btn-primary" type="submit">Submit demo order</button>
+          <p class="form-message"></p>
+        </form>
+      </article>
+      <article class="contact-card">
+        <span class="eyebrow">Ordering notes</span>
+        <h3>Use this sidebar for the details customers check before they commit.</h3>
+        <ul class="list-clean">
+          <li>Delivery zones and order cutoffs</li>
+          <li>Pickup timing and gifting notes</li>
+          <li>Seasonality and substitution expectations</li>
+          <li>How add-ons like candles, cards, or vases work</li>
+          <li>What qualifies as a custom request</li>
+        </ul>
+      </article>
+    </aside>
+  </div>
+</section>
+
+<section class="section-soft section">
+  <div class="container section-heading split">
+    <div>
+      <span class="eyebrow">Product selling details</span>
+      <h2>Use supporting blocks to answer the questions that slow down flower orders.</h2>
+    </div>
+    <p>These help the site feel more complete and more trustworthy before the customer commits.</p>
+  </div>
+  <div class="three-grid">
+    <article class="card">
+      <div class="card-icon">↺</div>
+      <h3>Delivery and pickup</h3>
+      <p>Show zip codes, neighborhoods, order cutoffs, and how pickup windows work.</p>
+    </article>
+    <article class="card">
+      <div class="card-icon">✧</div>
+      <h3>Seasonality and substitutions</h3>
+      <p>Explain that flower recipes shift naturally with the season while keeping the same overall mood and value.</p>
+    </article>
+    <article class="card">
+      <div class="card-icon">✉</div>
+      <h3>Gifting add-ons</h3>
+      <p>Use a small block like this for cards, candles, chocolates, or vases that increase order value.</p>
+    </article>
+  </div>
+</section>
+<footer class="site-footer section-dark">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand">
+        <span class="brand-mark"><img class="brand-logo-image" data-setting-logo alt="" hidden><span class="brand-initials" data-setting-text="brandMark">AV</span></span>
+        <div>
+          <span class="brand-name" data-setting-text="siteName">Aster &amp; Vine Studio</span>
+          <span class="brand-sub" data-setting-text="footerTagline">Seasonal flowers, event florals, and polished service pages that feel established from day one.</span>
+        </div>
+      </div>
+      <p class="footer-copy" data-setting-text="footerCopy">Designed for studios that sell wrapped bouquets, custom event florals, workshop seats, and recurring flower memberships without making the site feel crowded.</p>
+      <p class="footer-note">Connect the inquiry forms to your preferred service to collect orders, consultation requests, and workshop signups.</p>
+      <div class="footer-social social-links" data-social-location="footer"></div>
+    </div>
+    <div class="footer-links">
+      <a href="shop.html">Shop</a>
+      <a href="booking.html">Book</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <div class="footer-credit-wrap">
+    <a class="footer-credit" href="https://jasonswebpages.com" target="_blank" rel="noopener noreferrer" aria-label="Back to JasonsWebPages.com">
+      <img src="assets/images/jasonswebpages-footer-logo.png" alt="Jason'sWeb" class="footer-credit-logo">
+    </a>
+  </div>
+</footer>
+<script src="assets/js/floral-data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
