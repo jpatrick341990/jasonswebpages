@@ -1,0 +1,63 @@
+START HERE
+==========
+
+Thank you for downloading this Artist Website Demo Preview.
+
+THIS VERSION IS THE LIVE DEMO TWIN:
+
+- It shows the owner dashboard flow
+- It lets visitors test demo uploads
+- It updates the homepage featured art and gallery page
+- It keeps the layout and features visible without needing a real backend
+
+IMPORTANT:
+
+This preview version does NOT use Supabase.
+It saves demo artwork in the current browser only.
+
+That means:
+- uploads work for the preview
+- edits work for the preview
+- deletes work for the preview
+- reset works for the preview
+- nothing is stored online
+
+THE MOST IMPORTANT FILES ARE:
+
+- READ-ME-FIRST.txt
+- PREVIEW-READ-ME.txt
+- instructions.txt
+- preview-config.js
+- admin.html
+
+QUICK PATH:
+
+1. Unzip the file.
+2. Open the folder named:
+   artist-page-template
+3. Open that folder in Visual Studio Code.
+4. Run the site with Live Server if you want.
+5. Open admin.html or click the small Owner link in the footer.
+6. The demo owner tools open without a password in this version.
+
+WHAT IS IN THIS PREVIEW VERSION:
+
+- stronger homepage layout
+- cleaner gallery browsing with category filters and search
+- improved About and Contact pages
+- better mobile-friendly structure
+- demo-ready inquiry forms that do not reload the page
+- owner dashboard can upload, edit, delete, and reset demo artwork
+- demo owner page opens without a password so buyers can test faster
+
+JASONSWEB FOOTER LOGO:
+
+The Jason'sWeb footer image is still included and still links to:
+https://jasonswebpages.com
+
+
+UPDATED OWNER CONTROLS
+- This version now includes the richer owner controls: General, Copy, Colors, Images, Gallery, and Security / backup.
+- Social media links can be pasted in the owner page and will show in the header and footer automatically when filled in.
+- The Gallery tab lets buyers upload, edit, delete, and reset gallery pieces without touching the layout code.
+- The Security / backup tab lets buyers download and upload the owner settings file for this demo browser preview.

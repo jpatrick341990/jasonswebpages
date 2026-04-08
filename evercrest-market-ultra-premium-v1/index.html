@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evercrest Market | Curated Goods & Daily Living</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div class="announcement-bar">
+    <p>Free Shipping On Orders Over $50 • New Spring Collection Just Dropped • Limited-Time Deals Live Now</p>
+  </div>
+
+  <div class="utility-bar">
+    <div class="container utility-wrap">
+      <p>Free Shipping | Secure Checkout | 30-Day Returns</p>
+      <div class="utility-links">
+        <a href="tracking.html">Track Order</a>
+        <a href="account.html">My Account</a>
+        <a href="contact.html">Support</a>
+        <a href="site-settings.html">Store Settings</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header modern-header-fixed">
+    <div class="container header-wrap ultra-header header-top-row">
+      <a href="index.html" class="logo-wrap">
+        <img src="images/logo.png" alt="Evercrest Market Logo" class="logo" />
+        <div>
+          <h1 class="brand-name">Evercrest Market</h1>
+          <p class="brand-tag">Curated Goods & Daily Living</p>
+        </div>
+      </a>
+
+      <form class="header-search" id="headerSearchForm">
+        <div class="search-input-wrap ghost-search-wrap">
+          <input id="searchInput" type="text" autocomplete="off" placeholder="" />
+          <span class="ghost-placeholder" id="ghostPlaceholder"></span>
+          <div class="search-suggestions" id="searchSuggestions"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </div>
+
+    <div class="container nav-row header-bottom-row">
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html" class="">Shop</a>
+        <a href="collections.html" class="">Collections</a>
+        <a href="deals.html" class="">Deals</a>
+        <a href="checkout.html" class="">Checkout</a>
+        <a href="seller-dashboard.html" class="">Seller</a>
+        <a href="site-settings.html" class="">Store Settings</a>
+        <a href="blog.html" class="">Blog</a>
+        <a href="about.html" class="">About</a>
+        <a href="faq.html" class="">FAQ</a>
+        <a href="contact.html" class="">Contact</a>
+      </nav>
+
+      <div class="header-actions header-actions-bottom">
+        <a href="wishlist.html" class="header-wishlist-link">❤ Wishlist</a>
+        <a href="account.html">👤 Account</a>
+        <a href="cart.html" class="cart-pill">🛒 Cart</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero hero-ultra">
+    <div class="container hero-marketplace-grid">
+      <div class="hero-text">
+        <p class="eyebrow">Elevated Living • New Edit</p>
+        <h2>Curate A Better Everyday</h2>
+        <p>
+          Shop refined finds for home, style, travel, and tech. This version leans calmer, richer, and more boutique while staying easy to manage after launch.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="start-here.html" class="btn btn-secondary">Start Here</a>
+          <a href="shop.html" class="btn btn-primary">Shop Collection</a>
+          <a href="collections.html" class="btn btn-secondary">Browse Categories</a>
+          <a href="deals.html" class="btn btn-secondary">View Deals</a>
+        </div>
+
+        <div class="hero-stats hero-stats-four">
+          <div class="stat-card"><strong>4.9★</strong><span>Customer Rating</span></div>
+          <div class="stat-card"><strong>Fast</strong><span>Order Processing</span></div>
+          <div class="stat-card"><strong>30-Day</strong><span>Easy Returns</span></div>
+          <div class="stat-card"><strong>Curated</strong><span>Premium Picks</span></div>
+        </div>
+      </div>
+
+      <div class="hero-side-layout">
+        <div class="hero-image-card large-hero-card">
+          <img src="images/hero-main.jpg" alt="Premium lifestyle collection" />
+        </div>
+
+        <div class="mini-promo-card">
+          <img src="images/hero-side.jpg" alt="Seasonal featured product" />
+          <div class="mini-promo-content">
+            <p class="section-kicker">House Edit</p>
+            <h3>Seasonal Picks Worth Saving For</h3>
+            <a href="deals.html" class="btn small-btn">Shop Deals</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section trust-strip-section" data-home-section="trust">
+    <div class="container trust-strip">
+      <div class="trust-item"><strong>Fast Shipping</strong><span>Quick delivery on qualifying orders</span></div>
+      <div class="trust-item"><strong>Secure Checkout</strong><span>Protected payments and smooth ordering</span></div>
+      <div class="trust-item"><strong>Easy Returns</strong><span>Simple 30-day return process</span></div>
+      <div class="trust-item"><strong>Friendly Support</strong><span>Help when you need it most</span></div>
+    </div>
+  </section>
+
+  <section class="section" data-home-section="categories">
+    <div class="container">
+      <div class="section-heading centered">
+        <p class="section-kicker">Featured Categories</p>
+        <h3>Browse the categories that shape the store</h3>
+      </div>
+
+      <div class="collection-grid marketplace-categories">
+        <a href="collections.html" class="collection-card tall-card">
+          <img src="images/collection-1.jpg" alt="Home and living collection" />
+          <div class="overlay-card">
+            <h4>Home & Living</h4>
+            <p>Décor, lighting, kitchen accents, and premium everyday upgrades</p>
+          </div>
+        </a>
+
+        <a href="collections.html" class="collection-card">
+          <img src="images/collection-2.jpg" alt="Style collection" />
+          <div class="overlay-card">
+            <h4>Style & Apparel</h4>
+            <p>Modern fashion pieces, clean layers, and wearable essentials</p>
+          </div>
+        </a>
+
+        <a href="collections.html" class="collection-card">
+          <img src="images/collection-3.jpg" alt="Tech collection" />
+          <div class="overlay-card">
+            <h4>Tech Essentials</h4>
+            <p>Smart gear, desk accessories, and elevated daily carry items</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark-panel" data-home-section="bestsellers">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-kicker">Best Sellers</p>
+        <h3>Best-performing products customers keep coming back for</h3>
+      </div>
+
+      <div class="product-grid premium-grid" id="homeFeaturedGrid">
+
+        <div class="product-card" data-image="images/product-1.jpg" data-title="Minimal Lamp" data-price-label="$49.99" data-description="Modern desk lamp with warm ambient lighting and a clean, elevated look for any room.">
+          <div class="product-badge">Best Seller</div>
+          <div class="product-image-swap">
+            <img src="images/product-1.jpg" alt="Minimal Lamp" class="primary-image" />
+            <img src="images/product-9.jpg" alt="Minimal Lamp alternate view" class="secondary-image" />
+          </div>
+          <button class="btn btn-primary small-btn quick-view-btn" type="button">Quick View</button>
+          <div class="product-info">
+            <h4>Minimal Lamp</h4>
+            <p>Warm modern lighting for desks, shelves, and cozy interiors.</p>
+            <div class="rating-line">★★★★★ <span>4.9</span></div>
+            <div class="product-meta">
+              <span>$49.99</span>
+              <div class="button-group">
+                <a href="product.html?id=minimal-lamp" class="btn small-btn">Details</a>
+                <button class="btn btn-primary small-btn" type="button">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-image="images/product-2.jpg" data-title="Premium Hoodie" data-price-label="$64.00" data-description="Soft heavyweight hoodie with a modern fit and clean boutique styling.">
+          <div class="product-badge alt-badge">New</div>
+          <div class="product-image-swap">
+            <img src="images/product-2.jpg" alt="Premium Hoodie" class="primary-image" />
+            <img src="images/product-10.jpg" alt="Premium Hoodie alternate view" class="secondary-image" />
+          </div>
+          <button class="btn btn-primary small-btn quick-view-btn" type="button">Quick View</button>
+          <div class="product-info">
+            <h4>Premium Hoodie</h4>
+            <p>Heavyweight comfort with a clean modern streetwear feel.</p>
+            <div class="rating-line">★★★★★ <span>4.8</span></div>
+            <div class="product-meta">
+              <span>$64.00</span>
+              <div class="button-group">
+                <a href="product.html?id=premium-hoodie" class="btn small-btn">Details</a>
+                <button class="btn btn-primary small-btn" type="button">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-image="images/product-3.jpg" data-title="Wireless Earbuds" data-price-label="$89.99" data-description="Premium wireless earbuds with rich sound, deep bass, and a sleek everyday design.">
+          <div class="product-badge">Top Rated</div>
+          <div class="product-image-swap">
+            <img src="images/product-3.jpg" alt="Wireless Earbuds" class="primary-image" />
+            <img src="images/product-11.jpg" alt="Wireless Earbuds alternate view" class="secondary-image" />
+          </div>
+          <button class="btn btn-primary small-btn quick-view-btn" type="button">Quick View</button>
+          <div class="product-info">
+            <h4>Wireless Earbuds</h4>
+            <p>Big sound, compact design, and all-day listening comfort.</p>
+            <div class="rating-line">★★★★★ <span>4.9</span></div>
+            <div class="product-meta">
+              <span>$89.99</span>
+              <div class="button-group">
+                <a href="product.html?id=wireless-earbuds" class="btn small-btn">Details</a>
+                <button class="btn btn-primary small-btn" type="button">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-image="images/product-4.jpg" data-title="Travel Bag" data-price-label="$129.99" data-description="Durable canvas travel bag with premium details and an easy elevated look.">
+          <div class="product-badge sale-badge">Sale</div>
+          <div class="product-image-swap">
+            <img src="images/product-4.jpg" alt="Travel Bag" class="primary-image" />
+            <img src="images/product-12.jpg" alt="Travel Bag alternate view" class="secondary-image" />
+          </div>
+          <button class="btn btn-primary small-btn quick-view-btn" type="button">Quick View</button>
+          <div class="product-info">
+            <h4>Travel Bag</h4>
+            <p>Built for quick trips, daily carry, and polished travel style.</p>
+            <div class="rating-line">★★★★★ <span>4.7</span></div>
+            <div class="product-meta">
+              <span>$129.99</span>
+              <div class="button-group">
+                <a href="product.html?id=travel-bag" class="btn small-btn">Details</a>
+                <button class="btn btn-primary small-btn" type="button">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-image="images/product-5.jpg" data-title="Ceramic Planter" data-price-label="$39.00" data-description="Minimal ceramic planter that adds a clean boutique look to modern interiors.">
+          <div class="product-image-swap">
+            <img src="images/product-5.jpg" alt="Ceramic Planter" class="primary-image" />
+            <img src="images/product-13.jpg" alt="Ceramic Planter alternate view" class="secondary-image" />
+          </div>
+          <button class="btn btn-primary small-btn quick-view-btn" type="button">Quick View</button>
+          <div class="product-info">
+            <h4>Ceramic Planter</h4>
+            <p>Simple, clean, and perfect for modern home styling.</p>
+            <div class="rating-line">★★★★★ <span>4.8</span></div>
+            <div class="product-meta">
+              <span>$39.00</span>
+              <div class="button-group">
+                <a href="product.html" class="btn small-btn">Details</a>
+                <button class="btn btn-primary small-btn" type="button">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-image="images/product-6.jpg" data-title="Leather Wallet" data-price-label="$59.00" data-description="Slim premium wallet made from full grain leather with a refined minimalist finish.">
+          <div class="product-image-swap">
+            <img src="images/product-6.jpg" alt="Leather Wallet" class="primary-image" />
+            <img src="images/product-14.jpg" alt="Leather Wallet alternate view" class="secondary-image" />
+          </div>
+          <button class="btn btn-primary small-btn quick-view-btn" type="button">Quick View</button>
+          <div class="product-info">
+            <h4>Leather Wallet</h4>
+            <p>Classic, premium, and designed for everyday carry.</p>
+            <div class="rating-line">★★★★★ <span>4.7</span></div>
+            <div class="product-meta">
+              <span>$59.00</span>
+              <div class="button-group">
+                <a href="product.html" class="btn small-btn">Details</a>
+                <button class="btn btn-primary small-btn" type="button">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-image="images/product-7.jpg" data-title="Desk Organizer" data-price-label="$44.00" data-description="Clean wooden desk organizer that brings order and style to any workspace.">
+          <div class="product-image-swap">
+            <img src="images/product-7.jpg" alt="Desk Organizer" class="primary-image" />
+            <img src="images/product-15.jpg" alt="Desk Organizer alternate view" class="secondary-image" />
+          </div>
+          <button class="btn btn-primary small-btn quick-view-btn" type="button">Quick View</button>
+          <div class="product-info">
+            <h4>Desk Organizer</h4>
+            <p>Clean up your workspace without giving up the good look.</p>
+            <div class="rating-line">★★★★★ <span>4.8</span></div>
+            <div class="product-meta">
+              <span>$44.00</span>
+              <div class="button-group">
+                <a href="product.html" class="btn small-btn">Details</a>
+                <button class="btn btn-primary small-btn" type="button">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-image="images/product-8.jpg" data-title="Minimal Watch" data-price-label="$149.00" data-description="Luxury-inspired watch with clean detailing and timeless everyday style.">
+          <div class="product-image-swap">
+            <img src="images/product-8.jpg" alt="Minimal Watch" class="primary-image" />
+            <img src="images/product-16.jpg" alt="Minimal Watch alternate view" class="secondary-image" />
+          </div>
+          <button class="btn btn-primary small-btn quick-view-btn" type="button">Quick View</button>
+          <div class="product-info">
+            <h4>Minimal Watch</h4>
+            <p>Refined design with a sharp modern finish.</p>
+            <div class="rating-line">★★★★★ <span>4.9</span></div>
+            <div class="product-meta">
+              <span>$149.00</span>
+              <div class="button-group">
+                <a href="product.html" class="btn small-btn">Details</a>
+                <button class="btn btn-primary small-btn" type="button">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-home-section="brands">
+    <div class="container brands-panel">
+      <div class="section-heading centered">
+        <p class="section-kicker">Featured Brands</p>
+        <h3>Brands and collections that anchor the storefront</h3>
+      </div>
+
+      <div class="brand-slider-wrap">
+        <div class="brand-slider-track">
+
+          <div class="brand-card">
+            <img src="images/brand-1.jpg" alt="North Studio" />
+            <span>North Studio</span>
+          </div>
+
+          <div class="brand-card">
+            <img src="images/brand-2.jpg" alt="Luma Goods" />
+            <span>Luma Goods</span>
+          </div>
+
+          <div class="brand-card">
+            <img src="images/brand-3.jpg" alt="Core Supply" />
+            <span>Core Supply</span>
+          </div>
+
+          <div class="brand-card">
+            <img src="images/brand-4.jpg" alt="Urban Line" />
+            <span>Urban Line</span>
+          </div>
+
+          <div class="brand-card">
+            <img src="images/brand-1.jpg" alt="North Studio duplicate" />
+            <span>North Studio</span>
+          </div>
+
+          <div class="brand-card">
+            <img src="images/brand-2.jpg" alt="Luma Goods duplicate" />
+            <span>Luma Goods</span>
+          </div>
+
+          <div class="brand-card">
+            <img src="images/brand-3.jpg" alt="Core Supply duplicate" />
+            <span>Core Supply</span>
+          </div>
+
+          <div class="brand-card">
+            <img src="images/brand-4.jpg" alt="Urban Line duplicate" />
+            <span>Urban Line</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark-panel">
+    <div class="container split-banner ultra-split-banner">
+      <div class="split-banner-text">
+        <p class="section-kicker">Why Shoppers Love It</p>
+        <h3>Clean design. Better products. A smoother shopping experience.</h3>
+        <ul class="icon-list">
+          <li>Curated modern products across home, style, and tech</li>
+          <li>Polished shopping layout that feels premium and trustworthy</li>
+          <li>Fast checkout flow with wishlist, account, and tracking pages</li>
+          <li>Fresh seasonal deals and limited-time product drops</li>
+          <li>Responsive layout built to look great across devices</li>
+          <li>Helpful support and simple return-friendly shopping</li>
+        </ul>
+      </div>
+      <div class="split-banner-image">
+        <img src="images/banner-sale.jpg" alt="Seasonal sale banner" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-home-section="sellercta">
+    <div class="container category-spotlight-grid">
+      <div class="spotlight-card wide-card">
+        <div>
+          <p class="section-kicker">Limited-Time Offer</p>
+          <h3>Editor Picks</h3>
+          <p>Save on handpicked favorites before they’re gone. Fresh markdowns, clean picks, and easy gifting ideas all in one place.</p>
+          <a href="deals.html" class="btn btn-primary">See The Edit</a>
+        </div>
+      </div>
+
+      <div class="spotlight-card">
+        <h4>Handmade Favorites</h4>
+        <p>Warm home pieces and thoughtful finds with boutique appeal.</p>
+      </div>
+
+      <div class="spotlight-card">
+        <h4>Top Tech Picks</h4>
+        <p>Modern gadgets and desk upgrades built for everyday use.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section testimonials-section" data-home-section="reviews">
+    <div class="container">
+      <div class="section-heading centered">
+        <p class="section-kicker">Customer Reviews</p>
+        <h3>What customers are saying</h3>
+      </div>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p>“Everything arrived fast and looked even better in person. The whole shop feels really high-end.”</p>
+          <strong>— Amanda R.</strong>
+        </div>
+        <div class="testimonial-card">
+          <p>“Super clean shopping experience. Easy to browse, easy to order, and the product quality was exactly what I hoped for.”</p>
+          <strong>— Marcus T.</strong>
+        </div>
+        <div class="testimonial-card">
+          <p>“I found gifts, home pieces, and accessories all in one place. Definitely one of those stores you come back to.”</p>
+          <strong>— Danielle K.</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark-panel" data-home-section="journal">
+    <div class="container">
+      <div class="section-heading centered">
+        <p class="section-kicker">From the Journal</p>
+        <h3>Shopping inspiration, styling notes, and store updates</h3>
+      </div>
+
+      <div class="featured-blog-layout">
+
+        <article class="featured-blog-card">
+          <div class="featured-blog-image-wrap">
+            <img src="images/blog-1.jpg" alt="How to style a modern home" />
+            <span class="featured-blog-badge">Guide</span>
+          </div>
+
+          <div class="featured-blog-content">
+            <p class="section-kicker">Home Styling</p>
+            <h3>How to Style a Modern Home With Fewer, Better Pieces</h3>
+            <p class="featured-blog-text">
+              Learn how to create a cleaner, more intentional look using simple layers,
+              better textures, and practical products that still feel elevated.
+            </p>
+
+            <div class="featured-blog-meta">
+              <span>Evercrest Market</span>
+              <span>•</span>
+              <span>March 2026</span>
+              <span>•</span>
+              <span>6 min read</span>
+            </div>
+
+            <div class="button-group mt-24">
+              <a href="blog.html" class="btn btn-primary">Read Article</a>
+              <a href="blog.html" class="btn btn-secondary">View Blog</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="blog-grid blog-grid-secondary">
+          <article class="blog-card elevated-blog-card">
+            <div class="blog-image-wrap">
+              <img src="images/blog-2.jpg" alt="Product photography tips" />
+              <span class="blog-category">Photography</span>
+            </div>
+            <div class="blog-content">
+              <h4>Product Photography Tips That Make Your Store Look Better</h4>
+              <p>Simple lighting and composition tricks that instantly make products feel more premium.</p>
+              <div class="blog-meta-line">
+                <span>4 min read</span>
+                <a href="blog.html" class="read-link">Read →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card elevated-blog-card">
+            <div class="blog-image-wrap">
+              <img src="images/blog-3.jpg" alt="Building customer trust online" />
+              <span class="blog-category">Brand Trust</span>
+            </div>
+            <div class="blog-content">
+              <h4>Building Customer Trust With Better Product Pages</h4>
+              <p>Reviews, policies, and sharper product info can raise confidence and increase conversions.</p>
+              <div class="blog-meta-line">
+                <span>5 min read</span>
+                <a href="blog.html" class="read-link">Read →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-home-section="featuredpicks">
+    <div class="container">
+      <div class="section-heading centered">
+        <p class="section-kicker">Featured Picks</p>
+        <h3>Fresh arrivals added to the latest collection</h3>
+      </div>
+
+      <div class="carousel-shell">
+        <button class="carousel-btn" id="featuredPrev" type="button">←</button>
+
+        <div class="featured-carousel-window">
+          <div class="featured-carousel-track" id="featuredTrack">
+          
+
+          </div>
+        </div>
+
+        <button class="carousel-btn" id="featuredNext" type="button">→</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter-section" data-home-section="newsletter">
+    <div class="container newsletter-wrap">
+      <div>
+        <p class="section-kicker">Join The List</p>
+        <h3>Get first access to fresh collections, limited edits, and special offers</h3>
+        <p>Subscribe for product launches, special offers, and seasonal inspiration delivered straight to your inbox.</p>
+      </div>
+
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid ultra-footer-grid">
+      <div>
+        <h4>Evercrest Market</h4>
+        <p>Premium lifestyle essentials for modern living, gifting, and everyday upgrades.</p>
+      </div>
+
+      <div>
+        <h4>Shop</h4>
+        <a href="shop.html">Shop All</a>
+        <a href="collections.html">Collections</a>
+        <a href="deals.html">Deals</a>
+        <a href="wishlist.html">Wishlist</a>
+      </div>
+
+      <div>
+        <h4>Customer</h4>
+        <a href="account.html">My Account</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="tracking.html">Track Order</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+
+      <div>
+        <h4>Info</h4>
+        <a href="about.html">About</a>
+        <a href="site-settings.html">Store Settings</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="policies.html">Policies</a>
+      </div>
+
+      <div>
+        <h4>Why Shop Here</h4>
+        <p>Refined design, trusted checkout, premium products, and a calmer shopping experience from top to bottom.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="quick-view-modal" id="quickViewModal">
+    <div class="quick-view-content">
+      <button class="quick-view-close" id="quickViewClose" type="button">&times;</button>
+
+      <div class="quick-view-grid">
+        <div class="quick-view-image">
+          <img src="images/product-1.jpg" alt="Quick View Product" id="quickViewImage" />
+        </div>
+
+        <div class="quick-view-details">
+          <p class="section-kicker">Quick View</p>
+          <h3 id="quickViewTitle">Product Name</h3>
+          <div class="rating-line">★★★★★ <span>4.8 average rating</span></div>
+          <div class="quick-view-price" id="quickViewPrice">$0.00</div>
+          <p id="quickViewText">Product description preview goes here.</p>
+
+          <div class="trust-note-box">
+            <p><strong>Shipping:</strong> Fast shipping on qualifying orders</p>
+            <p><strong>Returns:</strong> Easy 30-day return policy</p>
+            <p><strong>Checkout:</strong> Safe and secure ordering experience</p>
+          </div>
+
+          <div class="quick-view-actions">
+            <button class="btn btn-primary add-cart-btn" id="quickViewAdd" type="button" data-product-id="minimal-lamp">Add to Cart</button>
+            <a href="product.html?id=minimal-lamp" class="btn btn-secondary" id="quickViewProductLink">View Full Product</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/menu.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/brand.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/slider.js"></script>
+</body>
+</html>

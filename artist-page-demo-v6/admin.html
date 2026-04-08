@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owner Admin | Artist Studio</title>
+  <meta name="description" content="Hidden owner dashboard for the artist website demo preview. Update branding, colors, images, gallery pieces, and backup settings without touching the layout code.">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="admin">
+  <header class="header">
+    <div class="container header-container">
+      <a class="logo-area" href="index.html" aria-label="Go to homepage">
+        <img src="images/logo.png" alt="Artist Studio logo" class="logo" data-setting-image="logoImage">
+        <div>
+          <div class="brand-text" data-setting-text="siteName">Artist Studio</div>
+          <div class="brand-subtext" data-setting-text="siteTagline">Pastel art, originals, and commissions</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="services.html" data-nav="gallery">Gallery</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="header-social social-links" data-social-location="header"></div>
+        <a href="services.html" class="call-btn" data-setting-text="headerCta">Book a Commission</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero admin-hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-shell single-shell">
+      <div class="hero-content hero-card max-wide">
+        <p class="eyebrow">Owner area</p>
+        <h1>Update the look, story, and gallery from one place without touching the layout code.</h1>
+        <p class="hero-text">This demo twin keeps the owner page open so buyers can test the flow. The sold version is the one that would connect to a real backend or password gate later.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section admin-shell">
+    <div class="container owner-layout artist-owner-layout">
+      <aside class="owner-sidebar owner-panel">
+        <p class="section-kicker">Owner controls</p>
+        <h2 class="section-title left">Manage the main site settings</h2>
+        <p class="owner-sidebar-copy">These controls update the branding, copy, colors, biggest image areas, and gallery pieces while keeping the layout intact.</p>
+        <div class="owner-tab-list">
+          <button class="owner-tab active" data-tab="general">General</button>
+          <button class="owner-tab" data-tab="copy">Copy</button>
+          <button class="owner-tab" data-tab="colors">Colors</button>
+          <button class="owner-tab" data-tab="images">Images</button>
+          <button class="owner-tab" data-tab="gallery">Gallery</button>
+          <button class="owner-tab" data-tab="security">Security / backup</button>
+        </div>
+      </aside>
+
+      <div class="owner-content owner-panel">
+        <div class="status-box owner-status-box">
+          <p class="status-label">Owner mode</p>
+          <p id="auth-status-text">Demo owner mode is active. No password is required in this preview.</p>
+        </div>
+        <p class="owner-action-message" id="owner-action-message" role="status" aria-live="polite"></p>
+
+        <section class="owner-tab-panel active" data-panel="general">
+          <div class="owner-help"><strong>Important:</strong> Use this tab for the main brand name, short tagline, footer copy, header button text, and social links. Empty social fields stay hidden automatically.</div>
+          <div class="owner-form-grid two-up">
+            <label>Site name<input type="text" data-owner-field="siteName"></label>
+            <label>Header tagline<input type="text" data-owner-field="siteTagline"></label>
+            <label>Header button text<input type="text" data-owner-field="headerCta"></label>
+            <label>Footer copy<textarea data-owner-field="footerCopy"></textarea></label>
+            <label>Instagram URL<input type="url" data-owner-field="instagramUrl" placeholder="https://instagram.com/yourname"></label>
+            <label>Facebook URL<input type="url" data-owner-field="facebookUrl" placeholder="https://facebook.com/yourpage"></label>
+            <label>Pinterest URL<input type="url" data-owner-field="pinterestUrl" placeholder="https://pinterest.com/yourpage"></label>
+            <label>TikTok URL<input type="url" data-owner-field="tiktokUrl" placeholder="https://tiktok.com/@yourname"></label>
+            <label>YouTube URL<input type="url" data-owner-field="youtubeUrl" placeholder="https://youtube.com/@yourchannel"></label>
+            <label>Contact email display<input type="text" data-owner-field="contactEmail"></label>
+            <label>Contact Instagram display<input type="text" data-owner-field="contactInstagram"></label>
+            <label>Response time display<input type="text" data-owner-field="contactTurnaround"></label>
+          </div>
+        </section>
+
+        <section class="owner-tab-panel" data-panel="copy">
+          <div class="owner-help">Use this tab for the main hero messaging on each page. Keep the headlines short and the body copy clear so the site still scans well on mobile.</div>
+          <div class="owner-form-grid two-up">
+            <label>Home eyebrow<input type="text" data-owner-field="homeHeroEyebrow"></label>
+            <label>Gallery eyebrow<input type="text" data-owner-field="galleryHeroEyebrow"></label>
+            <label>About eyebrow<input type="text" data-owner-field="aboutHeroEyebrow"></label>
+            <label>Contact eyebrow<input type="text" data-owner-field="contactHeroEyebrow"></label>
+            <label>Home headline<textarea data-owner-field="homeHeroHeadline"></textarea></label>
+            <label>Home text<textarea data-owner-field="homeHeroText"></textarea></label>
+            <label>Gallery headline<textarea data-owner-field="galleryHeroHeadline"></textarea></label>
+            <label>Gallery text<textarea data-owner-field="galleryHeroText"></textarea></label>
+            <label>About headline<textarea data-owner-field="aboutHeroHeadline"></textarea></label>
+            <label>About text<textarea data-owner-field="aboutHeroText"></textarea></label>
+            <label>Contact headline<textarea data-owner-field="contactHeroHeadline"></textarea></label>
+            <label>Contact text<textarea data-owner-field="contactHeroText"></textarea></label>
+          </div>
+        </section>
+
+        <section class="owner-tab-panel" data-panel="colors">
+          <div class="owner-help">Adjust the main palette here. Keep enough contrast between the panel backgrounds and text so the site still feels soft but readable.</div>
+          <div class="owner-form-grid color-grid">
+            <label>Accent<input type="color" data-owner-color="accent"></label>
+            <label>Accent hover<input type="color" data-owner-color="accentHover"></label>
+            <label>Accent soft<input type="color" data-owner-color="accentSoft"></label>
+            <label>Page background<input type="color" data-owner-color="bgMain"></label>
+            <label>Panel background<input type="color" data-owner-color="bgPanel"></label>
+            <label>Main text<input type="color" data-owner-color="textMain"></label>
+            <label>Soft text<input type="color" data-owner-color="textSoft"></label>
+          </div>
+        </section>
+
+        <section class="owner-tab-panel" data-panel="images">
+          <div class="owner-help">Upload replacement images for the biggest visual areas. You can also paste a relative file path if you prefer swapping images in the images folder later.</div>
+          <div class="owner-form-grid two-up image-setting-grid">
+            <div class="owner-image-card">
+              <label>Home hero image path<input type="text" data-owner-image-path="homeHero"></label>
+              <label>Upload home hero image<input type="file" accept="image/*" data-owner-image-upload="homeHero"></label>
+            </div>
+            <div class="owner-image-card">
+              <label>Gallery hero image path<input type="text" data-owner-image-path="galleryHero"></label>
+              <label>Upload gallery hero image<input type="file" accept="image/*" data-owner-image-upload="galleryHero"></label>
+            </div>
+            <div class="owner-image-card">
+              <label>About hero image path<input type="text" data-owner-image-path="aboutHero"></label>
+              <label>Upload about hero image<input type="file" accept="image/*" data-owner-image-upload="aboutHero"></label>
+            </div>
+            <div class="owner-image-card">
+              <label>Contact hero image path<input type="text" data-owner-image-path="contactHero"></label>
+              <label>Upload contact hero image<input type="file" accept="image/*" data-owner-image-upload="contactHero"></label>
+            </div>
+            <div class="owner-image-card">
+              <label>Owner page banner path<input type="text" data-owner-image-path="adminHero"></label>
+              <label>Upload owner page banner<input type="file" accept="image/*" data-owner-image-upload="adminHero"></label>
+            </div>
+            <div class="owner-image-card">
+              <label>Story image / about image path<input type="text" data-owner-image-path="storyImage"></label>
+              <label>Upload story image<input type="file" accept="image/*" data-owner-image-upload="storyImage"></label>
+            </div>
+            <div class="owner-image-card">
+              <label>Logo image path<input type="text" data-owner-image-path="logoImage"></label>
+              <label>Upload logo image<input type="file" accept="image/*" data-owner-image-upload="logoImage"></label>
+            </div>
+          </div>
+        </section>
+
+        <section class="owner-tab-panel" data-panel="gallery">
+          <div class="owner-help"><strong>Important:</strong> Add, remove, and reorder gallery pieces here without touching the page layout. Upload new artwork, update the title and category, or reset the demo gallery back to the starter set.</div>
+          <div class="owner-actions-row">
+            <button type="button" class="btn btn-secondary" id="refresh-artworks-btn">Refresh list</button>
+            <button type="button" class="btn btn-secondary" id="reset-demo-btn">Reset demo gallery</button>
+          </div>
+          <div class="owner-upload-card quote-box slim-box">
+            <h3>Add a new gallery piece</h3>
+            <form id="artwork-form" class="quote-form">
+              <div class="field-group"><label for="artwork-title">Artwork title</label><input type="text" id="artwork-title" placeholder="Artwork title" required></div>
+              <div class="form-row">
+                <div class="field-group"><label for="artwork-category">Category or collection</label><input type="text" id="artwork-category" value="Featured Collection"></div>
+                <div class="field-group"><label for="artwork-order">Sort order</label><input type="number" id="artwork-order" value="100"></div>
+              </div>
+              <div class="field-group"><label for="artwork-description">Short description</label><textarea id="artwork-description" required></textarea></div>
+              <div class="field-group"><label for="artwork-image">Artwork image</label><input type="file" id="artwork-image" accept="image/png,image/jpeg,image/webp,image/gif" required><p class="form-help">Recommended: JPG, PNG, WEBP, or GIF. Keep uploads reasonably sized for faster load times.</p></div>
+              <label class="checkbox-row"><input type="checkbox" id="artwork-featured" checked> Show this in the homepage featured section</label>
+              <div class="image-preview-wrap"><img id="upload-preview" class="upload-preview" alt="Selected artwork preview" hidden></div>
+              <button type="submit" class="btn btn-primary">Upload artwork</button>
+            </form>
+          </div>
+          <div id="artwork-list" class="artwork-list"></div>
+        </section>
+
+        <section class="owner-tab-panel" data-panel="security">
+          <div class="owner-help">This demo twin does not enforce a real password. These controls are here so buyers can see how the sold version could store a password setting and backup the owner settings file.</div>
+          <div class="owner-form-grid two-up">
+            <label class="password-field-group">Password
+              <div class="password-input-wrap">
+                <input type="password" id="owner-passcode" data-owner-field="passcode" placeholder="preview">
+                <button type="button" class="password-visibility-btn" data-monkey-toggle="owner-passcode" aria-label="Show or hide password">🙈</button>
+              </div>
+            </label>
+            <label class="password-field-group">Confirm password
+              <div class="password-input-wrap">
+                <input type="password" id="owner-passcode-confirm" placeholder="preview">
+                <button type="button" class="password-visibility-btn" data-monkey-toggle="owner-passcode-confirm" aria-label="Show or hide password">🙈</button>
+              </div>
+            </label>
+          </div>
+          <div class="owner-actions-row">
+            <button type="button" class="btn btn-primary" id="save-all-settings">Save all changes</button>
+            <button type="button" class="btn btn-secondary" id="download-settings">Download settings file</button>
+            <label class="btn btn-secondary file-upload-btn">Upload settings file<input type="file" id="upload-settings-file" accept="application/json" hidden></label>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-copy-stack">
+        <p class="footer-copy-text" data-setting-text="footerCopy">Artist Studio creates warm portfolio pages for originals, prints, and commission-based artwork.</p>
+        <div class="footer-social social-links" data-social-location="footer"></div>
+      </div>
+      <div class="footer-links">
+        <a href="admin.html" class="footer-admin-link" aria-label="Owner login">Owner</a>
+        <a href="https://jasonswebpages.com" class="footer-credit" target="_blank" rel="noopener noreferrer" aria-label="Visit JasonsWebPages.com">
+          <img src="images/jasonswebpages-footer-logo.png" alt="Jason'sWeb" class="footer-credit-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="preview-config.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+HOW THIS PREVIEW VERSION WORKS
+
+1. The site starts with starter artwork.
+2. The hidden Owner link in the footer opens admin.html.
+3. The demo owner tools open without a password in this version.
+4. Uploading artwork updates the homepage and gallery page instantly.
+5. Editing or deleting artwork updates the preview instantly.
+6. Uploaded images are saved in browser storage only for preview purposes.
+7. Use Reset Demo Gallery if you want to put the site back to the starter state.
+
+
+UPDATED OWNER CONTROLS
+- This version now includes the richer owner controls: General, Copy, Colors, Images, Gallery, and Security / backup.
+- Social media links can be pasted in the owner page and will show in the header and footer automatically when filled in.
+- The Gallery tab lets buyers upload, edit, delete, and reset gallery pieces without touching the layout code.
+- The Security / backup tab lets buyers download and upload the owner settings file for this demo browser preview.

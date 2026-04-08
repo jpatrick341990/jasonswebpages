@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artist Studio | Premium Artist Website Template</title>
+  <meta name="description" content="Artist website demo preview with a hidden owner dashboard, upload flow, live-updating featured art, and polished pages for originals, prints, and commissions.">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+  <header class="header">
+    <div class="container header-container">
+      <a class="logo-area" href="index.html" aria-label="Go to homepage">
+        <img src="images/logo.png" alt="Artist Studio logo" class="logo" data-setting-image="logoImage">
+        <div>
+          <div class="brand-text" data-setting-text="siteName">Artist Studio</div>
+          <div class="brand-subtext" data-setting-text="siteTagline">Pastel art, originals, and commissions</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="services.html" data-nav="gallery">Gallery</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+
+      <div class="header-actions"><div class="header-social social-links" data-social-location="header"></div><a href="contact.html" class="call-btn" data-setting-text="headerCta">Book a Commission</a></div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero home-hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-shell">
+      <div class="hero-content hero-card">
+        <p class="eyebrow" data-setting-text="homeHeroEyebrow">Premium artist portfolio template</p>
+        <h1 data-setting-text="homeHeroHeadline">Show the work beautifully. Make commissions feel easy. Keep the gallery live.</h1>
+        <p class="hero-text" data-setting-text="homeHeroText">This artist template is built for real working creatives who need more than a pretty homepage. It gives you a polished portfolio, a warm brand story, commission-ready contact flow, and a live demo gallery that updates in the browser through the hidden owner page.</p>
+
+        <div class="hero-buttons">
+          <a href="services.html" class="btn btn-primary">Browse the Gallery</a>
+          <a href="admin.html" class="btn btn-secondary">See Owner Dashboard</a>
+        </div>
+
+        <div class="hero-chip-row" aria-label="Template highlights">
+          <span class="hero-chip">Live gallery ready</span>
+          <span class="hero-chip">Commission inquiry flow</span>
+          <span class="hero-chip">Story-first brand pages</span>
+        </div>
+      </div>
+
+      <aside class="hero-side-card stats-panel">
+        <p class="section-kicker">Quick overview</p>
+        <div class="stats-stack">
+          <div class="stat-card">
+            <p class="stat-number" id="artwork-count">4</p>
+            <p class="stat-label">Artwork pieces loaded</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-number" id="featured-count">3</p>
+            <p class="stat-label">Homepage featured slots</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-number" id="collection-count">3</p>
+            <p class="stat-label">Collections represented</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- TRUST / FIT SECTION -->
+  <section class="trust-section">
+    <div class="container">
+      <p class="trust-title">Built for artists who need a clean website without losing warmth</p>
+      <div class="trust-grid">
+        <div class="trust-item">Original Paintings</div>
+        <div class="trust-item">Portrait Commissions</div>
+        <div class="trust-item">Print Collections</div>
+        <div class="trust-item">Live Gallery Uploads</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED ARTWORK -->
+  <section class="section gallery-preview">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Featured work</p>
+          <h2 class="section-title left">Lead with your strongest pieces, not just a blank portfolio grid.</h2>
+        </div>
+        <a href="services.html" class="text-link">See full gallery →</a>
+      </div>
+
+      <div class="art-grid" id="featured-art-grid"></div>
+      <p class="live-note" id="featured-art-note">Demo preview mode is active. Upload sample artwork from the owner page to see this update instantly.</p>
+    </div>
+  </section>
+
+  <!-- VALUE SECTION -->
+  <section class="section highlight-band">
+    <div class="container split-band">
+      <div>
+        <p class="section-kicker">Why this template works</p>
+        <h2 class="section-title left">It is designed around how collectors and commission clients actually shop.</h2>
+        <p class="section-text left">
+          People want to see the work, understand the artist, trust the process, and know how to reach out.
+          This layout handles those steps in the right order instead of feeling like a generic brochure page.
+        </p>
+      </div>
+
+      <div class="feature-list">
+        <div class="feature-pill">Strong hero and featured work first</div>
+        <div class="feature-pill">Hidden owner panel for demo uploads</div>
+        <div class="feature-pill">Commission-ready contact pages</div>
+        <div class="feature-pill">Live demo twin for showcase use</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-heading tight-heading">
+        <div>
+          <p class="section-kicker">Client journey</p>
+          <h2 class="section-title left">The page flow is set up to help visitors move naturally.</h2>
+        </div>
+      </div>
+
+      <div class="process-grid">
+        <article class="card process-card">
+          <span class="process-step">01</span>
+          <h3>Catch attention with real work</h3>
+          <p>Start with a strong hero and featured pieces so visitors immediately understand the visual style.</p>
+        </article>
+        <article class="card process-card">
+          <span class="process-step">02</span>
+          <h3>Build trust through story</h3>
+          <p>Use the About page to explain inspiration, materials, process, and what makes the work worth collecting.</p>
+        </article>
+        <article class="card process-card">
+          <span class="process-step">03</span>
+          <h3>Turn interest into inquiries</h3>
+          <p>Guide people into a clear commission form and contact flow instead of leaving them to guess what to do next.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT PREVIEW -->
+  <section class="section content-section">
+    <div class="container story-preview">
+      <div class="story-image-panel">
+        <img src="images/about-image.png" alt="Framed pastel artwork displayed on a styled wall" class="story-image" data-setting-image="storyImage">
+      </div>
+      <div class="story-copy-panel">
+        <p class="section-kicker">Story-driven selling</p>
+        <h2 class="section-title left">Collectors buy the art, but they also buy the voice behind it.</h2>
+        <p class="section-text left">
+          This template gives room for process notes, inspiration, materials, framed mockups, and the softer details that make handmade work feel personal instead of mass-produced.
+        </p>
+        <a href="about.html" class="btn btn-secondary">Read the About Page</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="section testimonial-section">
+    <div class="container narrow center-text">
+      <h2 class="section-title">Collector Note</h2>
+      <div class="testimonial-box">
+        <p class="testimonial-stars">★★★★★</p>
+        <p class="testimonial-text">
+          “Everything feels thoughtful. The site makes it easy to imagine the piece in a real home, and the commission process feels approachable instead of intimidating.”
+        </p>
+        <p class="testimonial-name">— Sample Collector Review</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMISSION FORM -->
+  <section class="section quote-section">
+    <div class="container">
+      <div class="quote-box commission-box">
+        <div>
+          <p class="section-kicker">Now booking</p>
+          <h2 class="section-title left">Commission inquiries that feel polished from the first click.</h2>
+          <p class="section-text left">
+            The form below is demo-ready right out of the box. Keep it as a styled sample or connect it to your favorite form service later for real submissions.
+          </p>
+          <ul class="check-list">
+            <li>Clear project type selection</li>
+            <li>Friendly language for non-technical buyers</li>
+            <li>Ready to connect to Formspree, Basin, or your own backend later</li>
+          </ul>
+        </div>
+
+        <form class="quote-form js-demo-form" id="commission-form-home">
+          <div class="form-row">
+            <div class="field-group">
+              <label for="home-name">Your Name</label>
+              <input type="text" id="home-name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="field-group">
+              <label for="home-email">Your Email</label>
+              <input type="email" id="home-email" name="email" placeholder="Your Email" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field-group">
+              <label for="home-reference">Instagram or Website</label>
+              <input type="text" id="home-reference" name="reference" placeholder="Instagram or Website">
+            </div>
+            <div class="field-group">
+              <label for="home-deadline">Preferred Deadline</label>
+              <input type="text" id="home-deadline" name="deadline" placeholder="Preferred Deadline">
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label for="home-project-type">Project Type</label>
+            <select id="home-project-type" name="project-type" required>
+              <option value="">Select a Project Type</option>
+              <option>Original Artwork</option>
+              <option>Custom Portrait</option>
+              <option>Framed Piece</option>
+              <option>Print Order</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="home-details">Project Details</label>
+            <textarea id="home-details" name="details" placeholder="Tell me about the piece you want" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Inquiry</button>
+          <p class="form-status" id="home-form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-copy-stack">
+        <p class="footer-copy-text" data-setting-text="footerCopy">Artist Studio creates warm portfolio pages for originals, prints, and commission-based artwork.</p>
+        <div class="footer-social social-links" data-social-location="footer"></div>
+      </div>
+      <div class="footer-links">
+        <a href="admin.html" class="footer-admin-link" aria-label="Owner login">Owner</a>
+        <a href="https://jasonswebpages.com" class="footer-credit" target="_blank" rel="noopener noreferrer" aria-label="Visit JasonsWebPages.com">
+          <img src="images/jasonswebpages-footer-logo.png" alt="Jason'sWeb" class="footer-credit-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="preview-config.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

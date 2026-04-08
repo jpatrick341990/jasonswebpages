@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Artist Studio</title>
+  <meta name="description" content="Commission-ready contact page for an artist website template with polished inquiry forms, FAQs, and contact details.">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="contact">
+  <header class="header">
+    <div class="container header-container">
+      <a class="logo-area" href="index.html" aria-label="Go to homepage">
+        <img src="images/logo.png" alt="Artist Studio logo" class="logo" data-setting-image="logoImage">
+        <div>
+          <div class="brand-text" data-setting-text="siteName">Artist Studio</div>
+          <div class="brand-subtext" data-setting-text="siteTagline">Pastel art, originals, and commissions</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="services.html" data-nav="gallery">Gallery</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+
+      <div class="header-actions"><div class="header-social social-links" data-social-location="header"></div><a href="contact.html" class="call-btn" data-setting-text="headerCta">Book a Commission</a></div>
+    </div>
+  </header>
+
+  <section class="hero contact-hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-shell single-shell">
+      <div class="hero-content hero-card max-wide">
+        <p class="eyebrow" data-setting-text="contactHeroEyebrow">Contact</p>
+        <h1 data-setting-text="contactHeroHeadline">Make it easy for someone to say, “I think I want to work with you.”</h1>
+        <p class="hero-text" data-setting-text="contactHeroText">This page is designed for commission requests, print questions, collaboration leads, and simple collector contact. The form is styled and demo-ready now, and can be connected to a real form service later.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section content-section">
+    <div class="container card-grid three-up contact-card-grid">
+      <article class="card contact-card">
+        <p class="gallery-tag">Email</p>
+        <h3 data-setting-text="contactEmail">hello@yourartiststudio.com</h3>
+        <p>Use a clear business email so commission requests feel legitimate and easy to trust.</p>
+      </article>
+      <article class="card contact-card">
+        <p class="gallery-tag">Instagram</p>
+        <h3 data-setting-text="contactInstagram">@yourartiststudio</h3>
+        <p>Perfect for showing behind-the-scenes process, new drops, framing mockups, and social proof.</p>
+      </article>
+      <article class="card contact-card">
+        <p class="gallery-tag">Response Time</p>
+        <h3 data-setting-text="contactTurnaround">1–3 business days</h3>
+        <p>Set buyer expectations clearly so inquiries feel organized and professional from the start.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section quote-section">
+    <div class="container">
+      <div class="quote-box commission-box">
+        <div>
+          <p class="section-kicker">Inquiry form</p>
+          <h2 class="section-title left">A better-looking commission form makes the whole business feel more serious.</h2>
+          <p class="section-text left">
+            Use this as a styled sample, or connect it later to Formspree, Basin, Netlify Forms, or your own backend.
+          </p>
+          <div class="mini-steps">
+            <div class="mini-step">Share the project idea</div>
+            <div class="mini-step">Review scope and timing</div>
+            <div class="mini-step">Move into the custom quote</div>
+          </div>
+        </div>
+
+        <form class="quote-form js-demo-form" id="commission-form-contact">
+          <div class="form-row">
+            <div class="field-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="field-group">
+              <label for="contact-email">Your Email</label>
+              <input type="email" id="contact-email" name="email" placeholder="Your Email" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field-group">
+              <label for="contact-size">Desired Size or Format</label>
+              <input type="text" id="contact-size" name="size" placeholder="What size are you thinking?">
+            </div>
+            <div class="field-group">
+              <label for="contact-date">Ideal Delivery Date</label>
+              <input type="text" id="contact-date" name="date" placeholder="When do you need it?">
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label for="contact-type">Inquiry Type</label>
+            <select id="contact-type" name="type" required>
+              <option value="">Select an Inquiry Type</option>
+              <option>Custom Portrait</option>
+              <option>Original Artwork</option>
+              <option>Framed Piece</option>
+              <option>Prints</option>
+              <option>Wholesale / Collaboration</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="contact-details">Project Details</label>
+            <textarea id="contact-details" name="details" placeholder="Describe the artwork you want" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Inquiry</button>
+          <p class="form-status" id="contact-form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section content-section">
+    <div class="container faq-shell">
+      <div class="section-heading tight-heading">
+        <div>
+          <p class="section-kicker">Frequently asked questions</p>
+          <h2 class="section-title left">Use this section to remove common buyer hesitation.</h2>
+        </div>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Do you offer custom commissions?</summary>
+          <p>Yes. Use this answer to explain what kinds of custom pieces you accept and what details you need from a client to get started.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can prints and originals be listed together?</summary>
+          <p>Absolutely. This template works for originals, framed mockups, print collections, and mixed galleries.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How do I connect the contact form to a real service?</summary>
+          <p>The form is styled and ready now. Later, you can point it to Formspree, Basin, Netlify Forms, or your own backend workflow.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-copy-stack">
+        <p class="footer-copy-text" data-setting-text="footerCopy">Artist Studio creates warm portfolio pages for originals, prints, and commission-based artwork.</p>
+        <div class="footer-social social-links" data-social-location="footer"></div>
+      </div>
+      <div class="footer-links">
+        <a href="admin.html" class="footer-admin-link" aria-label="Owner login">Owner</a>
+        <a href="https://jasonswebpages.com" class="footer-credit" target="_blank" rel="noopener noreferrer" aria-label="Visit JasonsWebPages.com">
+          <img src="images/jasonswebpages-footer-logo.png" alt="Jason'sWeb" class="footer-credit-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="preview-config.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

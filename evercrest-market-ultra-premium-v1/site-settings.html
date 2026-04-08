@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Store Settings | Evercrest Market</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body class="site-settings-page">
+  <div class="announcement-bar"><p>Free Shipping On Orders Over $50 • New Spring Collection Just Dropped • Limited-Time Deals Live Now</p></div>
+  <div class="utility-bar">
+    <div class="container utility-wrap">
+      <p>Free Shipping | Secure Checkout | 30-Day Returns</p>
+      <div class="utility-links">
+        <a href="tracking.html">Track Order</a>
+        <a href="account.html">My Account</a>
+        <a href="contact.html">Support</a>
+        <a href="site-settings.html">Store Settings</a>
+      </div>
+    </div>
+  </div>
+  <header class="site-header modern-header-fixed">
+    <div class="container header-wrap ultra-header header-top-row">
+      <a href="index.html" class="logo-wrap">
+        <img src="images/logo.png" alt="Evercrest Market Logo" class="logo" />
+        <div><h1 class="brand-name">Evercrest Market</h1><p class="brand-tag">Curated Goods & Daily Living</p></div>
+      </a>
+      <form class="header-search" id="headerSearchForm">
+        <div class="search-input-wrap ghost-search-wrap">
+          <input id="searchInput" type="text" autocomplete="off" placeholder="" />
+          <span class="ghost-placeholder" id="ghostPlaceholder"></span>
+          <div class="search-suggestions" id="searchSuggestions"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </div>
+    <div class="container nav-row header-bottom-row">
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <nav class="nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="collections.html">Collections</a>
+        <a href="deals.html">Deals</a>
+        <a href="seller-dashboard.html">Seller</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions header-actions-bottom">
+        <a href="wishlist.html" class="header-wishlist-link">❤ Wishlist</a>
+        <a href="account.html">👤 Account</a>
+        <a href="cart.html" class="cart-pill">🛒 Cart</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero site-settings-hero">
+    <div class="container">
+      <p class="section-kicker">Owner Controls</p>
+      <h2>Shape the storefront without touching the layout code</h2>
+      <p>Save the big brand pieces, social links, copy, colors, spacing, and header styles here. Use the built-in owner or seller demo accounts first, then update the store with your own brand details.</p>
+      <div class="settings-hero-stats">
+        <div class="settings-stat"><strong>Brand + Social</strong><span>Store name, logo, announcement bar, footer note, and social links.</span></div>
+        <div class="settings-stat"><strong>Theme Controls</strong><span>Presets, colors, fonts, card style, spacing, and header polish.</span></div>
+        <div class="settings-stat"><strong>Copy Studio</strong><span>Edit the biggest visible words across the header, homepage sections, cards, and footer.</span></div>
+        <div class="settings-stat"><strong>Safe Testing</strong><span>Everything saves in this browser so you can try ideas without breaking the layout.</span></div>
+        <div class="settings-stat"><strong>Owner Access</strong><span>Owner and seller demo accounts unlock the settings link in the main navigation.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container site-settings-shell">
+      <div class="owner-settings-grid">
+        <div class="site-settings-stack">
+          <div class="site-settings-card">
+            <p class="section-kicker">Brand Setup</p>
+            <h3>Store identity, contact links, and socials</h3>
+            <form id="brandSettingsForm" class="site-settings-stack">
+              <div class="settings-control-grid">
+                <div class="settings-control-group"><label class="theme-label" for="brandStoreName">Store name</label><input class="theme-input" id="brandStoreName" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="brandTagLine">Tagline</label><input class="theme-input" id="brandTagLine" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="brandSupportEmail">Support email</label><input class="theme-input" id="brandSupportEmail" type="email"></div>
+                <div class="settings-control-group"><label class="theme-label" for="brandSupportPhone">Support phone</label><input class="theme-input" id="brandSupportPhone" type="text"></div>
+              </div>
+              <div class="settings-control-group"><label class="theme-label" for="brandAnnouncement">Announcement bar text</label><input class="theme-input" id="brandAnnouncement" type="text"></div>
+              <div class="settings-control-group"><label class="theme-label" for="brandUtility">Utility bar text</label><input class="theme-input" id="brandUtility" type="text"></div>
+              <div class="settings-control-group"><label class="theme-label" for="brandFooterNote">Footer intro note</label><textarea class="theme-input" id="brandFooterNote" rows="3"></textarea></div>
+              <div class="settings-control-group">
+                <label class="theme-label">Homepage section visibility</label>
+                <div class="settings-toggle-grid">
+                  <label class="settings-check"><input type="checkbox" id="brandShowTrust" checked> <span>Trust strip</span></label>
+                  <label class="settings-check"><input type="checkbox" id="brandShowCategories" checked> <span>Featured categories</span></label>
+                  <label class="settings-check"><input type="checkbox" id="brandShowBestsellers" checked> <span>Best sellers row</span></label>
+                  <label class="settings-check"><input type="checkbox" id="brandShowBrands" checked> <span>Featured brands</span></label>
+                  <label class="settings-check"><input type="checkbox" id="brandShowSellercta" checked> <span>Seller CTA row</span></label>
+                  <label class="settings-check"><input type="checkbox" id="brandShowReviews" checked> <span>Reviews section</span></label>
+                  <label class="settings-check"><input type="checkbox" id="brandShowJournal" checked> <span>Journal section</span></label>
+                  <label class="settings-check"><input type="checkbox" id="brandShowFeaturedpicks" checked> <span>Featured picks row</span></label>
+                  <label class="settings-check"><input type="checkbox" id="brandShowNewsletter" checked> <span>Newsletter section</span></label>
+                </div>
+              </div>
+              <div class="settings-control-grid">
+                <div class="settings-control-group"><label class="theme-label" for="brandInstagram">Instagram URL</label><input class="theme-input" id="brandInstagram" type="url" placeholder="https://"></div>
+                <div class="settings-control-group"><label class="theme-label" for="brandFacebook">Facebook URL</label><input class="theme-input" id="brandFacebook" type="url" placeholder="https://"></div>
+                <div class="settings-control-group"><label class="theme-label" for="brandPinterest">Pinterest URL</label><input class="theme-input" id="brandPinterest" type="url" placeholder="https://"></div>
+                <div class="settings-control-group"><label class="theme-label" for="brandTikTok">TikTok URL</label><input class="theme-input" id="brandTikTok" type="url" placeholder="https://"></div>
+                <div class="settings-control-group"><label class="theme-label" for="brandYouTube">YouTube URL</label><input class="theme-input" id="brandYouTube" type="url" placeholder="https://"></div>
+                <div class="settings-control-group"><label class="theme-label" for="brandLogoPath">Fallback logo file path</label><input class="theme-input" id="brandLogoPath" type="text" placeholder="images/logo.png"></div>
+              </div>
+              <div class="settings-control-grid">
+                <div class="settings-control-group"><label class="theme-label" for="brandLogoFile">Upload replacement logo</label><input class="theme-input" id="brandLogoFile" type="file" accept="image/*"></div>
+                <div class="settings-control-group"><label class="theme-label">Logo preview</label><div class="settings-note-box"><img id="brandLogoPreview" src="images/logo.png" alt="Logo preview" style="max-width:140px;width:100%;height:auto;display:block;"></div></div>
+              </div>
+              <div class="theme-actions-row">
+                <button class="btn btn-primary" type="submit">Save brand settings</button>
+                <button class="btn btn-secondary" type="button" id="brandSettingsExport">Download settings file</button>
+                <button class="btn btn-secondary" type="button" id="brandSettingsImport">Upload settings file</button>
+                <button class="btn btn-secondary" type="button" id="brandSettingsReset">Reset brand settings</button>
+              </div>
+              <input type="file" id="brandSettingsImportFile" accept="application/json" hidden>
+              <div class="seller-status" id="brandSettingsStatus"></div>
+            </form>
+          </div>
+
+          <div class="site-settings-card">
+            <p class="section-kicker">Copy Studio</p>
+            <h3>Edit the words shoppers see most</h3>
+            <p class="theme-helper">Use this section for the header, homepage, spotlight cards, footer, and other big public-facing copy. Product card words can still be changed in the seller dashboard. For any leftover wording, use the global find and replace box at the bottom.</p>
+            <form id="copySettingsForm" class="site-settings-stack">
+              <div class="settings-control-grid">
+                <div class="settings-control-group"><label class="theme-label" for="copyNavHome">Home label</label><input class="theme-input" id="copyNavHome" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyNavShop">Shop label</label><input class="theme-input" id="copyNavShop" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyNavCollections">Collections label</label><input class="theme-input" id="copyNavCollections" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyNavDeals">Deals label</label><input class="theme-input" id="copyNavDeals" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyNavCheckout">Checkout label</label><input class="theme-input" id="copyNavCheckout" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyNavSeller">Seller label</label><input class="theme-input" id="copyNavSeller" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyNavBlog">Blog label</label><input class="theme-input" id="copyNavBlog" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyNavAbout">About label</label><input class="theme-input" id="copyNavAbout" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyNavFaq">FAQ label</label><input class="theme-input" id="copyNavFaq" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyNavContact">Contact label</label><input class="theme-input" id="copyNavContact" type="text"></div>
+              </div>
+              <div class="settings-control-grid">
+                <div class="settings-control-group"><label class="theme-label" for="copyUtilityTrack">Utility link: Track Order</label><input class="theme-input" id="copyUtilityTrack" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyUtilityAccount">Utility link: My Account</label><input class="theme-input" id="copyUtilityAccount" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyUtilitySupport">Utility link: Support</label><input class="theme-input" id="copyUtilitySupport" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copySearchButton">Search button</label><input class="theme-input" id="copySearchButton" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyHeaderWishlist">Header wishlist label</label><input class="theme-input" id="copyHeaderWishlist" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyHeaderAccount">Header account label</label><input class="theme-input" id="copyHeaderAccount" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyHeaderCart">Header cart label</label><input class="theme-input" id="copyHeaderCart" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyFooterOwnerButton">Footer owner button</label><input class="theme-input" id="copyFooterOwnerButton" type="text"></div>
+              </div>
+              <div class="settings-control-grid">
+                <div class="settings-control-group"><label class="theme-label" for="copyHeroEyebrow">Hero eyebrow</label><input class="theme-input" id="copyHeroEyebrow" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyHeroTitle">Hero title</label><input class="theme-input" id="copyHeroTitle" type="text"></div>
+              </div>
+              <div class="settings-control-group"><label class="theme-label" for="copyHeroBody">Hero paragraph</label><textarea class="theme-input" id="copyHeroBody" rows="3"></textarea></div>
+              <div class="settings-control-grid">
+                <div class="settings-control-group"><label class="theme-label" for="copyHeroButton1">Hero button 1</label><input class="theme-input" id="copyHeroButton1" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyHeroButton2">Hero button 2</label><input class="theme-input" id="copyHeroButton2" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyHeroButton3">Hero button 3</label><input class="theme-input" id="copyHeroButton3" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyHeroButton4">Hero button 4</label><input class="theme-input" id="copyHeroButton4" type="text"></div>
+              </div>
+              <div class="settings-control-grid">
+                <div class="settings-control-group"><label class="theme-label" for="copyHeroStat1Title">Hero stat 1 title</label><input class="theme-input" id="copyHeroStat1Title" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyHeroStat1Text">Hero stat 1 text</label><input class="theme-input" id="copyHeroStat1Text" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyHeroStat2Title">Hero stat 2 title</label><input class="theme-input" id="copyHeroStat2Title" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyHeroStat2Text">Hero stat 2 text</label><input class="theme-input" id="copyHeroStat2Text" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyHeroStat3Title">Hero stat 3 title</label><input class="theme-input" id="copyHeroStat3Title" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyHeroStat3Text">Hero stat 3 text</label><input class="theme-input" id="copyHeroStat3Text" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyHeroStat4Title">Hero stat 4 title</label><input class="theme-input" id="copyHeroStat4Title" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyHeroStat4Text">Hero stat 4 text</label><input class="theme-input" id="copyHeroStat4Text" type="text"></div>
+              </div>
+              <div class="settings-control-grid">
+                <div class="settings-control-group"><label class="theme-label" for="copyPromoKicker">Mini promo kicker</label><input class="theme-input" id="copyPromoKicker" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyPromoTitle">Mini promo title</label><input class="theme-input" id="copyPromoTitle" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyPromoButton">Mini promo button</label><input class="theme-input" id="copyPromoButton" type="text"></div>
+              </div>
+              <div class="settings-control-grid">
+                <div class="settings-control-group"><label class="theme-label" for="copyTrust1Title">Trust 1 title</label><input class="theme-input" id="copyTrust1Title" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyTrust1Text">Trust 1 text</label><input class="theme-input" id="copyTrust1Text" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyTrust2Title">Trust 2 title</label><input class="theme-input" id="copyTrust2Title" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyTrust2Text">Trust 2 text</label><input class="theme-input" id="copyTrust2Text" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyTrust3Title">Trust 3 title</label><input class="theme-input" id="copyTrust3Title" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyTrust3Text">Trust 3 text</label><input class="theme-input" id="copyTrust3Text" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyTrust4Title">Trust 4 title</label><input class="theme-input" id="copyTrust4Title" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyTrust4Text">Trust 4 text</label><input class="theme-input" id="copyTrust4Text" type="text"></div>
+              </div>
+              <div class="settings-control-grid">
+                <div class="settings-control-group"><label class="theme-label" for="copyCategoriesKicker">Categories kicker</label><input class="theme-input" id="copyCategoriesKicker" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyCategoriesTitle">Categories title</label><input class="theme-input" id="copyCategoriesTitle" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyCategory1Title">Category card 1 title</label><input class="theme-input" id="copyCategory1Title" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyCategory1Text">Category card 1 text</label><input class="theme-input" id="copyCategory1Text" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyCategory2Title">Category card 2 title</label><input class="theme-input" id="copyCategory2Title" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyCategory2Text">Category card 2 text</label><input class="theme-input" id="copyCategory2Text" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyCategory3Title">Category card 3 title</label><input class="theme-input" id="copyCategory3Title" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyCategory3Text">Category card 3 text</label><input class="theme-input" id="copyCategory3Text" type="text"></div>
+              </div>
+              <div class="settings-control-grid">
+                <div class="settings-control-group"><label class="theme-label" for="copyBestKicker">Best sellers kicker</label><input class="theme-input" id="copyBestKicker" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyBestTitle">Best sellers title</label><input class="theme-input" id="copyBestTitle" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyBrandsKicker">Brands kicker</label><input class="theme-input" id="copyBrandsKicker" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyBrandsTitle">Brands title</label><input class="theme-input" id="copyBrandsTitle" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copySellerKicker">Spotlight kicker</label><input class="theme-input" id="copySellerKicker" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copySellerTitle">Spotlight title</label><input class="theme-input" id="copySellerTitle" type="text"></div>
+              </div>
+              <div class="settings-control-group"><label class="theme-label" for="copySellerBody">Spotlight paragraph</label><textarea class="theme-input" id="copySellerBody" rows="2"></textarea></div>
+              <div class="settings-control-grid">
+                <div class="settings-control-group"><label class="theme-label" for="copySellerButton">Spotlight button</label><input class="theme-input" id="copySellerButton" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copySpotlight2Title">Card 2 title</label><input class="theme-input" id="copySpotlight2Title" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copySpotlight2Text">Card 2 text</label><input class="theme-input" id="copySpotlight2Text" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copySpotlight3Title">Card 3 title</label><input class="theme-input" id="copySpotlight3Title" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copySpotlight3Text">Card 3 text</label><input class="theme-input" id="copySpotlight3Text" type="text"></div>
+              </div>
+              <div class="settings-control-grid">
+                <div class="settings-control-group"><label class="theme-label" for="copyReviewsKicker">Reviews kicker</label><input class="theme-input" id="copyReviewsKicker" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyReviewsTitle">Reviews title</label><input class="theme-input" id="copyReviewsTitle" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyJournalKicker">Journal kicker</label><input class="theme-input" id="copyJournalKicker" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyJournalTitle">Journal title</label><input class="theme-input" id="copyJournalTitle" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyFeaturedKicker">Featured picks kicker</label><input class="theme-input" id="copyFeaturedKicker" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyFeaturedTitle">Featured picks title</label><input class="theme-input" id="copyFeaturedTitle" type="text"></div>
+              </div>
+              <div class="settings-control-grid">
+                <div class="settings-control-group"><label class="theme-label" for="copyNewsletterKicker">Newsletter kicker</label><input class="theme-input" id="copyNewsletterKicker" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyNewsletterTitle">Newsletter title</label><input class="theme-input" id="copyNewsletterTitle" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyNewsletterBody">Newsletter text</label><input class="theme-input" id="copyNewsletterBody" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyNewsletterButton">Newsletter button</label><input class="theme-input" id="copyNewsletterButton" type="text"></div>
+              </div>
+              <div class="settings-control-grid">
+                <div class="settings-control-group"><label class="theme-label" for="copyFooterShopHeading">Footer shop heading</label><input class="theme-input" id="copyFooterShopHeading" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyFooterCustomerHeading">Footer customer heading</label><input class="theme-input" id="copyFooterCustomerHeading" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyFooterInfoHeading">Footer info heading</label><input class="theme-input" id="copyFooterInfoHeading" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyFooterWhyHeading">Footer why heading</label><input class="theme-input" id="copyFooterWhyHeading" type="text"></div>
+                <div class="settings-control-group"><label class="theme-label" for="copyFooterWhyText">Footer why text</label><input class="theme-input" id="copyFooterWhyText" type="text"></div>
+              </div>
+              <div class="settings-control-group"><label class="theme-label" for="copyGlobalReplacements">Global text find and replace</label><textarea class="theme-input" id="copyGlobalReplacements" rows="6" placeholder="Old text => New text
+Editor Picks => Flash Sale"></textarea><p class="theme-helper">Use one line per replacement. This is the quick way to catch leftover wording across the public pages without opening the code.</p></div>
+              <div class="theme-actions-row">
+                <button class="btn btn-primary" type="submit">Save copy settings</button>
+                <button class="btn btn-secondary" type="button" id="copySettingsReset">Reset copy settings</button>
+              </div>
+              <div class="seller-status" id="copySettingsStatus"></div>
+            </form>
+          </div>
+
+          <div class="site-settings-card">
+            <p class="section-kicker">Theme Setup</p>
+            <h3>Presets, colors, spacing, and polish</h3>
+            <div class="site-settings-stack">
+              <div class="theme-preset-grid" id="themePagePresets"></div>
+              <div class="theme-preview-pill" id="themePreviewBadge">Evercrest Noir • Dark</div>
+              <div class="settings-control-grid">
+                <div class="settings-control-group"><label class="theme-label" for="themePageMode">Theme mode</label><select class="theme-select" id="themePageMode"><option value="dark">Dark</option><option value="light">Light</option></select></div>
+                <div class="settings-control-group"><label class="theme-label" for="themePageCardStyle">Card style</label><select class="theme-select" id="themePageCardStyle"><option value="soft">Soft</option><option value="glass">Glass</option><option value="outline">Outline</option><option value="solid">Solid</option></select></div>
+                <div class="settings-control-group"><label class="theme-label" for="themePageButtonStyle">Button shape</label><select class="theme-select" id="themePageButtonStyle"><option value="rounded">Rounded</option><option value="soft">Soft</option><option value="square">Square</option></select></div>
+                <div class="settings-control-group"><label class="theme-label" for="themePageFontHeading">Heading font</label><select class="theme-select" id="themePageFontHeading"></select></div>
+                <div class="settings-control-group"><label class="theme-label" for="themePageFontBody">Body font</label><select class="theme-select" id="themePageFontBody"></select></div>
+                <div class="settings-control-group"><label class="theme-label" for="themePageLayoutWidth">Layout width</label><input class="settings-range" id="themePageLayoutWidth" type="range" min="1080" max="1360" step="10"></div>
+                <div class="settings-control-group"><label class="theme-label" for="themePageSpacing">Section spacing</label><input class="settings-range" id="themePageSpacing" type="range" min="0.8" max="1.4" step="0.05"></div>
+                <div class="settings-control-group"><label class="theme-label" for="themePageHeaderScale">Header scale</label><input class="settings-range" id="themePageHeaderScale" type="range" min="0.82" max="1.08" step="0.01"></div>
+                <div class="settings-control-group"><label class="theme-label" for="themePageTextScale">Text scale</label><input class="settings-range" id="themePageTextScale" type="range" min="0.92" max="1.14" step="0.01"></div>
+                <div class="settings-control-group"><label class="theme-label" for="themePageRadius">Corner roundness</label><input class="settings-range" id="themePageRadius" type="range" min="8" max="36" step="1"></div>
+                <div class="settings-control-group"><label class="theme-label" for="themePageSurface">Card surface</label><input class="settings-range" id="themePageSurface" type="range" min="0.04" max="0.2" step="0.01"></div>
+                <div class="settings-control-group"><label class="theme-label" for="themePageButtonGlow">Button glow</label><input class="settings-range" id="themePageButtonGlow" type="range" min="0.4" max="1.8" step="0.05"></div>
+                <div class="settings-control-group"><label class="theme-label" for="themePageLineHeight">Body line height</label><input class="settings-range" id="themePageLineHeight" type="range" min="1.35" max="1.9" step="0.01"></div>
+              </div>
+              <div class="settings-control-grid">
+                <div class="settings-control-group"><label class="theme-label" for="themePageAccent">Accent color</label><input class="theme-color-input" id="themePageAccent" type="color"></div>
+                <div class="settings-control-group"><label class="theme-label" for="themePageAccentAlt">Accent alt</label><input class="theme-color-input" id="themePageAccentAlt" type="color"></div>
+                <div class="settings-control-group"><label class="theme-label" for="themePageHeadingColor">Heading color</label><input class="theme-color-input" id="themePageHeadingColor" type="color"></div>
+                <div class="settings-control-group"><label class="theme-label" for="themePageBodyColor">Body color</label><input class="theme-color-input" id="themePageBodyColor" type="color"></div>
+                <div class="settings-control-group"><label class="theme-label" for="themePageMutedColor">Muted color</label><input class="theme-color-input" id="themePageMutedColor" type="color"></div>
+                <div class="settings-control-group"><label class="theme-label" for="themePageHeaderColor">Header base color</label><input class="theme-color-input" id="themePageHeaderColor" type="color"></div>
+                <div class="settings-control-group"><label class="theme-label" for="themePageHeaderBorderColor">Header border color</label><input class="theme-color-input" id="themePageHeaderBorderColor" type="color"></div>
+                <div class="settings-control-group"><label class="theme-label" for="themePageHeaderText">Header link color</label><input class="theme-color-input" id="themePageHeaderText" type="color"></div>
+                <div class="settings-control-group"><label class="theme-label" for="themePageCardTint">Card tint</label><input class="theme-color-input" id="themePageCardTint" type="color"></div>
+                <div class="settings-control-group"><label class="theme-label" for="themePageButtonText">Button text color</label><input class="theme-color-input" id="themePageButtonText" type="color"></div>
+              </div>
+              <div class="theme-actions-row">
+                <button class="btn btn-secondary" id="themePageReset" type="button">Reset theme settings</button>
+                <span class="theme-preview-pill"><span id="themeHeaderSwatch" style="width:18px;height:18px;border-radius:999px;display:inline-block;background:rgba(38,61,99,.92)"></span> Header preview</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="site-settings-stack settings-sticky-summary">
+          <div class="site-settings-card">
+            <p class="section-kicker">Quick Notes</p>
+            <h3>What this upgrade adds</h3>
+            <div class="settings-note-box">
+              <ul>
+                <li>Owner and seller demo access through the account page</li>
+                <li>Brand controls for the store name, logo, announcement, utility bar, and footer</li>
+                <li>Social links that auto-show in the header and footer only when filled in</li>
+                <li>Theme controls for colors, fonts, spacing, and card/button polish</li>
+                <li>Seller dashboard and account tools that still work without a backend</li>
+              </ul>
+            </div>
+          </div>
+          <div class="site-settings-card">
+            <p class="section-kicker">Demo Access</p>
+            <h3>Built-in sign in</h3>
+            <div class="settings-note-box">
+              <p><strong>Owner:</strong> owner@evercrest.demo / owner123</p>
+              <p><strong>Seller:</strong> seller@evercrest.demo / seller123</p>
+              <p><strong>Shopper:</strong> shopper@evercrest.demo / shopper123</p>
+              <a href="account.html" class="btn btn-primary small-btn">Open account sign in</a>
+            </div>
+          </div>
+          <div class="site-settings-card">
+            <p class="section-kicker">Start Here</p>
+            <h3>Need the setup order?</h3>
+            <div class="settings-note-box">
+              <p>Use the Start Here page and the text guides in the zip for the easiest path: sign in, set the brand, tune the theme, then manage products through the seller dashboard.</p>
+              <a href="start-here.html" class="btn btn-secondary small-btn">Open start here guide</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid ultra-footer-grid">
+      <div><h4>Evercrest Market</h4><p>A polished multi-page storefront with a built-in seller dashboard, customer account area, and a more boutique visual direction.</p></div>
+      <div><h4>Shop</h4><a href="shop.html">Shop All</a><a href="collections.html">Collections</a><a href="deals.html">Deals</a><a href="wishlist.html">Wishlist</a></div>
+      <div><h4>Customer</h4><a href="account.html">My Account</a><a href="checkout.html">Checkout</a><a href="tracking.html">Track Order</a><a href="faq.html">FAQ</a></div>
+      <div><h4>Info</h4><a href="start-here.html">Start Here</a><a href="site-settings.html">Store Settings</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+    </div>
+  </footer>
+  <script src="js/menu.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/brand.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>

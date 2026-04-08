@@ -1,0 +1,185 @@
+DEMO PREVIEW NOTE
+=================
+This demo twin does not use Supabase. The owner page opens without a password and saves demo artwork in the current browser only.
+
+ARTIST WEBSITE TEMPLATE
+EDITING GUIDE
+=================================
+
+Thank you for using this Artist Website Template.
+
+This version includes:
+
+- A hidden owner admin page
+- Supabase-ready live gallery uploads
+- Auto-updating gallery page
+- Auto-updating featured homepage art
+- Gallery search and category filters
+- Demo-ready contact and commission forms
+- Artwork detail editing inside the admin area
+- Small footer owner link
+- Jason'sWeb footer logo link
+
+---------------------------------
+WHAT FILES DO WHAT
+---------------------------------
+
+index.html
+Home page
+
+services.html
+Main gallery page
+
+about.html
+About / artist story page
+
+contact.html
+Contact / commission page
+
+admin.html
+Owner login + upload dashboard
+
+styles.css
+All design and layout styling
+
+scripts.js
+Gallery loading, owner login, uploads, edit buttons, delete buttons, gallery search, and demo form handling
+
+supabase-config.js
+Where the buyer pastes the Supabase URL and anon key
+
+supabase-setup.sql
+The SQL file used to build the backend table and permissions
+
+HOW-TO-CONNECT-SUPABASE.txt
+Very simple backend setup guide
+
+images/
+Logo and sample artwork images
+
+---------------------------------
+HOW TO EDIT THE BASIC SITE TEXT
+---------------------------------
+
+Open the HTML pages and replace sample wording like:
+
+- Artist Studio
+- section headings
+- sample review text
+- contact info
+- commission wording
+- FAQ answers
+
+---------------------------------
+HOW TO CHANGE THE MAIN SITE LOGO
+---------------------------------
+
+Replace this file:
+images/logo.png
+
+Keep the same file name if you do not want to edit code.
+
+---------------------------------
+HOW TO CHANGE THE JASONSWEB FOOTER LOGO SIZE
+---------------------------------
+
+Open:
+styles.css
+
+Find:
+.footer-credit-logo
+
+Change the width value.
+
+---------------------------------
+HOW THE LIVE GALLERY WORKS
+---------------------------------
+
+When Supabase is connected:
+
+1. The owner opens admin.html
+2. The owner signs in
+3. The owner uploads a new image
+4. The owner adds a title and description
+5. The gallery page updates automatically
+6. The homepage featured section updates automatically
+7. The owner can later edit the title, category, description, featured status, and sort order
+
+---------------------------------
+HOW TO USE THE OWNER PAGE
+---------------------------------
+
+Open:
+admin.html
+
+That page lets the owner:
+
+- sign in
+- upload a new artwork image
+- add a title
+- add a description
+- choose a category
+- choose sort order
+- mark an item as featured
+- edit artwork details later
+- delete old artwork
+
+IMPORTANT:
+If the owner wants to replace the actual image file,
+delete the old item and upload the new image version.
+
+---------------------------------
+HOW THE PUBLIC FORMS WORK
+---------------------------------
+
+The homepage and contact page forms are demo-ready.
+
+That means:
+- they look finished
+- they do not reload the page
+- they show a success message
+
+To receive real submissions later,
+connect the form to a service like:
+- Formspree
+- Basin
+- Netlify Forms
+- your own backend
+
+---------------------------------
+IF THE BUYER DOES NOT WANT SUPABASE YET
+---------------------------------
+
+The template still works.
+
+It will show the sample starter artwork until the buyer connects Supabase.
+
+---------------------------------
+PUBLISHING
+---------------------------------
+
+This template can be hosted on:
+
+- GitHub Pages
+- Cloudflare Pages
+- Netlify
+
+The frontend stays static.
+Supabase handles the live backend part.
+
+---------------------------------
+VERY IMPORTANT
+---------------------------------
+
+The buyer MUST paste their own Supabase project URL and anon key into:
+
+supabase-config.js
+
+That file is what connects the website to their backend.
+
+
+UPDATED OWNER CONTROLS
+- This version now includes the richer owner controls: General, Copy, Colors, Images, Gallery, and Security / backup.
+- Social media links can be pasted in the owner page and will show in the header and footer automatically when filled in.
+- The Gallery tab lets buyers upload, edit, delete, and reset gallery pieces without touching the layout code.
+- The Security / backup tab lets buyers download and upload the owner settings file for this demo browser preview.

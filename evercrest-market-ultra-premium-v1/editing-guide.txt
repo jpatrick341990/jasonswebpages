@@ -1,0 +1,24 @@
+NOVA MARKET ULTRA — EDITING GUIDE
+
+Quick edit paths:
+- Brand + social links: site-settings.html
+- Theme colors, fonts, spacing, and card style: site-settings.html
+- Product catalog and seller listings: seller-dashboard.html
+- Default starter product data: js/catalog.js
+- Main styling: css/style.css and css/responsive.css
+- Store scripts: js/site.js, js/theme.js, js/brand.js, js/auth.js
+- Store images: images/
+
+Missing files fixed in this upgraded build:
+- js/auth.js was added
+- site-settings.html was added
+- start-here.html was added
+- missing images were replaced so the included pages stop breaking
+
+How the premium controls work:
+- Site settings controls the store name, logo, announcement bar, utility bar, footer intro note, support contact info, and social links.
+- Theme settings controls the look and feel of the storefront through browser-saved settings.
+- Seller dashboard controls custom product listings.
+
+Contact form note:
+The contact page still works as a front-end demo by saving messages locally in this browser. For real inbox delivery, connect a form service or backend later.

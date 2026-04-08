@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Artist Studio</title>
+  <meta name="description" content="Artist gallery demo preview with category filters, search, collection stats, and a hidden owner upload flow.">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="gallery">
+  <header class="header">
+    <div class="container header-container">
+      <a class="logo-area" href="index.html" aria-label="Go to homepage">
+        <img src="images/logo.png" alt="Artist Studio logo" class="logo" data-setting-image="logoImage">
+        <div>
+          <div class="brand-text" data-setting-text="siteName">Artist Studio</div>
+          <div class="brand-subtext" data-setting-text="siteTagline">Pastel art, originals, and commissions</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="services.html" data-nav="gallery">Gallery</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+
+      <div class="header-actions"><div class="header-social social-links" data-social-location="header"></div><a href="contact.html" class="call-btn" data-setting-text="headerCta">Book a Commission</a></div>
+    </div>
+  </header>
+
+  <section class="hero services-hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-shell single-shell">
+      <div class="hero-content hero-card max-wide">
+        <p class="eyebrow" data-setting-text="galleryHeroEyebrow">Gallery</p>
+        <h1 data-setting-text="galleryHeroHeadline">Collections, framed mockups, and portfolio pieces that can stay updated over time.</h1>
+        <p class="hero-text">
+          This gallery is built to feel organized and easy to explore. In this demo preview, new work uploaded through the hidden owner page appears here instantly inside the current browser.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section stats-band compact-band">
+    <div class="container stats-grid three-up">
+      <article class="stat-card stat-card-wide">
+        <p class="stat-number" id="gallery-total-count">4</p>
+        <p class="stat-label">Pieces in the gallery</p>
+      </article>
+      <article class="stat-card stat-card-wide">
+        <p class="stat-number" id="gallery-featured-count">3</p>
+        <p class="stat-label">Featured works available</p>
+      </article>
+      <article class="stat-card stat-card-wide">
+        <p class="stat-number" id="gallery-category-count">3</p>
+        <p class="stat-label">Collections represented</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section gallery-section with-controls">
+    <div class="container">
+      <div class="gallery-toolbar card-surface">
+        <div>
+          <p class="section-kicker">Browse faster</p>
+          <h2 class="section-title left">Live filters and search make this page feel like a real collection browser.</h2>
+        </div>
+        <div class="gallery-toolbar-actions">
+          <div class="field-group compact-field">
+            <label for="gallery-search">Search artwork</label>
+            <input type="search" id="gallery-search" placeholder="Search by title, description, or collection">
+          </div>
+          <div class="filter-button-row" id="gallery-filter-buttons" aria-label="Filter gallery"></div>
+        </div>
+      </div>
+
+      <div class="gallery-masonry enhanced-gallery" id="gallery-grid"></div>
+      <p class="live-note" id="gallery-note">Demo preview mode is active. Upload sample artwork from the owner page to test the gallery flow.</p>
+    </div>
+  </section>
+
+  <section class="section content-section">
+    <div class="container card-grid three-up">
+      <article class="card">
+        <h3>Originals and framed work</h3>
+        <p>Use categories to separate originals, room mockups, prints, or seasonal drops without rewriting the layout.</p>
+      </article>
+      <article class="card">
+        <h3>Easy buyer browsing</h3>
+        <p>Visitors can filter by collection and search by title, which makes larger art catalogs feel much more usable.</p>
+      </article>
+      <article class="card">
+        <h3>Demo-ready structure</h3>
+        <p>The gallery is data-driven so buyers can test uploads, filters, and search without needing a live backend in the preview.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-copy-stack">
+        <p class="footer-copy-text" data-setting-text="footerCopy">Artist Studio creates warm portfolio pages for originals, prints, and commission-based artwork.</p>
+        <div class="footer-social social-links" data-social-location="footer"></div>
+      </div>
+      <div class="footer-links">
+        <a href="admin.html" class="footer-admin-link" aria-label="Owner login">Owner</a>
+        <a href="https://jasonswebpages.com" class="footer-credit" target="_blank" rel="noopener noreferrer" aria-label="Visit JasonsWebPages.com">
+          <img src="images/jasonswebpages-footer-logo.png" alt="Jason'sWeb" class="footer-credit-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="preview-config.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

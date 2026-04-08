@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | Evercrest Market</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div class="announcement-bar">
+    <p>Free Shipping On Orders Over $50 • New Spring Collection Just Dropped • Limited-Time Deals Live Now</p>
+  </div>
+
+  <div class="utility-bar">
+    <div class="container utility-wrap">
+      <p>Free Shipping | Secure Checkout | 30-Day Returns</p>
+      <div class="utility-links">
+        <a href="tracking.html">Track Order</a>
+        <a href="account.html">My Account</a>
+        <a href="contact.html">Support</a>
+        <a href="site-settings.html">Store Settings</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header modern-header-fixed">
+    <div class="container header-wrap ultra-header header-top-row">
+      <a href="index.html" class="logo-wrap">
+        <img src="images/logo.png" alt="Evercrest Market Logo" class="logo" />
+        <div>
+          <h1 class="brand-name">Evercrest Market</h1>
+          <p class="brand-tag">Curated Goods & Daily Living</p>
+        </div>
+      </a>
+
+      <form class="header-search" id="headerSearchForm">
+        <div class="search-input-wrap ghost-search-wrap">
+          <input id="searchInput" type="text" autocomplete="off" placeholder="" />
+          <span class="ghost-placeholder" id="ghostPlaceholder"></span>
+          <div class="search-suggestions" id="searchSuggestions"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </div>
+
+    <div class="container nav-row header-bottom-row">
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html" class="">Home</a>
+        <a href="shop.html" class="">Shop</a>
+        <a href="collections.html" class="">Collections</a>
+        <a href="deals.html" class="">Deals</a>
+        <a href="checkout.html" class="active">Checkout</a>
+        <a href="seller-dashboard.html" class="">Seller</a>
+        <a href="blog.html" class="">Blog</a>
+        <a href="about.html" class="">About</a>
+        <a href="faq.html" class="">FAQ</a>
+        <a href="contact.html" class="">Contact</a>
+      </nav>
+
+      <div class="header-actions header-actions-bottom">
+        <a href="wishlist.html" class="header-wishlist-link">❤ Wishlist</a>
+        <a href="account.html">👤 Account</a>
+        <a href="cart.html" class="cart-pill">🛒 Cart</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero small-hero">
+    <div class="container centered-hero">
+      <p class="section-kicker">Checkout Layout</p>
+      <h2>Secure Checkout</h2>
+      <p>Review billing details, order totals, and delivery information before placing an order.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container checkout-layout">
+      <div class="checkout-form-card">
+        <p class="section-kicker">Billing Details</p>
+        <h3>Customer Information</h3>
+
+        <form class="checkout-form">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Address" />
+          <input type="text" placeholder="Phone Number" />
+          <input type="text" placeholder="Street Address" />
+          <input type="text" placeholder="Apartment, suite, etc. (optional)" />
+          <div class="hero-buttons">
+            <input type="text" placeholder="City" />
+            <input type="text" placeholder="State" />
+          </div>
+          <div class="hero-buttons">
+            <input type="text" placeholder="ZIP Code" />
+            <select id="billingCountry">
+              <option value="">Country</option>
+              <option>United States</option>
+              <option>Canada</option>
+              <option>Mexico</option>
+              <option>Brazil</option>
+              <option>Argentina</option>
+              <option>United Kingdom</option>
+              <option>Ireland</option>
+              <option>France</option>
+              <option>Germany</option>
+              <option>Italy</option>
+              <option>Spain</option>
+              <option>Netherlands</option>
+              <option>Belgium</option>
+              <option>Sweden</option>
+              <option>Norway</option>
+              <option>Denmark</option>
+              <option>Switzerland</option>
+              <option>Portugal</option>
+              <option>Poland</option>
+              <option>Czech Republic</option>
+              <option>Australia</option>
+              <option>New Zealand</option>
+              <option>Japan</option>
+              <option>South Korea</option>
+              <option>India</option>
+              <option>Singapore</option>
+              <option>United Arab Emirates</option>
+              <option>South Africa</option>
+            </select>
+          </div>
+        </form>
+      </div>
+
+      <div class="checkout-summary-card">
+        <p class="section-kicker">Order Summary</p>
+        <h2>Review Order</h2>
+        <p>Use this section for totals, trust notes, and the final checkout action.</p>
+
+        <div class="checkout-summary-list">
+          <div class="cart-item">
+            <span>Minimal Lamp</span>
+            <span>$49.99</span>
+          </div>
+          <div class="cart-item">
+            <span>Premium Hoodie</span>
+            <span>$64.00</span>
+          </div>
+          <div class="cart-item">
+            <span>Wireless Earbuds</span>
+            <span>$89.99</span>
+          </div>
+          <div class="cart-item">
+            <span>Shipping</span>
+            <span>$12.00</span>
+          </div>
+          <div class="cart-item">
+            <span>Tax</span>
+            <span>$16.32</span>
+          </div>
+          <div class="cart-item total-row">
+            <span>Total</span>
+            <span>$232.30</span>
+          </div>
+        </div>
+
+        <div class="trust-note-box">
+          <p><strong>Payment Method:</strong> Card / Wallet / Manual integration later</p>
+          <p><strong>Security:</strong> This is a front-end checkout demo layout</p>
+          <p><strong>Next Step:</strong> Connect Stripe or another payment platform later</p>
+        </div>
+
+        <a href="#" class="btn btn-primary full-btn">Place Order</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark-panel">
+    <div class="container">
+      <div class="section-heading centered">
+        <p class="section-kicker">Checkout Trust Row</p>
+        <h3>Checkout details that build trust</h3>
+      </div>
+
+      <div class="checkout-trust-grid">
+        <div class="trust-item">
+          <strong>Encrypted Checkout</strong>
+          <span>Show secure purchase messaging here.</span>
+        </div>
+        <div class="trust-item">
+          <strong>Fast Delivery</strong>
+          <span>Promote shipping speed and updates.</span>
+        </div>
+        <div class="trust-item">
+          <strong>Easy Returns</strong>
+          <span>Build confidence with return information.</span>
+        </div>
+        <div class="trust-item">
+          <strong>Support Available</strong>
+          <span>Add reassurance before the final purchase step.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter-section">
+    <div class="container newsletter-wrap">
+      <div>
+        <p class="section-kicker">Checkout Reminder</p>
+        <h3>Stay updated on offers and order updates</h3>
+        <p>Use this signup area for order updates, launches, and customer reminders.</p>
+      </div>
+
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid ultra-footer-grid">
+      <div>
+        <h4>Evercrest Market</h4>
+        <p>A checkout page with billing fields, totals, and trust details.</p>
+      </div>
+
+      <div>
+        <h4>Shop</h4>
+        <a href="shop.html">Shop All</a>
+        <a href="collections.html">Collections</a>
+        <a href="deals.html">Deals</a>
+        <a href="wishlist.html">Wishlist</a>
+      </div>
+
+      <div>
+        <h4>Customer</h4>
+        <a href="account.html">My Account</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="tracking.html">Track Order</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+
+      <div>
+        <h4>Info</h4>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="policies.html">Policies</a>
+      </div>
+
+      <div>
+        <h4>Template Notes</h4>
+        <p>A complete checkout flow makes the store feel organized and ready to use.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/brand.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
