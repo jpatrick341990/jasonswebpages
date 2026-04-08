@@ -1,0 +1,114 @@
+FILE EDITING GUIDE
+
+MOST IMPORTANT CONTENT FILE:
+assets/js/photo-data.js
+
+This file controls the repeatable sections.
+
+---------------------------------
+1. FEATURED COLLECTION CARDS
+---------------------------------
+Look for:
+featuredCollections: [
+
+Each card has:
+- title
+- subtitle
+- image
+- link
+- badge
+
+---------------------------------
+2. PACKAGE CARDS
+---------------------------------
+Look for:
+packages: [
+
+Each package has:
+- title
+- price
+- image
+- points
+- badge
+
+---------------------------------
+3. PORTFOLIO GRID
+---------------------------------
+Look for:
+portfolioItems: [
+
+Each item has:
+- title
+- category
+- image
+- size
+
+Categories used now:
+- wedding
+- portrait
+- branding
+
+Sizes used now:
+- standard
+- wide
+- tall
+
+---------------------------------
+4. TESTIMONIALS
+---------------------------------
+Look for:
+testimonials: [
+
+Each testimonial has:
+- quote
+- name
+- detail
+
+---------------------------------
+5. FAQ
+---------------------------------
+Look for:
+faq: [
+
+Each FAQ has:
+- question
+- answer
+
+---------------------------------
+6. HOW TO CHANGE A CARD IMAGE
+---------------------------------
+Example line:
+image: 'assets/images/gallery-wedding-1.jpg'
+
+To change it:
+- put your new image inside assets/images/
+- replace the file path in photo-data.js
+
+Example:
+image: 'assets/images/my-new-wedding-photo.jpg'
+
+---------------------------------
+7. IF YOU WANT TO ADD MORE PORTFOLIO ITEMS
+---------------------------------
+Copy one existing portfolio item block.
+Paste it below.
+Change:
+- title
+- category
+- image
+- size
+
+Then save the file.
+
+
+
+PORTFOLIO OWNER TAB
+- This version includes a Portfolio tab inside owner.html.
+- Use that tab to add more portfolio photos, remove photos, change the category, change the card size, and upload replacement images without editing the layout code.
+- After making changes in the Portfolio tab, click Save all changes.
+
+
+SOCIAL LINKS
+- The owner panel includes Instagram, Facebook, Pinterest, TikTok, and YouTube fields.
+- Paste the full profile links there and the header will automatically show the matching social buttons.
+- Leave any field blank and that social button stays hidden.

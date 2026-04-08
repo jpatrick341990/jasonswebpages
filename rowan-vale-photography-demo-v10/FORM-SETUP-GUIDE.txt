@@ -1,0 +1,47 @@
+FORM SETUP GUIDE
+
+The contact form is in demo mode until you connect a real form service.
+
+---------------------------------
+1. FILE TO EDIT
+---------------------------------
+contact.html
+
+---------------------------------
+2. WHAT TO FIND
+---------------------------------
+Find the form tag.
+It currently looks like this:
+<form class="styled-form" action="#" method="post">
+
+---------------------------------
+3. WHAT TO CHANGE
+---------------------------------
+Replace the # with your real form endpoint.
+
+Example with Formspree:
+<form class="styled-form" action="https://formspree.io/f/yourformid" method="post">
+
+---------------------------------
+4. WHY THIS MATTERS
+---------------------------------
+If the action is # or blank, the template stays in demo mode.
+The form will show a demo message instead of sending anything.
+
+---------------------------------
+5. TEST BEFORE PUBLISHING
+---------------------------------
+After adding your real form action:
+- save contact.html
+- reload the page
+- send a test inquiry
+- make sure it reaches your email or form inbox
+
+---------------------------------
+6. SIMPLE FORM SERVICES PEOPLE OFTEN USE
+---------------------------------
+- Formspree
+- Basin
+- Getform
+- Netlify Forms (if hosting supports it)
+
